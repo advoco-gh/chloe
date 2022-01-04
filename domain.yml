@@ -1,0 +1,37 @@
+version: "2.0"
+
+intents:
+  - confirm
+  - reject
+  - evening
+  - afternoon
+  - age
+
+responses:
+  utter_greeting_chloe:
+  - text: "Hello hi this Chloe is it a good time to speak with you for a short while"
+
+  utter_60_cents_policy:
+  - text: "hi I am calling on behalf of AIA, this call is to check if you are aware of the insurance that cost only 60 cents a day have you hear about it"
+
+  utter_pa_benefits:
+  - text: "Er ya for this personal accident plan it allow you to claim plenty of accident that do not require to be hospitalized & no medical check up required.This including TCM medical, Chiropractic claim & many more is it okay  i get my manager to give you a detailed introduction on this plan & there is no obligation"
+
+  utter_convincing:
+  - text: "I understand how you feel but many times we neglected small unexpected accident that can possibly happen & without PA plan we ended up have to pay the bills by our own as it is not deductible by medisave isit okay if i could arrange my manager to give you a detailed introduction on this plan i promise you will find it useful"
+
+  utter_appointment_call_time:
+  - text: "great I will get my manager to contact you by next week to arrange a meet up  alright erm do prefer him to call you in the afternoon or evening"
+  
+  utter_goodbye:
+  - text: "oh okay thank you & have a pleasant week ahead goodbye"
+
+  utter_age_info:
+  - text: "okay i will get my manager will give you a call back oh ya one last question i just wanted to check how old are you"
+
+  utter_aknowledge_age:
+  - text: "ok sure, i will take note. Thank you for your time do expect a call from my manager."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
