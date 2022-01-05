@@ -1,6 +1,82 @@
 version: "2.0"
 
 nlu:
+
+- intent: pa_question
+  examples: |
+    - who is this plan for
+
+- intent: pa_plan_coverage
+  examples: |
+    - what does this plan cover
+
+- intent: fees_question
+  examples: |
+    - is there any hidden fee
+
+- intent: login_details
+  examples: |
+    - do i need to share details
+
+- intent: meet_up_document
+  examples: |
+    - what do i need to bring
+
+- intent: manager_question
+  examples: |
+    - who is your manager
+
+- intent: objection_i_am_agent
+  examples: |
+    - I'm also an agent
+
+- intent: who_is
+  examples: |
+    - who am I speaking to?
+    - who are you?
+    - who is calling
+    - who is this?
+    - you are calling from prudential?
+    - from where are you calling?
+    - where are you calling from?
+    - I don't know you
+    - hello who are you
+    - who's on the line
+    - whats your name again
+
+- intent: question_related_to_numbers
+  examples: |
+    - how did you got my number
+    - what is it exactly you do
+
+- intent: question_related_to_scam
+  examples: |
+    - is this a scam
+    - prank call isit
+    - i can report you to the police
+
+- intent: not_singaporean
+  examples: |
+    - i'm not singaporean
+    - i'm malesian
+    - i don't qualify for cpf
+    - i'm not a singapore citizen
+    - i cannot do cpf i'm malesian
+    - i am holding on to a permit pass
+    - i am onwork permit
+    - i am on EP
+    - i am on s pass
+    - i am a foreigner
+    - i am a foreigner i am a s pass holder
+    - i am a s pass holder
+    - oh sorry i am a foreigner i am a s pass holder
+    - i am not eligibe for cpf 
+    - i am not a pr
+    - sorry i am not a pr
+    - i do not have cpf
+    - i am not a singaporean or pr
+
+
 - intent: confirm
   examples: |
     - yes
