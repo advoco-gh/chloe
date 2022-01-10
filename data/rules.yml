@@ -1,61 +1,58 @@
 version: "2.0"
 
 rules:
-
-- rule: not_singaporean 
+- rule: dnc
   steps:
-  - intent: not_singaporean 
-  - action: utter_not_local
-
-- rule: question_related_to_numbers 
+  - intent: dnc
+  - action: utter_chloe_goodbye
+- rule: student
   steps:
-  - intent: question_related_to_numbers 
-  - action: utter_number_info
-
-- rule: pa_question 
+  - intent: student
+  - action: utter_chloe_goodbye
+- rule: who_is
   steps:
-  - intent: pa_question 
-  - action: utter_pa_question
-
-- rule: question_related_to_scam 
-  steps:
-  - intent: question_related_to_scam 
-  - action: utter_scam_kelly
-
-- rule: pa_plan_coverage 
-  steps:
-  - intent: pa_plan_coverage 
-  - action: utter_pa_coverage
-
+  - intent: who_is
+  - action: utter_chloe_greeting_repeat
 - rule: fees_question 
   steps:
   - intent: fees_question 
-  - action: utter_fees_involvement
-
-- rule: login_details 
+  - action: utter_chloe_pa_coverage
+- rule: question_related_to_scam
   steps:
-  - intent: login_details 
-  - action: utter_confidential_details
-
-- rule: meet_up_document 
+  - intent: question_related_to_scam
+  - action: utter_chloe_scam
+- rule: question_related_to_numbers
   steps:
-  - intent: meet_up_document 
-  - action: utter_document_to_bring
-
+  - intent: question_related_to_numbers
+  - action: utter_chloe_number_info
+- rule: objection_already_have_PA_plan
+  steps:
+  - intent: objection_already_have_PA_plan
+  - action: utter_chloe_had_a_pa_plan
+- rule: not_singaporean
+  steps:
+  - intent: not_singaporean
+  - action: utter_chloe_not_local
 - rule: manager_question 
   steps:
   - intent: manager_question 
-  - action: utter_manager_introduction
-
-- rule: who_is 
+  - action: utter_chloe_manager_introduction
+- rule: question_related_to_age
   steps:
-  - intent: who_is 
-  - action: utter_greeting_repeat
-
-- rule: objection_i_am_agent 
+  - intent: question_related_to_age
+  - action: utter_chloe_age_question
+- rule: question_speak_chinese
   steps:
-  - intent: objection_i_am_agent 
-  - action: utter_goodbye
+  - intent: question_speak_chinese
+  - action: utter_chloe_language_barrier
+- rule: objection_i_am_agent
+  steps:
+  - intent: objection_i_am_agent
+  - action: utter_chloe_goodbye
+- rule: call_back_to_another_party
+  steps:
+  - intent: call_back_to_another_party
+  - action: utter_chloe_busy_call_back
 
 
 

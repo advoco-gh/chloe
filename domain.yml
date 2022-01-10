@@ -17,63 +17,107 @@ intents:
   - login_details
   - meet_up_document
   - manager_question
-
+  - objection_already_have_PA_plan
+  - call_back_to_another_party
+  - question_speak_chinese
+  - looking_for
+  - already_have_agent
+  - morning
+  - busy
+  - speak_twice
+  - student
+  - question_related_to_age
+  - dnc
 
 responses:
 
-  utter_not_local:
-  - text: "great you ask this question, this policy is open for anyone isit okay if i could arrange my manager to further explain on this plan i promise you will find it useful"
+  utter_chloe_60_cents_policy:
+  - text: hi I am calling on behalf of AIA this call is to check if you are aware of the insurance that cost only 60 cents a day have you hear about it
 
-  utter_number_info:
-  - text: "hi erm so sorry i got your number from a online marketing survey that you fill in your particular some times back i am doing a follow up service call to offer you the new accident plan policy that you only have to pay 60 cents a day and can cover you up to 100k of coverage & many other accident isit okay if i could arrange my manager to further explain on this plan"
+  utter_chloe_acknowledgement_age:
+  - text: okay sure i will take note thank you so much for your time do expect a call from my manager ya
 
-  utter_pa_question:
-  - text: "This plan is open to anyone that is 17 years & above it is to  protect you from accident-related medical bills as well as provide compensate to your lost of income. AIA allow many small injuries claim that is self inflicted. Such as like injured by very small minor fall i would say hassle free claim isit okay if i could arrange my manager to further explain on this plan"
+  utter_chloe_age_info:
+  - text: okay i will i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you 
 
-  utter_scam_kelly:
-  - text: "Don't worry, this is definitely not a scam. i am calling on behalf of AIA to share with you the 60 cent per day new attractive personal accident plan with high covererage So this more like a awareness campaign to share with you the extra benefits of this plan isit okay if i could arrange my manager to give you a detailed introduction on this plan i promise you will find it useful"
+  utter_chloe_age_question:
+  - text: erm ya so by knowing your age this allow my manager to do her preparation before meeting you so erm this allow us to save some time too before meeting you
 
-  utter_pa_coverage:
-  - text: "you only have to pay as low as 60 cents a day for this plan & it cover many benefit such as Life payout, lost of income & Disability issue isit okay if i could arrange my manager to give you a detailed introduction on this plan"
+  utter_chloe_appointment_call_time:
+  - text: erm great er I will get my manager to contact you by next week to arrange a meet up  alright so erm do prefer him to call you in the afternoon or in the evening
 
-  utter_fees_involvement:
-  - text: "oh okay dont worry, During the meet with my manager there will be hidden cost & no obligation. My manager will just share with you this affordable attractive plan isit okay if i could arrange my manager to give you a detailed introduction on this plan"
+  utter_chloe_busy_call_back:
+  - text: sorry to disturb i will give you a call back tomorrow okay
 
-  utter_confidential_details:
-  - text: "don't worry you do not have to give me your confidential details, during the meet up with my manager she will assist you with policy isit okay if i could arrange my manager to give you a detailed introduction on this plan"
+  utter_chloe_call _back_other:
+  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
 
-  utter_document_to_bring:
-  - text: "oh okay it would just be a meet up session my manager and she will assist you with this policy review together with you isit okay if i could arrange my manager to give you a detailed introduction on this plan"
+  utter_chloe_convincing:
+  - text: erm I understand how it feel but many times we are neglected by all this er small unexpected accident that can erm possibly happen and without PA plan we ended have to pay upfront cash erm by paying the bills of our own and is not deductible by medisave so wpuld it be okay if i could arrange my manager to give you a detailed introduction on this plan i promise you will find it very useful after the meet
 
-  utter_manager_introduction:
-  - text: "er ya my manager is from AIAwith many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you erm the whole duration will take around 30 minutes or more"
+  utter_chloe_existing_agent:
+  - text: ah okay er can i ask does your agent follow up with you often erm would you be interested for me to assign a new agent for you
 
-  utter_greeting_repeat:
-  - text: "hmm so sorry i am Chloe calling from AIA Insurance"
+  utter_chloe_fall_back:
+  - text: erm so sorry i didn't get you 
 
-  utter_greeting_chloe:
-  - text: "Hello hi this Chloe is it a good time to speak with you for a short while"
+  utter_chloe_goodbye:
+  - text: oh okay thank you and have a pleasant week ahead good bye
 
-  utter_60_cents_policy:
-  - text: "hi I am calling on behalf of AIA, this call is to check if you are aware of the insurance that cost only 60 cents a day have you hear about it"
+  utter_chloe_greeting:
+  - text: Hello hi this Chloe is it a good time to speak with you for a short while
 
-  utter_pa_benefits:
-  - text: "Er ya for this personal accident plan it allow you to claim plenty of accident that do not require to be hospitalized & no medical check up required.This including TCM medical, Chiropractic claim & many more is it okay  i get my manager to give you a detailed introduction on this plan & there is no obligation"
+  utter_chloe_greeting_repeat:
+  - text: hi so sorry i am chloe calling on behalf of AIA
 
-  utter_convincing:
-  - text: "I understand how you feel but many times we neglected small unexpected accident that can possibly happen & without PA plan we ended up have to pay the bills by our own as it is not deductible by medisave isit okay if i could arrange my manager to give you a detailed introduction on this plan i promise you will find it useful"
+  utter_chloe_had_a_pa_plan:
+  - text: erm er would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may value add to you in the long term erm would you consider that
 
-  utter_appointment_call_time:
-  - text: "great I will get my manager to contact you by next week to arrange a meet up  alright erm do prefer him to call you in the afternoon or evening"
-  
-  utter_goodbye:
-  - text: "oh okay thank you & have a pleasant week ahead goodbye"
+  utter_chloe_language_barrier:
+  - text: erm sorry i cant understand chinese i get my colleague call you tomorrow thank you bye bye 
 
-  utter_age_info:
-  - text: "okay i will get my manager will give you a call back oh ya one last question i just wanted to check how old are you"
+  utter_chloe_looking_for:
+  - text: erm hi erm so sorry am i speaking to Ashley
 
-  utter_aknowledge_age:
-  - text: "ok sure, i will take note. Thank you for your time do expect a call from my manager."
+  utter_chloe_manager_introduction:
+  - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
+
+  utter_chloe_nodding_er_ok:
+  - text: er ok 
+
+  utter_chloe_nodding_erya:
+  - text: er ya
+
+  utter_chloe_nodding_um_uhum:
+  - text: num uhum
+
+  utter_chloe_nodding_umm:
+  - text: umm
+
+  utter_chloe_nodding_yacan:
+  - text: ya can
+
+  utter_chloe_not_local:
+  - text: ah great you ask this question so this policy is actually open for anyone so er would it be okay if i could arrange my manager to further explain on this plan i promise you will find it very useful after the meet
+
+  utter_chloe_number_info:
+  - text: hi erm so sorry i got your number from a online marketing survey that you fill in your particular some times back so i am doing a follow up service call to offer you the new accident plan policy that you only have to pay 60 cents a day and you can cover youself up to 100k of coverage so erm isit okay if i could arrange my manager to further explain on this plan
+
+  utter_chloe_pa_benefit:
+  - text: er ya for this personal accident plan it allow you to claim plenty of accident that do not require to be hospitalized and no medical check up are required so this including TCM medical Chiropractic claim and many more so is it okay if i get my manager to give you a non obligation introduction on this plan itself
+
+  utter_chloe_pa_coverage:
+  - text: yup this plan is actually erm eligible for anyone that that is 17 years and above erm it actually cover accident related medical bills as well as erm provide compensate to your lost of income so erm the benefit of this erm plan it allow many small injuries claim that is self inflicted so such as like injured very small minor fall so isit okay if i could arrange my manager to further explain on this plan
+
+  utter_chloe_pa_fees:
+  - text: erm er you only have to pay as low as 60 cents a day for this plan and it cover many benefit such as erm life payout lost of income and disability issue so isit okay if i could arrange my manager to give you a detailed introduction on this plan itself
+
+  utter_chloe_scam:
+  - text: ya so erm don't worry this is definitely not a scam i am calling on behalf of AIA to share with you the 60 cent per day new attractive personal accident plan with high covererage so this more like a awareness campaign to share with you on the extra benefits of this plan so would it be okay if i could arrange my manager to give you a detailed introduction on this plan and i promise you will find it very useful after the meet
+
+  utter_chloe_sry_are_you_there:
+  - text: erm sorry are you there
+
 
 session_config:
   session_expiration_time: 60
