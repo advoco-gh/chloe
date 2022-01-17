@@ -1,5 +1,34 @@
 version: "2.0"
 
+
+slots:
+  chloe_busy_call_back:
+    type: text
+    influence_conversation: true
+  want_to_continue:
+    type: bool
+    influence_conversation: false  
+  reply_to_manager_advice:
+    type: text
+    influence_conversation: false
+  goodbye:
+    type: text
+    influence_conversation: false
+
+forms:
+  busy:
+    chloe_busy_call_back:
+    - type: from_text
+  already_have_agent:
+    want_to_continue:
+    - type: from_intent
+      intent: confirm
+      value: true
+    - type: from_intent
+      intent: reject
+      value: false
+
+
 intents:
   - confirm
   - reject
@@ -31,6 +60,15 @@ intents:
 
 responses:
 
+  utter_ask_goodbye:
+    - text: oh okay thank you and have a pleasant week ahead good bye
+    
+  utter_ask_want_to_continue:
+    - text: ah okay er can i ask does your agent follow up with you often erm would you be interested for me to assign a new agent for you
+    
+  utter_ask_reply_to_manager_advice:
+    - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
+
   utter_chloe_60_cents_policy:
   - text: hi I am calling on behalf of AIA this call is to check if you are aware of the insurance that cost only 60 cents a day have you hear about it
 
@@ -45,6 +83,9 @@ responses:
 
   utter_chloe_appointment_call_time:
   - text: erm great er I will get my manager to contact you by next week to arrange a meet up  alright so erm do prefer him to call you in the afternoon or in the evening
+
+  utter_ask_chloe_busy_call_back:
+  - text: sorry to disturb i will give you a call back tomorrow okay
 
   utter_chloe_busy_call_back:
   - text: sorry to disturb i will give you a call back tomorrow okay
@@ -122,3 +163,6 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+actions:
+  - validate_already_have_agent

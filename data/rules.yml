@@ -1,6 +1,40 @@
 version: "2.0"
 
 rules:
+
+- rule: Activate form2
+  steps:
+  - intent: already_have_agent
+  - action: already_have_agent
+  - active_loop: already_have_agent
+
+- rule: Submit form2
+  condition:
+  - active_loop: already_have_agent
+  steps:
+  - action: already_have_agent
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_chloe_goodbye
+  
+- rule: Activate form
+  steps:
+  - intent: busy
+  - action: busy
+  - active_loop: busy
+
+- rule: Submit form
+  condition:
+  - active_loop: busy
+  steps:
+  - action: busy
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_chloe_goodbye
+
+
 - rule: dnc
   steps:
   - intent: dnc
@@ -49,10 +83,20 @@ rules:
   steps:
   - intent: objection_i_am_agent
   - action: utter_chloe_goodbye
-- rule: call_back_to_another_party
+
+- rule: pa_plan_coverage
   steps:
-  - intent: call_back_to_another_party
-  - action: utter_chloe_busy_call_back
+  - intent: pa_plan_coverage
+  - action: utter_chloe_pa_coverage
+
+- rule: looking_for
+  steps:
+  - intent: looking_for
+  - action: utter_chloe_looking_for
+# - rule: call_back_to_another_party
+#   steps:
+#   - intent: call_back_to_another_party
+#   - action: utter_chloe_busy_call_back
 
 
 

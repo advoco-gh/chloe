@@ -1,6 +1,6 @@
 version: '2.0'
 stories:
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
@@ -9,18 +9,22 @@ stories:
       - intent: confirm
       - action: utter_chloe_pa_benefit
       - intent: reject
+      - action: utter_chloe_convincing
+      - intent: reject
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
       - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
       - action: utter_chloe_convincing
       - intent: reject
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
@@ -29,15 +33,33 @@ stories:
       - intent: confirm
       - action: utter_chloe_pa_benefit
       - intent: reject
+      - action: utter_chloe_convincing
+      - intent: reject
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
       - action: utter_chloe_convincing
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
       - intent: reject
       - action: utter_chloe_goodbye
   - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
@@ -52,26 +74,16 @@ stories:
       - action: utter_chloe_appointment_call_time
       - intent: reject
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
       - intent: reject
       - action: utter_chloe_convincing
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: reject
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: confirm
-      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: reject
@@ -80,12 +92,112 @@ stories:
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
       - intent: reject
       - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
       - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
       - action: utter_chloe_appointment_call_time
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
       - intent: reject
       - action: utter_chloe_goodbye
   - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
@@ -130,12 +242,14 @@ stories:
       - action: utter_chloe_age_info
       - intent: reject
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
       - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
@@ -144,12 +258,14 @@ stories:
       - action: utter_chloe_age_info
       - intent: reject
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
       - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
@@ -158,12 +274,14 @@ stories:
       - action: utter_chloe_age_info
       - intent: reject
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
       - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
@@ -176,6 +294,96 @@ stories:
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: confirm
@@ -214,6 +422,54 @@ stories:
       - action: utter_chloe_age_info
       - intent: reject
       - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: reject
+      - action: utter_chloe_goodbye
   - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
@@ -221,7 +477,7 @@ stories:
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: confirm
@@ -235,7 +491,7 @@ stories:
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: afternoon
@@ -249,12 +505,120 @@ stories:
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: evening
       - action: utter_chloe_age_info
       - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
       - action: utter_chloe_goodbye
   - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
@@ -352,12 +716,14 @@ stories:
       - action: utter_chloe_acknowledgement_age
       - intent: confirm
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
       - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
@@ -368,12 +734,14 @@ stories:
       - action: utter_chloe_acknowledgement_age
       - intent: confirm
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
       - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
@@ -384,12 +752,14 @@ stories:
       - action: utter_chloe_acknowledgement_age
       - intent: confirm
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
       - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
@@ -400,12 +770,14 @@ stories:
       - action: utter_chloe_acknowledgement_age
       - intent: confirm
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
       - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
@@ -416,12 +788,14 @@ stories:
       - action: utter_chloe_acknowledgement_age
       - intent: confirm
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
       - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
@@ -432,204 +806,14 @@ stories:
       - action: utter_chloe_acknowledgement_age
       - intent: confirm
       - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: evening
-      - action: utter_chloe_age_info
-      - intent: age
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: confirm
       - action: utter_chloe_pa_benefit
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: confirm
-      - action: utter_chloe_age_info
-      - intent: confirm
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: confirm
-      - action: utter_chloe_pa_benefit
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: confirm
-      - action: utter_chloe_age_info
-      - intent: age
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: confirm
-      - action: utter_chloe_pa_benefit
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: afternoon
-      - action: utter_chloe_age_info
-      - intent: confirm
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: confirm
-      - action: utter_chloe_pa_benefit
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: afternoon
-      - action: utter_chloe_age_info
-      - intent: age
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: confirm
-      - action: utter_chloe_pa_benefit
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: evening
-      - action: utter_chloe_age_info
-      - intent: confirm
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: confirm
-      - action: utter_chloe_pa_benefit
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: evening
-      - action: utter_chloe_age_info
-      - intent: age
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: reject
-      - action: utter_chloe_convincing
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: confirm
-      - action: utter_chloe_age_info
-      - intent: confirm
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: reject
-      - action: utter_chloe_convincing
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: confirm
-      - action: utter_chloe_age_info
-      - intent: age
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: reject
-      - action: utter_chloe_convincing
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: afternoon
-      - action: utter_chloe_age_info
-      - intent: confirm
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: reject
-      - action: utter_chloe_convincing
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: afternoon
-      - action: utter_chloe_age_info
-      - intent: age
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
-      - intent: reject
-      - action: utter_chloe_convincing
-      - intent: confirm
-      - action: utter_chloe_appointment_call_time
-      - intent: evening
-      - action: utter_chloe_age_info
-      - intent: confirm
-      - action: utter_chloe_acknowledgement_age
-      - intent: confirm
-      - action: utter_chloe_goodbye
-  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
-    steps:
-      - intent: confirm
-      - action: utter_chloe_greeting
-      - intent: reject
-      - action: utter_chloe_60_cents_policy
       - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
@@ -646,6 +830,618 @@ stories:
       - action: utter_chloe_greeting
       - intent: confirm
       - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: confirm
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
       - intent: confirm
       - action: utter_chloe_pa_benefit
       - intent: confirm
@@ -736,6 +1532,114 @@ stories:
       - action: utter_chloe_acknowledgement_age
       - intent: reject
       - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: confirm
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
   - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
@@ -743,7 +1647,7 @@ stories:
       - intent: confirm
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: confirm
@@ -759,7 +1663,7 @@ stories:
       - intent: confirm
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: confirm
@@ -775,7 +1679,7 @@ stories:
       - intent: confirm
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: afternoon
@@ -791,7 +1695,7 @@ stories:
       - intent: confirm
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: afternoon
@@ -807,7 +1711,7 @@ stories:
       - intent: confirm
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: evening
@@ -823,6 +1727,114 @@ stories:
       - intent: confirm
       - action: utter_chloe_60_cents_policy
       - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: confirm
+      - action: utter_chloe_pa_benefit
+      - intent: reject
       - action: utter_chloe_convincing
       - intent: confirm
       - action: utter_chloe_appointment_call_time
@@ -928,6 +1940,114 @@ stories:
       - action: utter_chloe_acknowledgement_age
       - intent: reject
       - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: confirm
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: afternoon
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: confirm
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
+  - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
+    steps:
+      - intent: confirm
+      - action: utter_chloe_greeting
+      - intent: reject
+      - action: utter_chloe_60_cents_policy
+      - intent: reject
+      - action: utter_chloe_pa_benefit
+      - intent: reject
+      - action: utter_chloe_convincing
+      - intent: confirm
+      - action: utter_chloe_appointment_call_time
+      - intent: evening
+      - action: utter_chloe_age_info
+      - intent: age
+      - action: utter_chloe_acknowledgement_age
+      - intent: reject
+      - action: utter_chloe_goodbye
   - story: Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path + Untitled Path
     steps:
       - intent: confirm
@@ -935,7 +2055,7 @@ stories:
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: confirm
@@ -951,7 +2071,7 @@ stories:
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: confirm
@@ -967,7 +2087,7 @@ stories:
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: afternoon
@@ -983,7 +2103,7 @@ stories:
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: afternoon
@@ -999,7 +2119,7 @@ stories:
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: evening
@@ -1015,7 +2135,7 @@ stories:
       - intent: reject
       - action: utter_chloe_60_cents_policy
       - intent: reject
-      - action: utter_chloe_convincing
+      - action: utter_chloe_pa_benefit
       - intent: confirm
       - action: utter_chloe_appointment_call_time
       - intent: evening
