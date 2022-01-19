@@ -50,7 +50,7 @@ rules:
 - rule: fees_question 
   steps:
   - intent: fees_question 
-  - action: utter_chloe_pa_coverage
+  - action: utter_chloe_pa_fees
 - rule: question_related_to_scam
   steps:
   - intent: question_related_to_scam
