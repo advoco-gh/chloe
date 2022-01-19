@@ -166,3 +166,4 @@ session_config:
 
 actions:
   - validate_already_have_agent
+  - action_chloe

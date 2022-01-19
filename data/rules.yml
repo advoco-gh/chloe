@@ -18,6 +18,22 @@ rules:
     - requested_slot: null
   - action: utter_chloe_goodbye
   
+- rule: Activate form call_back_to_another_party
+  steps:
+  - intent: call_back_to_another_party
+  - action: busy
+  - active_loop: busy
+
+- rule: Submit form call_back_to_another_party
+  condition:
+  - active_loop: busy
+  steps:
+  - action: busy
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_chloe_goodbye
+  
 - rule: Activate form
   steps:
   - intent: busy
@@ -33,6 +49,12 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: utter_chloe_goodbye
+
+- rule: speak_twice
+  steps:
+  - intent: speak_twice
+  - action: action_chloe
+  
 
 
 - rule: dnc
@@ -100,7 +122,3 @@ rules:
 
 
 
-# - rule: Say 'I am a bot' anytime the user challenges
-#   steps:
-#   - intent: bot_challenge
-#   - action: utter_iamabot
