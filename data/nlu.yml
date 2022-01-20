@@ -4,7 +4,6 @@ nlu:
 
 - intent: objection_already_have_PA_plan
   examples: |
-    - I have already
     - ya I have alr already have
     - yes I got already
     - oh have already
