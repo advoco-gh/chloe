@@ -139,6 +139,9 @@ nlu:
     - my husband is a agent
     - no it is okay i will just go to my agent
     - it's ok i call my insurance agent can already
+    - my girlfriend is a insurance agent from great eastern 
+    - no thats fine i have already somebody working with me with on prudential itself
+    - no worry i see my agent contact me
 
 - intent: morning
   examples: |
@@ -222,6 +225,18 @@ nlu:
     - I am at work
     - not convient to talk
     - I am at work
+    - i think its okay its not a good time to answer the call thank you bye bye
+    - sorry im having lunch now
+    - i am not free at the moment 
+    - hi can you call back
+    - yeah but can you call me back later
+    - maybe not i am talking with some one else
+    - im sorry actually im from the call now
+    - hello hi im sorry but im actually quite busy now going into a meeting so sorry about that yah okay
+    - im not sorry im working sorry bye
+    - no i think its okay because i only its okay its okay because i just did not long ago
+    - meeting 
+    - in meeting now ok sorry sorry thank you bye
 
 - intent: speak_twice
   examples: |
@@ -235,6 +250,8 @@ nlu:
     - what you say again
     - what you say  
     - huh what 
+    - hello can you hear me
+    - hello again 
 
 - intent: student
   examples: |
@@ -256,6 +273,14 @@ nlu:
     - still studying 
     - only twelve years old
     - i am actually a student
+    - fifteen 
+    - thirteen
+    - fourteen
+    - sixteen
+    - ten
+    - eleven
+    - twelve
+    - seventeen  
 
 
 - intent: question_related_to_age
@@ -284,7 +309,9 @@ nlu:
     - my number registered under do not call
     - my number is under PDPA
     - you know you cannot call me i am from DNC list
-
+    - my number is under p d p a
+    - DNC
+    
 - intent: pa_question
   examples: |
     - who is this plan for
@@ -448,6 +475,10 @@ nlu:
     - hello who are you
     - you are calling from prudential?
     - prudential life insurance
+    - sorry what is that
+    - sorry who is this person
+    - you are calling from a i a
+
 
 - intent: question_related_to_numbers
   examples: |
@@ -645,7 +676,6 @@ nlu:
     - whatsup
     - hi there
     - lovely day isn't it
-    - hello again
     - just going to say hi
     - a good day
     - hello hi
@@ -676,10 +706,12 @@ nlu:
     - it may be
     - it may be ok
     - maybe it is ok
-    - hello can you hear me
     - hi ya sorry what is it about
     - eh actually this is insurance is it
     - two minutes only 
+    - im not very sure about this sixty cents policy what is it about
+    - hi is this very urgent
+    - calling from
 
 - intent: reject
   examples: |
@@ -823,6 +855,15 @@ nlu:
     - 6pm
     - in the afternoon will be good
     - in the evening will be good
+    - 10 p m
+    - 11 p m
+    - 9 p m
+    - 7 p m 
+    - ten pm
+    - nine pm
+    - seven pm
+    - five pm
+    
 
 - intent: afternoon
   examples: |
@@ -845,6 +886,10 @@ nlu:
     - afternoon lo
     - 3pm
     - early afternoon please
+    - one pm
+    - two pm
+    - three pm
+    - four pm
 
 - intent: age
   examples: |
