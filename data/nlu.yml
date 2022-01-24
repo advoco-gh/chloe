@@ -4,7 +4,6 @@ nlu:
 
 - intent: objection_already_have_PA_plan
   examples: |
-    - I have already
     - ya I have alr already have
     - yes I got already
     - oh have already
@@ -36,6 +35,8 @@ nlu:
     - i already have a insurance with ntuc also pa 
     - i already have more than enough insurance
     - actually i have a plan already
+    - i dont know this but i have one
+    - I already have it
 
 
 - intent: call_back_to_another_party
@@ -140,6 +141,9 @@ nlu:
     - my husband is a agent
     - no it is okay i will just go to my agent
     - it's ok i call my insurance agent can already
+    - my girlfriend is a insurance agent from great eastern 
+    - no thats fine i have already somebody working with me with on prudential itself
+    - no worry i see my agent contact me
 
 - intent: morning
   examples: |
@@ -209,7 +213,6 @@ nlu:
     - i am not convenient to talk okay
     - so sorry i am actually in the meeting right now
     - sorry ah i busy now i can't talk
-    - hi is this very urgent
     - not a good time i am working right now
     - outside now can't talk 
     - I'm not free to speak to you now
@@ -223,6 +226,20 @@ nlu:
     - I am at work
     - not convient to talk
     - I am at work
+    - i think its okay its not a good time to answer the call thank you bye bye
+    - sorry im having lunch now
+    - i am not free at the moment 
+    - hi can you call back
+    - yeah but can you call me back later
+    - maybe not i am talking with some one else
+    - im sorry actually im from the call now
+    - hello hi im sorry but im actually quite busy now going into a meeting so sorry about that yah okay
+    - im not sorry im working sorry bye
+    - no i think its okay because i only its okay its okay because i just did not long ago
+    - meeting 
+    - in meeting now ok sorry sorry thank you bye
+    - i dont have time now
+    - i don't have the time now
 
 - intent: speak_twice
   examples: |
@@ -236,6 +253,8 @@ nlu:
     - what you say again
     - what you say  
     - huh what 
+    - hello can you hear me
+    - hello again 
 
 - intent: student
   examples: |
@@ -257,6 +276,14 @@ nlu:
     - still studying 
     - only twelve years old
     - i am actually a student
+    - fifteen 
+    - thirteen
+    - fourteen
+    - sixteen
+    - ten
+    - eleven
+    - twelve
+    - seventeen  
 
 
 - intent: question_related_to_age
@@ -285,7 +312,9 @@ nlu:
     - my number registered under do not call
     - my number is under PDPA
     - you know you cannot call me i am from DNC list
-
+    - my number is under p d p a
+    - DNC
+    
 - intent: pa_question
   examples: |
     - who is this plan for
@@ -428,7 +457,7 @@ nlu:
     - i am agent from Allianz Insurance
     - i am agent from AIG
     - i am from the same company 
-
+    - My husband is from AIA
 
 - intent: who_is
   examples: |
@@ -449,6 +478,10 @@ nlu:
     - hello who are you
     - you are calling from prudential?
     - prudential life insurance
+    - sorry what is that
+    - sorry who is this person
+    - you are calling from a i a
+
 
 - intent: question_related_to_numbers
   examples: |
@@ -547,7 +580,6 @@ nlu:
     - you can you call me
     - yes please
     - what is it about
-    - come again
     - it's alright
     - you can you call me I think
     - prudential why
@@ -646,7 +678,6 @@ nlu:
     - whatsup
     - hi there
     - lovely day isn't it
-    - hello again
     - just going to say hi
     - a good day
     - hello hi
@@ -677,10 +708,12 @@ nlu:
     - it may be
     - it may be ok
     - maybe it is ok
-    - hello can you hear me
     - hi ya sorry what is it about
     - eh actually this is insurance is it
     - two minutes only 
+    - im not very sure about this sixty cents policy what is it about
+    - hi is this very urgent
+    - calling from
 
 - intent: reject
   examples: |
@@ -729,7 +762,6 @@ nlu:
     - not necessary
     - no Thank you
     - no need
-    - My husband is from AIA
     - no so sorry
     - not at the moment thanks
     - No sorry not keen
@@ -737,8 +769,7 @@ nlu:
     - Zoom ah? No need thankyou
     - i dont know this but i have one
     - no actually i got my agent who contact me also
-    - no worry i see my agent contact me
-    - no already arranged for this
+   - no already arranged for this
     - sorry i am not really keen thanks
     - its okay thank you
     - don’t want
@@ -757,7 +788,6 @@ nlu:
     - its okay thanks for calling
     - can you take me off your calling list
     - can you take my number off your calling list
-    - I already have it
     - Not interested in anything
     - This will surely lead into insurance. No thanks.
     - We are not interested in any insurance
@@ -775,8 +805,6 @@ nlu:
     - not intertested
     - don't want don't want
     - i don't need it
-    - i dont have time now
-    - i don't have the time now
     - no no no i don't need it
     - i don't want
     - i don't have time for this
@@ -824,6 +852,15 @@ nlu:
     - 6pm
     - in the afternoon will be good
     - in the evening will be good
+    - 10 p m
+    - 11 p m
+    - 9 p m
+    - 7 p m 
+    - ten pm
+    - nine pm
+    - seven pm
+    - five pm
+    
 
 - intent: afternoon
   examples: |
@@ -846,29 +883,25 @@ nlu:
     - afternoon lo
     - 3pm
     - early afternoon please
+    - one pm
+    - two pm
+    - three pm
+    - four pm
 
 - intent: age
   examples: |
     - [thirtyfive](number)
     - am [25](number)
     - eighteen
-    - fifteen
-    - sixteen
-    - fourteen
-    - thirteen
     - am major
     - my age is [30](number)
     - am [twentyone](number)
     - nineteen
-    - ten
-    - eleven
     - I am minor
     - [24](number)
     - twenty two
     - twenty
-    - twelve
     - my age is [sixty](number)
-    - seventeen
     - twenty one
     - I have [26](number) years
     - twenty three
