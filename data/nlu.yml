@@ -2,6 +2,18 @@ version: "2.0"
 
 nlu:
 
+
+- intent: morning
+  examples: |
+    - it is ok morning
+    - let's do morning
+    - Morning is ok
+    - early morning
+    - morning please
+    - morning
+    - maybe tomorrow morning 
+
+    
 - intent: objection_already_have_PA_plan
   examples: |
     - ya I have alr already have

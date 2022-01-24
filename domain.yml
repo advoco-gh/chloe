@@ -19,8 +19,14 @@ slots:
   goodbye:
     type: text
     influence_conversation: false
+  are_you_ashley:
+    type: text
+    influence_conversation: false
 
 forms:
+  looking_for_form:
+    are_you_ashley:
+    - type: from_text
   busy:
     chloe_busy_call_back:
     - type: from_text
@@ -64,6 +70,11 @@ intents:
   - dnc
   - request_names
 responses:
+
+
+  utter_ask_are_you_ashley:
+  - text: erm hi erm so sorry am i speaking to Ashley
+
 
   utter_ask_goodbye:
     - text: oh okay thank you and have a pleasant week ahead good bye
@@ -125,9 +136,6 @@ responses:
 
   utter_chloe_language_barrier:
   - text: erm sorry i cant understand chinese i get my colleague call you tomorrow thank you bye bye 
-
-  utter_chloe_looking_for:
-  - text: erm hi erm so sorry am i speaking to Ashley
 
   utter_chloe_manager_introduction:
   - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
