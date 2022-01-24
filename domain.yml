@@ -1,5 +1,10 @@
-version: "2.0"
-
+version: '2.0'
+actions:
+  - action_chloe
+  - validate_already_have_agent
+  
+entities:
+  - number
 
 slots:
   chloe_busy_call_back:
@@ -57,16 +62,20 @@ intents:
   - student
   - question_related_to_age
   - dnc
-
+  - request_names
 responses:
 
   utter_ask_goodbye:
     - text: oh okay thank you and have a pleasant week ahead good bye
-    
+
+
   utter_ask_want_to_continue:
     - text: ah okay er can i ask does your agent follow up with you often erm would you be interested for me to assign a new agent for you
     
   utter_ask_reply_to_manager_advice:
+    - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
+
+  utter_manager_introduction:
     - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
 
   utter_chloe_60_cents_policy:
@@ -85,12 +94,12 @@ responses:
   - text: erm great er I will get my manager to contact you by next week to arrange a meet up  alright so erm do prefer him to call you in the afternoon or in the evening
 
   utter_ask_chloe_busy_call_back:
-  - text: sorry to disturb i will give you a call back tomorrow okay
+  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
 
   utter_chloe_busy_call_back:
   - text: sorry to disturb i will give you a call back tomorrow okay
 
-  utter_chloe_call _back_other:
+  utter_chloe_call_back_other:
   - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
 
   utter_chloe_convincing:
@@ -164,6 +173,3 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 
-actions:
-  - validate_already_have_agent
-  - action_chloe

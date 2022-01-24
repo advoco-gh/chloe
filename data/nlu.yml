@@ -145,6 +145,8 @@ nlu:
     - no thats fine i have already somebody working with me with on prudential itself
     - no worry i see my agent contact me
 
+
+    
 - intent: morning
   examples: |
     - it is ok morning

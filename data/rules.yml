@@ -16,8 +16,10 @@ rules:
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
-  - action: utter_chloe_goodbye
-  
+  - action: utter_manager_introduction
+
+
+
 - rule: Activate form call_back_to_another_party
   steps:
   - intent: call_back_to_another_party
