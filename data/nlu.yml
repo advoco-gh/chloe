@@ -2,6 +2,18 @@ version: "2.0"
 
 nlu:
 
+
+- intent: morning
+  examples: |
+    - it is ok morning
+    - let's do morning
+    - Morning is ok
+    - early morning
+    - morning please
+    - morning
+    - maybe tomorrow morning 
+
+    
 - intent: objection_already_have_PA_plan
   examples: |
     - ya I have alr already have
@@ -145,6 +157,8 @@ nlu:
     - no thats fine i have already somebody working with me with on prudential itself
     - no worry i see my agent contact me
 
+
+    
 - intent: morning
   examples: |
     - it is ok morning
@@ -446,7 +460,7 @@ nlu:
     - i am agent from MSIG
     - i am agent from MS First Capital
     - i am agent from Lonpac Insurance
-    - i am agent from Lloyd’s of London
+    - i am agent from Lloyd's of London
     - i am agent from India International Insurance
     - i am agent from HL Assurance
     - i am agent from HDI Global
@@ -645,7 +659,7 @@ nlu:
     - all right
     - no problem
     - welcome
-    - Erm I think it’s okay.
+    - Erm I think it's okay.
     - erm okay
     - sup
     - yo
@@ -763,19 +777,19 @@ nlu:
     - No sorry not keen
     - no sorry
     - Zoom ah? No need thankyou
-    - i dont know this but i have one
     - no actually i got my agent who contact me also
-   - no already arranged for this
     - sorry i am not really keen thanks
+    - no already aranged for this
     - its okay thank you
-    - don’t want
+    - don't want
     - no thank you
     - oh no need
     - ah i dont want
     - i dont know lah
     - not now
     - sorry not now
-    - don’t know
+    - don't know
+    - huh cpf what
     - don't have time
     - sorry,not interested
     - not interested
@@ -791,7 +805,7 @@ nlu:
     - No, It's ok.
     - Sorry not interested in all these kind of insurance thing.
     - This will surely leading into insurance someway so don't disturb me
-    - don’t think I'll need it, thanks.
+    - don't think I'll need it, thanks.
     - Not interested, thank you
     - Sorry not interested
     - no not interested
@@ -805,7 +819,7 @@ nlu:
     - i don't have time for this
     - i dont want a call back
     - i am not interested for call back
-    - No, I don’t want to receive a callback
+    - No, I don't want to receive a callback
     - Why would you need them to call me back
     - please dont call me again
     - not need for callback
