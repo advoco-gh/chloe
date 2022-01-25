@@ -69,6 +69,7 @@ intents:
   - question_related_to_age
   - dnc
   - request_names
+  - date_day
 responses:
 
 
@@ -105,7 +106,7 @@ responses:
   - text: erm great er I will get my manager to contact you by next week to arrange a meet up  alright so erm do prefer him to call you in the afternoon or in the evening
 
   utter_ask_chloe_busy_call_back:
-  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
+  - text: sorry to disturb i will give you a call back tomorrow okay
 
   utter_chloe_busy_call_back:
   - text: sorry to disturb i will give you a call back tomorrow okay
