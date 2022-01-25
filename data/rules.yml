@@ -16,8 +16,25 @@ rules:
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
+  - action: utter_manager_introduction
+
+- rule: Activate form looking_for_form
+  steps:
+  - intent: looking_for
+  - action: looking_for_form
+  - active_loop: looking_for_form
+
+- rule: Submit form looking_for_form
+  condition:
+  - active_loop: looking_for_form
+  steps:
+  - action: looking_for_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
   - action: utter_chloe_goodbye
-  
+
+
 - rule: Activate form call_back_to_another_party
   steps:
   - intent: call_back_to_another_party
@@ -111,10 +128,7 @@ rules:
   - intent: pa_plan_coverage
   - action: utter_chloe_pa_coverage
 
-- rule: looking_for
-  steps:
-  - intent: looking_for
-  - action: utter_chloe_looking_for
+
 # - rule: call_back_to_another_party
 #   steps:
 #   - intent: call_back_to_another_party

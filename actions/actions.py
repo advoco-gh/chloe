@@ -38,6 +38,7 @@ from rasa_sdk.events import FollowupAction, ActionExecuted
 from rasa_sdk import Action, Tracker
 
 
+
 class Validate_already_have_agent(FormValidationAction):
     def name(self) -> Text:
         return "validate_already_have_agent"
@@ -49,11 +50,11 @@ class Validate_already_have_agent(FormValidationAction):
             tracker: "Tracker",
             domain: "DomainDict",
     ) -> Optional[List[Text]]:
-        if tracker.get_slot("want_to_continue"):
-            slots_mapped_in_domain.append("reply_to_manager_advice")
-        else:
+        if not tracker.get_slot("want_to_continue"):
             slots_mapped_in_domain.append("goodbye")
+
         return slots_mapped_in_domain
+
 
 
 
