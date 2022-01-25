@@ -899,6 +899,9 @@ nlu:
     - two pm
     - three pm
     - four pm
+    - one p m
+    - three p m
+    - two p m
 
 - intent: age
   examples: |
