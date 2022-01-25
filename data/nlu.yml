@@ -125,6 +125,7 @@ nlu:
     - do i even know you
     - do i know you
     - looking for
+    - no you call the wrong person
 
 - intent: already_have_agent
   examples: |
@@ -144,6 +145,7 @@ nlu:
     - my girlfriend is a insurance agent from great eastern 
     - no thats fine i have already somebody working with me with on prudential itself
     - no worry i see my agent contact me
+    - no actually i got my agent who contact me also 
 
 - intent: morning
   examples: |
@@ -316,6 +318,7 @@ nlu:
     - you know you cannot call me i am from DNC list
     - my number is under p d p a
     - DNC
+    - i am under d n c call list
     
 - intent: pa_question
   examples: |
@@ -556,6 +559,7 @@ nlu:
     - i am e p 
     - is this eligible for everyone?
     - i malaysian can?
+    - but i am not local 
 
 
 - intent: confirm
@@ -816,8 +820,7 @@ nlu:
     - okay sorry bye bye
     - no it is okay 
     - i think it is okay
-    - i think it about it again it is pkay thank you 
-    - no you call the wrong person
+    - i think it about it again it is okay thank you 
 
 - intent: evening
   examples: |
