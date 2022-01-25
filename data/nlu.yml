@@ -298,6 +298,8 @@ nlu:
     - eleven
     - twelve
     - seventeen  
+    - i am ten  
+    - i am eleven  
 
 
 - intent: question_related_to_age
@@ -495,6 +497,8 @@ nlu:
     - sorry what is that
     - sorry who is this person
     - you are calling from a i a
+    - from where
+    - calling from
 
 
 - intent: question_related_to_numbers
@@ -553,9 +557,7 @@ nlu:
     - i am not a singaporean or pr
     - i am not a pr
     - sorry i am not a pr
-    - i am not eligibe for cpf
     - oh sorry i am a foreigner i am a s pass holder
-    - i don't qualify for cpf
     - i'm not singaporean
     - i am on work permit
     - not local
@@ -563,11 +565,8 @@ nlu:
     - i am a foreigner i am a s pass holder
     - i'm not a singapore citizen
     - i am holding on to a permit pass
-    - i don't contribute cpf 
     - i am a s pass holder
     - i am on s pass
-    - i do not have cpf
-    - i cannot do cpf i'm malesian
     - i am e p 
     - is this eligible for everyone?
     - i malaysian can?
@@ -575,7 +574,6 @@ nlu:
 
 - intent: confirm
   examples: |
-    - cpf nomination
     - okay okay
     - can you be quick, i'm going for a meeting
     - what is it regarding about
@@ -587,7 +585,6 @@ nlu:
     - yes
     - is it through the phone
     - thats right
-    - ahh cpf nomination
     - what is this call about
     - why
     - what is it about you wanna discuss
@@ -727,7 +724,6 @@ nlu:
     - two minutes only 
     - im not very sure about this sixty cents policy what is it about
     - hi is this very urgent
-    - calling from
 
 - intent: reject
   examples: |
@@ -964,3 +960,20 @@ nlu:
     - sixty seven
     - sixty eight
     - sixty nine
+
+- intent: date_day
+  examples: |
+    - next sunday
+    - next week
+    - last week
+    - third week
+    - next monday
+    - next month
+    - next friday
+    - next weekday
+    - first week
+    - next tuesday
+    - next thursday
+    - second week
+    - next weekend
+    - next wednesday
