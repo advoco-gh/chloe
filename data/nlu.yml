@@ -153,6 +153,7 @@ nlu:
     - no worry i see my agent contact me
     - no actually i got my agent who contact me also 
     - i tell you my agent is good i dont want to change
+    - but i have my agent from aia
 
 
     
@@ -738,6 +739,7 @@ nlu:
     - im not very sure about this sixty cents policy what is it about
     - hi is this very urgent
     - orh orh yah what is it regarding
+    - orh  
 
 - intent: reject
   examples: |
