@@ -314,6 +314,7 @@ nlu:
     - no i dont want to tell you
     - for what tell you my age
     - why do you you need to know how old am i 
+    - not comfortable giving you my age
 
 - intent: dnc
   examples: |
@@ -484,7 +485,6 @@ nlu:
     - i used to be an agent as well
     - last time i am an agent 
     - i am agent in the past 
-    - you say you are from aia or prudential 
 
 - intent: who_is
   examples: |
@@ -512,6 +512,7 @@ nlu:
     - calling from
     - you are calling on behalf of a i a
     - from
+    - you say you are from aia or prudential 
 
 
 - intent: question_related_to_numbers
