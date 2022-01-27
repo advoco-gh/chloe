@@ -137,25 +137,23 @@ nlu:
     - do i even know you
     - do i know you
     - looking for
+    - no you call the wrong person
 
 - intent: already_have_agent
   examples: |
-    - my wife is a agent
     - I already have a financial advisor
     - I have a prudential agent
     - I already have an agent
-    - my relative is a agent
     - i prefer to stay to my agent
     - it is okay i got some one who handle my insurance for me
     - i have a agent who handle all this for me 
-    - my brother is an agent too 
-    - no it is fine my relative under the same industry too 
-    - my husband is a agent
     - no it is okay i will just go to my agent
     - it's ok i call my insurance agent can already
-    - my girlfriend is a insurance agent from great eastern 
     - no thats fine i have already somebody working with me with on prudential itself
     - no worry i see my agent contact me
+    - no actually i got my agent who contact me also 
+    - i tell you my agent is good i dont want to change
+    - but i have my agent from aia
 
 
     
@@ -254,6 +252,7 @@ nlu:
     - in meeting now ok sorry sorry thank you bye
     - i dont have time now
     - i don't have the time now
+    - no its not a good time
 
 - intent: speak_twice
   examples: |
@@ -269,6 +268,7 @@ nlu:
     - huh what 
     - hello can you hear me
     - hello again 
+    - what are you talking about
 
 - intent: student
   examples: |
@@ -330,6 +330,7 @@ nlu:
     - you know you cannot call me i am from DNC list
     - my number is under p d p a
     - DNC
+    - i am under d n c call list
     
 - intent: pa_question
   examples: |
@@ -474,6 +475,16 @@ nlu:
     - i am agent from AIG
     - i am from the same company 
     - My husband is from AIA
+    - my brother is an agent too 
+    - my girlfriend is a insurance agent from great eastern 
+    - my husband is a agent
+    - my relative is a agent
+    - my wife is a agent
+    - no it is fine my relative under the same industry too 
+    - i used to be an agent as well
+    - last time i am an agent 
+    - i am agent in the past 
+    - you say you are from aia or prudential 
 
 - intent: who_is
   examples: |
@@ -499,6 +510,8 @@ nlu:
     - you are calling from a i a
     - from where
     - calling from
+    - you are calling on behalf of a i a
+    - from
 
 
 - intent: question_related_to_numbers
@@ -570,6 +583,7 @@ nlu:
     - i am e p 
     - is this eligible for everyone?
     - i malaysian can?
+    - but i am not local 
 
 
 - intent: confirm
@@ -724,6 +738,8 @@ nlu:
     - two minutes only 
     - im not very sure about this sixty cents policy what is it about
     - hi is this very urgent
+    - orh orh yah what is it regarding
+    - orh  
 
 - intent: reject
   examples: |
@@ -830,8 +846,7 @@ nlu:
     - okay sorry bye bye
     - no it is okay 
     - i think it is okay
-    - i think it about it again it is pkay thank you 
-    - no you call the wrong person
+    - i think it about it again it is okay thank you 
 
 - intent: evening
   examples: |
@@ -896,6 +911,9 @@ nlu:
     - two pm
     - three pm
     - four pm
+    - one p m
+    - three p m
+    - two p m
 
 - intent: age
   examples: |
