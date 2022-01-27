@@ -18,6 +18,42 @@ rules:
     - requested_slot: null
   - action: utter_manager_introduction
 
+
+- rule: Activate question_related_to_age
+  steps:
+  - intent: question_related_to_age
+  - action: question_related_to_age
+  - active_loop: question_related_to_age
+
+- rule: Submit question_related_to_age
+  condition:
+  - active_loop: question_related_to_age
+  steps:
+  - action: question_related_to_age
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_chloe_goodbye
+
+
+- rule: Activate objection_already_have_PA_plan
+  steps:
+  - intent: objection_already_have_PA_plan
+  - action: objection_already_have_PA_plan
+  - active_loop: objection_already_have_PA_plan
+
+- rule: Submit objection_already_have_PA_plan
+  condition:
+  - active_loop: objection_already_have_PA_plan
+  steps:
+  - action: objection_already_have_PA_plan
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+
+
+
+
 - rule: Activate form looking_for_form
   steps:
   - intent: looking_for
@@ -98,10 +134,7 @@ rules:
   steps:
   - intent: question_related_to_numbers
   - action: utter_chloe_number_info
-- rule: objection_already_have_PA_plan
-  steps:
-  - intent: objection_already_have_PA_plan
-  - action: utter_chloe_had_a_pa_plan
+
 - rule: not_singaporean
   steps:
   - intent: not_singaporean
@@ -110,10 +143,8 @@ rules:
   steps:
   - intent: manager_question 
   - action: utter_chloe_manager_introduction
-- rule: question_related_to_age
-  steps:
-  - intent: question_related_to_age
-  - action: utter_chloe_age_question
+
+
 - rule: question_speak_chinese
   steps:
   - intent: question_speak_chinese

@@ -56,6 +56,43 @@ class Validate_already_have_agent(FormValidationAction):
         return slots_mapped_in_domain
 
 
+class Validate_objection_already_have_PA_plan(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_objection_already_have_PA_plan"
+
+    async def required_slots(
+            self,
+            slots_mapped_in_domain: List[Text],
+            dispatcher: "CollectingDispatcher",
+            tracker: "Tracker",
+            domain: "DomainDict",
+    ) -> Optional[List[Text]]:
+            if tracker.get_slot("alternative_plan"):
+                return slots_mapped_in_domain
+            
+            else:
+                slots_mapped_in_domain.append("goodbye")
+                return slots_mapped_in_domain
+
+class validate_question_related_to_age(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_question_related_to_age"
+
+    async def required_slots(
+            self,
+            slots_mapped_in_domain: List[Text],
+            dispatcher: "CollectingDispatcher",
+            tracker: "Tracker",
+            domain: "DomainDict",
+    ) -> Optional[List[Text]]:
+            if tracker.get_slot("ok_for_age"):
+                return slots_mapped_in_domain
+            
+            else:
+                slots_mapped_in_domain.append("goodbye")
+                return slots_mapped_in_domain
+
+
 
 
 
