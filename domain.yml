@@ -36,7 +36,7 @@ forms:
       intent: confirm
       value: true
     - type: from_intent
-      intent: reject
+      intent: already_have_agent
       value: false
 
 
@@ -106,7 +106,7 @@ responses:
   - text: erm great er I will get my manager to contact you by next week to arrange a meet up  alright so erm do prefer him to call you in the afternoon or in the evening
 
   utter_ask_chloe_busy_call_back:
-  - text: sorry to disturb i will give you a call back tomorrow okay
+  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
 
   utter_chloe_busy_call_back:
   - text: sorry to disturb i will give you a call back tomorrow okay
