@@ -11,6 +11,9 @@ slots:
   chloe_busy_call_back:
     type: text
     influence_conversation: true
+  other_party:
+    type: text
+    influence_conversation: true
   want_to_continue:
     type: bool
     influence_conversation: false  
@@ -39,6 +42,9 @@ forms:
     - type: from_text
   busy:
     chloe_busy_call_back:
+    - type: from_text
+  other_party:
+    other_party:
     - type: from_text
   already_have_agent:
     want_to_continue:
@@ -165,6 +171,9 @@ responses:
   utter_ask_chloe_busy_call_back:
   - text: sorry to disturb i will give you a call back tomorrow okay
 
+  utter_ask_other_party:
+  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
+
   utter_chloe_busy_call_back:
   - text: sorry to disturb i will give you a call back tomorrow okay
 
@@ -177,9 +186,9 @@ responses:
   utter_chloe_existing_agent:
   - text: ah okay er can i ask does your agent follow up with you often erm would you be interested for me to assign a new agent for you
 
-  utter_chloe_fall_back:
-  - text: erm so sorry i didn't get you 
-
+  utter_fallback:
+    - text: erm so sorry i didn't get you
+    
   utter_chloe_goodbye:
   - text: oh okay thank you and have a pleasant week ahead good bye
 

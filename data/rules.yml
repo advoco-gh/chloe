@@ -74,26 +74,26 @@ rules:
 - rule: Activate form call_back_to_another_party
   steps:
   - intent: call_back_to_another_party
-  - action: busy
-  - active_loop: busy
+  - action: other_party
+  - active_loop: other_party
 
 - rule: Submit form call_back_to_another_party
   condition:
-  - active_loop: busy
+  - active_loop: other_party
   steps:
-  - action: busy
+  - action: other_party
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - action: utter_chloe_goodbye
   
-- rule: Activate form
+- rule: Activate busy
   steps:
   - intent: busy
   - action: busy
   - active_loop: busy
 
-- rule: Submit form
+- rule: Submit busy
   condition:
   - active_loop: busy
   steps:
@@ -102,6 +102,16 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: utter_chloe_goodbye
+
+
+
+- rule: out-of-scope
+  steps:
+    - intent: nlu_fallback
+    - action: utter_fallback
+
+    
+
 
 - rule: speak_twice
   steps:
