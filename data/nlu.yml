@@ -333,9 +333,7 @@ nlu:
     - DNC
     - i am under d n c call list
     
-- intent: pa_question
-  examples: |
-    - who is this plan for
+
 
 - intent: pa_plan_coverage
   examples: |
@@ -608,7 +606,6 @@ nlu:
     - what is it about
     - it's alright
     - you can you call me I think
-    - prudential why
     - indeed
     - of course
     - um hmm
@@ -745,7 +742,6 @@ nlu:
 - intent: reject
   examples: |
     - never mind
-    - I'm not changing my nomination
     - never
     - no la no
     - not needed
@@ -753,7 +749,6 @@ nlu:
     - don't come
     - you can share this with other people
     - No
-    - actually prudential right no need no need
     - not at this time
     - no its fine
     - don't want
@@ -765,7 +760,6 @@ nlu:
     - no its okay
     - of course not
     - absolutely no
-    - i can do it myself
     - do not
     - dont think i need
     - i will be fine without it
@@ -794,7 +788,6 @@ nlu:
     - No sorry not keen
     - no sorry
     - Zoom ah? No need thankyou
-    - no actually i got my agent who contact me also
     - sorry i am not really keen thanks
     - no already aranged for this
     - its okay thank you
@@ -806,7 +799,6 @@ nlu:
     - not now
     - sorry not now
     - don't know
-    - huh cpf what
     - don't have time
     - sorry,not interested
     - not interested
@@ -833,7 +825,6 @@ nlu:
     - i don't need it
     - no no no i don't need it
     - i don't want
-    - i don't have time for this
     - i dont want a call back
     - i am not interested for call back
     - No, I don't want to receive a callback
