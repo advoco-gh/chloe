@@ -154,7 +154,7 @@ nlu:
     - no actually i got my agent who contact me also 
     - i tell you my agent is good i dont want to change
     - but i have my agent from aia
-
+    - its okay my agent is aia
 
     
 - intent: morning
@@ -300,6 +300,8 @@ nlu:
     - seventeen  
     - i am ten  
     - i am eleven  
+    - i dont think that i am a student pass
+    - i dont think it applies to me im a student pass
 
 
 - intent: question_related_to_age
@@ -332,7 +334,9 @@ nlu:
     - my number is under p d p a
     - DNC
     - i am under d n c call list
-    
+    - this is a corporate phone 
+    - okay because this is not personal phone this is the corporate phone
+    - this phone number is only for work phone work purposes
 
 
 - intent: pa_plan_coverage
@@ -511,6 +515,8 @@ nlu:
     - you are calling on behalf of a i a
     - from
     - you say you are from aia or prudential 
+    - hi may i know why are you calling from
+    - sorry who are you who are you why are you calling from
 
 
 - intent: question_related_to_numbers
@@ -738,6 +744,7 @@ nlu:
     - hi is this very urgent
     - orh orh yah what is it regarding
     - orh  
+    - what insurance are you talking about
 
 - intent: reject
   examples: |
@@ -839,6 +846,9 @@ nlu:
     - no it is okay 
     - i think it is okay
     - i think it about it again it is okay thank you 
+    - no sorry you got the wrong number
+    - im actually fully covered with everything 
+    - ill think ill give it a miss for the for the time being thanks
 
 - intent: evening
   examples: |
