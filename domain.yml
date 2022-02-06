@@ -106,8 +106,6 @@ intents:
   - pa_question
   - pa_plan_coverage 
   - fees_question
-  - login_details
-  - meet_up_document
   - manager_question
   - objection_already_have_PA_plan
   - call_back_to_another_party
