@@ -1,483 +1,256 @@
-version: "2.0"
-
+version: '2.0'
 nlu:
 
-
-- intent: morning
+- intent: pa_plan_coverage 
   examples: |
-    - it is ok morning
-    - let's do morning
-    - Morning is ok
-    - early morning
-    - morning please
-    - morning
-    - maybe tomorrow morning 
-
-    
-- intent: objection_already_have_PA_plan
-  examples: |
-    - ya I have alr already have
-    - yes I got already
-    - oh have already
-    - yes have already
-    - I've already have it
-    - I've already have PA plan
-    - ah I actually have PA plan already
-    - oh I think this plan my husband buy for me already 
-    - buy alr last week
-    - yes everything I have already
-    - no thanks i have already got this plan already
-    - I got the plan
-    - ah ya i got already thank you ah
-    - ya yes have already
-    - PA i already got already
-    - i completed 
-    -i already settle all this 
-    - can do online or
-    - i already have insurance for related to such 
-    - i think i have already 
-    - i think i have similar like this 
-    - this one got what difference with my insurance
-    - can review for me i also dont know if i have anot ?
-    - i have something close to prudential 
-    - my company buy for me already
-    - i have insurance it's okay 
-    - i have many plans currently 
-    - i buy from another company 
-    - i already have a insurance with ntuc also pa 
-    - i already have more than enough insurance
-    - actually i have a plan already
-    - i dont know this but i have one
-    - I already have it
-
-
-- intent: call_back_to_another_party
-  examples: |
-    - please talk to my husband
-    - please call my spouse
-    - i am confuse can you explain to my husband
-    - can you call back again to explain to my wife
-    - can you call back and explain to my husband
-    - speak with my husband
-    - my husband will take care
-    - please call my wife
-    - please call my husband
-    - am not aware of it speak with my husband
-    - what are you talking about can you call & explain to my husband
-    - call my parents
-    - I need to ask my husband
-    - can you call my husband
-    - talk to my husband
-    - i dont handle all this maybe you call back and explain to my husband
-    - i need to check with my husband because he handle all this
-    - My husband will handle this
-    - i need to check with my husband
-    - can you explain to my husband
-    - have to check with my husband
-    - call my husband
-    - dont know what you are talking about you call back tomorrow again help me explain to my husband
-    - dont know anything you call back again help me explain to my husband
-    - i dont know i dont know you call back again explain to my husband
-    - my husband handle everything can you call and explain to him 
-    - my wife settle all my insurance can you call again 
-    - you can do it for my sister 
-    - you can call my friend
-
-
-- intent: question_speak_chinese
-  examples: |
-    - i don't know english
-    - orh ni zai
-    - jiang jiang jiang jiang 
-    - jiang wo ting bu dong
-    - can you speak mandarine
-    - ke yi ma
-    - i dont unsderstand what you say
-    - i don't know what you say 
-    - ting bu dong 
-    - sorry can you speak chinese
-    - i don't understand english
-    - can you speak chinese
-    - talk english i don't know
-    - ting bu min by
-    - don't know what you say
-    - say english i don't know 
-    - don't know english
-    - talking chinese
-    - ke yi shuo hua yu ma
-    - wo ting bu dong 
-    - say chinese can 
-    - jiang hua yu ma
-    - wo bu zhi dao
-    - wo bu dong
-    - wo bu min by
-    - wo bu hui jiang in one
-    - ting bu dong ni zai jiang some more
-    - by ni zai jiang some more
-
-- intent: looking_for
-  examples: |
-    - who are you calling
-    - tell me what is my name to prove me you know me
-    - what is my date of birth
-    - are we friend
-    - what is my name
-    - tell me what is my name to prove me you know me
-    - who do you want to speak with
-    - who are you looking for
-    - why are you calling me
-    - are we friend
-    - who you are calling
-    - you know who am i anot why you call me
-    - who do you want to call
-    - looking for who
-    - have i met you before
-    - do i even know you
-    - sorry you are calling
-    - do i even know you
-    - do i know you
-    - looking for
-    - no you call the wrong person
-
-- intent: already_have_agent
-  examples: |
-    - I already have a financial advisor
-    - I have a prudential agent
-    - I already have an agent
-    - i prefer to stay to my agent
-    - it is okay i got some one who handle my insurance for me
-    - i have a agent who handle all this for me 
-    - no it is okay i will just go to my agent
-    - it's ok i call my insurance agent can already
-    - no thats fine i have already somebody working with me with on prudential itself
-    - no worry i see my agent contact me
-    - no actually i got my agent who contact me also 
-    - i tell you my agent is good i dont want to change
-    - but i have my agent from aia
-    - its okay my agent is aia
-
-    
-- intent: morning
-  examples: |
-    - it is ok morning
-    - let's do morning
-    - Morning is ok
-    - early morning
-    - morning please
-    - morning
-    - maybe tomorrow morning 
-
-- intent: busy
-  examples: |
-    - I'm busy can you call tomorrow
-    - call me back at eight p m can
-    - driving now
-    - I don't have time for this
-    - I'm swamped
-    - I got things to do
-    - I'm busy
-    - I have no time
-    - this is a work phone
-    - I'm busy at the moment
-    - I'm busy can you can another time
-    - I'm working right now
-    - can call tomorrow
-    - am busy now
-    - I am at the hospital
-    - I'm busy at the moment can you call tomorrow
-    - I'm driving, call tomorrow.
-    - No I'm in the public transport
-    - busy right now
-    - can call another time
-    - how busy I am
-    - Sorry I'm still in the middle of something
-    - I'm not available right now can you call me back
-    - driving at this moment
-    - no its okay am not free
-    - no free
-    - sorry I cant talk
-    - I am busy
-    - I am busy leh
-    - I am busy with my baby right now what is it
-    - I am busy with my children now
-    - I am unavailable at the moment
-    - sorry ah not free right now ah
-    - busy with my children
-    - busy cooking
-    - busy doing housework
-    - not available to speak right now
-    - call me next week
-    - call me again
-    - call me other time
-    - call me in the afternoon
-    - call me tomorrow
-    - call me next time
-    - call me next month
-    - this is not a good time can you call me back later
-    - it is okay i am expecting a call now
-    - er no sorry i am not free at the moment sorry
-    - sorry i cannot answer your call now can you call me the next day i am at work now
-    - no need la now i am outside not convenient
-    - no it is okay i am currently at work right now
-    - actually not convenient right now thank you
-    - i am in the middle of discussion now so sorry
-    - i am so sorry i am actually in the mid of conference right now
-    - i am not convenient to talk okay
-    - so sorry i am actually in the meeting right now
-    - sorry ah i busy now i can't talk
-    - not a good time i am working right now
-    - outside now can't talk 
-    - I'm not free to speak to you now
-    - I'm not free thank you for calling
-    - I don't have time for the call now
-    - i will contact you later
-    - sorry,this isn't a good convienent time to talk.I am at work
-    - am not available now
-    - I have work
-    - I am in office
-    - I am at work
-    - not convient to talk
-    - I am at work
-    - i think its okay its not a good time to answer the call thank you bye bye
-    - sorry im having lunch now
-    - i am not free at the moment 
-    - hi can you call back
-    - yeah but can you call me back later
-    - maybe not i am talking with some one else
-    - im sorry actually im from the call now
-    - hello hi im sorry but im actually quite busy now going into a meeting so sorry about that yah okay
-    - im not sorry im working sorry bye
-    - no i think its okay because i only its okay its okay because i just did not long ago
-    - meeting 
-    - in meeting now ok sorry sorry thank you bye
-    - i dont have time now
-    - i don't have the time now
-    - no its not a good time
-
-- intent: speak_twice
-  examples: |
-    - Hello hello
-    - Come again
-    - sorry
-    - can you repeat
-    - i dont get you
-    - i didn't catch you
-    - repeat
-    - what you say again
-    - what you say  
-    - huh what 
-    - hello can you hear me
-    - hello again 
-    - what are you talking about
-
-- intent: student
-  examples: |
-    - only fifteen years old
-    - i am schooling
-    - is a kid
-    - still a kid
-    - still a child
-    - i am a children
-    - i am ten years old
-    - i am still a student
-    - only fourteen years old
-    - Seventeen years old
-    - eighteen year old
-    - i am eleven years old
-    - only thirteen years old
-    - nineteen years old
-    - sixteen years old
-    - still studying 
-    - only twelve years old
-    - i am actually a student
-    - fifteen 
-    - thirteen
-    - fourteen
-    - sixteen
-    - ten
-    - eleven
-    - twelve
-    - seventeen  
-    - i am ten  
-    - i am eleven  
-    - i dont think that i am a student pass
-    - i dont think it applies to me im a student pass
-
-
-- intent: question_related_to_age
-  examples: |
-    - do not wish to disclose my age
-    - why must i tell you my age
-    - you need my age for what
-    - why do you need my age
-    - not comfortable telling you my age
-    - why do you need to know
-    - why must you know
-    - no i dont want to tell you
-    - for what tell you my age
-    - why do you you need to know how old am i 
-    - not comfortable giving you my age
-
-- intent: dnc
-  examples: |
-    - i can go PDPA and log a complain
-    - i am from do not call list
-    - i am under DNC
-    - do you know i am registered under do not call list
-    - why are you calling me my number from DNC
-    - do you know the PDPA guideline 
-    - PDPA rules
-    - i registered DNC
-    - my number registered under do not call
-    - my number is under PDPA
-    - you know you cannot call me i am from DNC list
-    - my number is under p d p a
-    - DNC
-    - i am under d n c call list
-    - this is a corporate phone 
-    - okay because this is not personal phone this is the corporate phone
-    - this phone number is only for work phone work purposes
-
-
-- intent: pa_plan_coverage
-  examples: |
-    - can this claim for minoor injuries?
-    - can this be cliam for car accident?
-    - this one cal claim for all kind of accidents?
     - can claim from all woman disease?
-    - Got cover covid 19?
-    - Got cover dengue fever?
-    - What is the maxium coverage?
-    - can i claim if i sprain my leg ?
     - can i claim if Falls down?
-    - does it only cover accidents?
-    - does it covers death?
-    - does it covers woman diseasae 
-    - doe it covers man dieases 
-    - does it cover covid 19 if i admit into hospital 
-    - what does it covers?
+    - can i claim if i sprain my leg ?
+    - can my children buy?
+    - can this be claim for car accident?
+    - can this claim for minoor injuries?
     - car accident also can claim ah?
     - coverage till what age?
-    - can my children buy?
-    - does it have cash payout? 
-    - does it cover death?
+    - doe it covers man dieases
+    - does it cover covid 19 if i admit into hospital
+    - does it covers death?
+    - does it covers woman diseasae
+    - does it have cash payout?
+    - does it only cover accidents?
     - got cash compensation?
+    - Got cover covid 19?
+    - Got cover dengue fever?
     - how much i can claim up to?
+    - this one can claim for all kind of accidents?
+    - what does it covers?
+    - What is the maxium coverage?
+    - does it cover death?
+
+
+- intent: objection_already_have_PA_plan
+  examples: |
+    - actually i have a plan already
+    - ah I actually have PA plan already
+    - ah ya i got already thank you ah
+    - buy alr last week
+    - can review for me i also dont know if i have anot ?
+    - i already have a insurance with ntuc also pa 
+    - i already have insurance for related to such 
+    - I already have it
+    - i already have more than enough insurance
+    - i already settle all this 
+    - i buy from another company 
+    - i completed 
+    - i dont know this but i have one
+    - I got the plan
+    - I have already
+    - i have insurance it's okay 
+    - i have many plans currently 
+    - i have something close to prudential 
+    - i think i have already 
+    - i think i have similar like this 
+    - I've already have it
+    - I've already have PA plan
+    - my company buy for me already
+    - no thanks i have already got this plan already
+    - oh have already
+    - oh I think this plan my husband buy for me already 
+    - PA i already got already
+    - this one got what difference with my insurance
+    - ya I have alr already have
+    - ya yes have already
+    - yes everything I have already
+    - yes have already
+    - yes I got already
 
 
 - intent: fees_question
   examples: |
-    - how much is it
-    - so good meh only sixty cents
-    - sure anot sixty cents
-    - sorry you were saying how much does it cost again the plan
-    - do i need to pay anything
-    - is it expensive
-    - no oblgations right
-    - is there any terms and conditions
-    - is it expensive how much does it cost
-    - sorry free
-    - is this free of charge
-    - how much does it cost
-    - is there any obligaton
-    - Free or not
-    - confirm free ah
-    - How can this be free
-    - what it costs
-    - Is it free
-    - i dont need pay a single cent right
-    - no payment ah
-    - free ah
-    - do we need to buy
-    - is there any obligaton
-    - zero cost ah
-    - How much is this
-    - you sure free ah
-    - promise me free first
-    - confirm with me it is free
-    - got so good thing meh
-    - free lunch
     - any cost involvement
-    - i can't afford to pay i am not working 
-    - is it really 60 cents 
+    - confirm free ah
+    - confirm with me it is free
     - do i have to pay 1 shot?
+    - do i need to pay anything
+    - do we need to buy
+    - free ah
+    - free lunch
+    - Free or not
+    - got so good thing meh
+    - How can this be free
+    - how much does it cost
+    - how much is it
+    - How much is this
+    - i can't afford to pay i am not working 
+    - i dont need pay a single cent right
+    - is it expensive
+    - is it expensive how much does it cost
+    - Is it free
+    - is it really 60 cents 
+    - is there any obligaton
+    - is there any terms and conditions
+    - is this free of charge
+    - no oblgations right
+    - no payment ah
+    - promise me free first
+    - so good meh only sixty cents
+    - sorry is this free
+    - sorry you were saying how much does it cost again the plan
+    - sure anot sixty cents
+    - what it costs
+    - you sure free ah
+    - zero cost ah
 
-- intent: login_details
-  examples: |
-    - do i need to share details
 
-- intent: meet_up_document
+- intent: question_related_to_scam
   examples: |
-    - what do i need to bring
+    - are you playing me
+    - are you scamming me
+    - bloody hell what are you saying
+    - cheat people
+    - do you know it is illegal
+    - do you think i am stupid
+    - dont con old people la
+    - eh you trying to fool me ah
+    - fun isit
+    - i call police
+    - i can report to police
+    - i can report you to the police
+    - i don't think it is appropriate
+    - is this a prank call
+    - is this a scam
+    - is this a scam call
+    - no time for all this nonense
+    - not comfortable
+    - prank call ah
+    - prank call isit
+    - pranking me is it
+    - scam call isit
+    - think i am a fool is it
+    - what are you talking about cheating people
+    - what you trying to do
+    - ya you want to cheat people 
+    - you people like to cheat people
+    - you think aunty old alr play me ah
+    - you think i 3 years old is it
+    - you think i am a fool is it
+    - you trying to disturb aunty is it
 
-- intent: manager_question
+
+- intent: call_back_to_another_party
   examples: |
-    - tell me about your manager
-    - can i know who is your manager
-    - your manager who
-    - what is your manger name
-    - who is your manager
-    - can i check who is your manager
-    - what is the manager call regarding?
-    - you cannot tell me meh need your manager to all me meh 
-    - why your manager need to call me?
-    - how do i know your manager
-    - just tell me la why need your manager 
-    - why he need to call me again?
-    - what is tthe purpose of your manager calling me?
+    - am not aware of it speak with my husband
+    - call my husband
+    - call my parents
+    - can you call back again to explain to my wife
+    - can you call back and explain to my husband
+    - can you call my husband
+    - can you explain to my husband
+    - dont know anything you call back again help me explain to my husband
+    - dont know what you are talking about you call back tomorrow again help me explain to my husband
+    - have to check with my husband
+    - i am confuse can you explain to my husband
+    - i dont handle all this maybe you call back and explain to my husband
+    - i dont know i dont know you call back again explain to my husband
+    - I need to ask my husband
+    - i need to check with my husband
+    - i need to check with my husband because he handle all this
+    - my husband handle everything can you call and explain to him 
+    - My husband will handle this
+    - my husband will take care
+    - my wife settle all my insurance can you call again 
+    - please call my husband
+    - please call my spouse
+    - please call my wife
+    - please talk to my husband
+    - speak with my husband
+    - talk to my husband
+    - what are you talking about can you call & explain to my husband
+    - you can call my friend
+    - you can do it for my sister 
+
+
+- intent: question_speak_chinese
+  examples: |
+    - by ni zai jiang some more
+    - can you speak chinese
+    - can you speak mandarine
+    - don't know english
+    - don't know what you say
+    - i don't know english
+    - i don't know what you say 
+    - i don't understand english
+    - i dont unsderstand what you say
+    - jiang hua yu ma
+    - jiang jiang jiang jiang 
+    - jiang wo ting bu dong
+    - ke yi ma
+    - ke yi shuo hua yu ma
+    - orh ni zai
+    - say chinese can 
+    - say english i don't know 
+    - sorry can you speak chinese
+    - talk english i don't know
+    - talking chinese
+    - ting bu dong 
+    - ting bu dong ni zai jiang some more
+    - ting bu min by
+    - wo bu dong
+    - wo bu hui jiang in one
+    - wo bu min by
+    - wo bu zhi dao
+    - wo ting bu dong 
 
 
 - intent: objection_i_am_agent
   examples: |
-    - we are actually in the same industry 
-    - i'm under prudential
-    - i am also under pru
-    - i am agent from manulife
-    - i am agent from prudential
-    - i am agent from  Aviva
-    - i am agent from AXA
-    - i am a insurance broker myself 
-    - i am from AIA
-    - I'm also an agent
-    - i am in the same industry 
-    - i am agent from FWD
-    - i am a insurance agent myself
-    - i am also selling insurance
-    - i am also a financial advisor 
-    - i am working at prudential i am also the staff there
-    - i am agent from HL Assurance
-    - i am agent from Pacific Prime Singapore
-    - i am from great easten 
-    - i am a financial advisor from aviva
-    - i am agent from NTUC
-    - i am agent from Liberty Insurance
     - i am a agent as well
-    - i am agent from Zurich Insurance Company
-    - i am agent from XL Insurance Company
-    - i am agent from United Overseas Insurance
-    - i am agent from Tokio Marine Insurance
-    - i am agent from Swiss Re International 
-    - i am agent from Starr International Insurance
-    - i am agent from Sompo Insurance
-    - i am agent from Raffles Health Insurance
-    - i am agent from QBE Insurance
-    - i am agent from MSIG
-    - i am agent from MS First Capital
-    - i am agent from Lonpac Insurance
-    - i am agent from Lloyd's of London
-    - i am agent from India International Insurance
-    - i am agent from HL Assurance
-    - i am agent from HDI Global
-    - i am agent from Great American Insurance
-    - i am agent from Etiqa 
-    - i am agent from ERGO
-    - i am agent from EQ Insurance
-    - i am agent from ECICS Limited
-    - i am agent from Direct Asia Insurance
-    - i am agent from Allianz Insurance
+    - i am a financial advisor from aviva
+    - i am a insurance agent myself
+    - i am a insurance broker myself 
+    - i am agent from  Aviva
     - i am agent from AIG
+    - i am agent from Allianz Insurance
+    - i am agent from AXA
+    - i am agent from Direct Asia Insurance
+    - i am agent from ECICS Limited
+    - i am agent from EQ Insurance
+    - i am agent from ERGO
+    - i am agent from Etiqa 
+    - i am agent from FWD
+    - i am agent from Great American Insurance
+    - i am agent from HDI Global
+    - i am agent from HL Assurance
+    - i am agent from India International Insurance
+    - i am agent from Liberty Insurance
+    - i am agent from Lloyd’s of London
+    - i am agent from Lonpac Insurance
+    - i am agent from manulife
+    - i am agent from MS First Capital
+    - i am agent from MSIG
+    - i am agent from NTUC
+    - i am agent from Pacific Prime Singapore
+    - i am agent from prudential
+    - i am agent from QBE Insurance
+    - i am agent from Raffles Health Insurance
+    - i am agent from Sompo Insurance
+    - i am agent from Starr International Insurance
+    - i am agent from Swiss Re International 
+    - i am agent from Tokio Marine Insurance
+    - i am agent from United Overseas Insurance
+    - i am agent from XL Insurance Company
+    - i am agent from Zurich Insurance Company
+    - i am also a financial advisor 
+    - i am also selling insurance
+    - i am also under pru
+    - i am from AIA
+    - i am from great easten 
     - i am from the same company 
+    - i am in the same industry 
+    - i am working at prudential i am also the staff there
+    - I'm also an agent
+    - im under prudential
     - My husband is from AIA
+    - we are actually in the same industry 
     - my brother is an agent too 
     - my girlfriend is a insurance agent from great eastern 
     - my husband is a agent
@@ -488,512 +261,731 @@ nlu:
     - last time i am an agent 
     - i am agent in the past 
 
+
+- intent: question_related_to_numbers
+  examples: |
+    - can i check how did you get my number
+    - can i know who gave my number?
+    - eh why you call me
+    - how come you got my number
+    - how did you get my number
+    - how did you get to reach this number
+    - what is it exactly you do?
+    - where did you find my number
+    - where you got my number from
+    - who gave my number
+    - who pass you my number
+
+
+- intent: looking_for
+  examples: |
+    - are we friend
+    - do i even know you
+    - do i know you
+    - have i met you before
+    - looking for
+    - looking for who
+    - no you call the wrong person
+    - sorry you are calling
+    - tell me what is my name to prove me you know me
+    - what is my date of birth
+    - what is my name
+    - who are you calling
+    - who are you looking for
+    - who do you want to call
+    - who do you want to speak with
+    - who you are calling
+    - why are you calling me
+    - you know who am i anot why you call me
+    - where are you from
+    - chloe from
+
+
+- intent: already_have_agent
+  examples: |
+    - but i have my agent from aia
+    - I already have a financial advisor
+    - I already have an agent
+    - i have a agent who handle all this for me 
+    - I have a prudential agent
+    - i prefer to stay to my agent
+    - i tell you my agent is good i dont want to change
+    - it is okay i got some one who handle my insurance for me
+    - it's ok i call my insurance agent can already
+    - no actually i got my agent who contact me also 
+    - no it is okay i will just go to my agent
+    - no thats fine i have already somebody working with me with on prudential itself
+    - no worry i see my agent contact me
+    - its okay my agent is aia
+
+
+- intent: evening
+  examples: |
+    - 10 p m
+    - 10pm
+    - 11 p m
+    - 11pm
+    - 5pm
+    - 6pm
+    - 6pm
+    - 7 p m 
+    - 7pm
+    - 8pm
+    - 9 p m
+    - 9pm
+    - after dinner 
+    - after five
+    - after six
+    - at night
+    - can la evening 
+    - early evening
+    - evening
+    - evening is good
+    - evening is ok
+    - evening lo
+    - evening please
+    - five pm
+    - in the evening
+    - in the night
+    - let's do evening
+    - maybe evening 
+    - night
+    - nine pm
+    - seven pm
+    - ten pm
+    - in the afternoon will be good
+    - in the evening will be good
+
+
+- intent: morning
+  examples: |
+    - early morning
+    - it is ok morning
+    - let's do morning
+    - maybe tomorrow morning 
+    - morning
+    - Morning is ok
+    - morning please
+
+
+- intent: afternoon
+  examples: |
+    - 12pm
+    - 1pm
+    - 2pm
+    - 3pm
+    - 4pm
+    - after lunch
+    - after one
+    - after two
+    - afternoon
+    - afternoon is good
+    - afternoon is ok
+    - afternoon lo
+    - afternoon please
+    - can la afternoon
+    - early afternoon please
+    - four p m
+    - four pm
+    - in the afternoon
+    - it is ok afternoon
+    - late afternoon
+    - let's do afternoon
+    - maybe afternoon
+    - one p m
+    - one pm
+    - three p m
+    - three pm
+    - two p m
+    - two pm
+
+
+- intent: busy
+  examples: |
+    - actually not convenient right now thank you
+    - am busy now
+    - am not available now
+    - busy cooking
+    - busy doing housework
+    - busy right now
+    - busy with my children
+    - call me again
+    - call me back at eight p m can
+    - call me in the afternoon
+    - call me next month
+    - call me next time
+    - call me next week
+    - call me other time
+    - call me tomorrow
+    - can call another time
+    - can call tomorrow
+    - driving at this moment
+    - driving now
+    - er no sorry i am not free at the moment sorry
+    - hello hi im sorry but im actually quite busy now going into a meeting so sorry about that yah okay
+    - hi can you call back
+    - how busy I am
+    - I am at the hospital
+    - I am at work
+    - I am busy
+    - I am busy leh
+    - I am busy with my baby right now what is it
+    - I am busy with my children now
+    - I am in office
+    - i am in the middle of discussion now so sorry
+    - i am not convenient to talk okay
+    - i am not free at the moment 
+    - i am so sorry i am actually in the mid of conference right now
+    - I am unavailable at the moment
+    - I don't have time for the call now
+    - I don't have time for this
+    - i dont have the time now 
+    - i dont have time now
+    - I got things to do
+    - I have no time
+    - I have work
+    - i think its okay its not a good time to answer the call thank you bye bye
+    - i will contact you later
+    - I'm busy
+    - I'm busy at the moment
+    - I'm busy at the moment can you call tomorrow
+    - I'm busy can you call tomorrow
+    - I'm busy can you can another time
+    - I'm driving, call tomorrow.
+    - I'm not available right now can you call me back
+    - I'm not free thank you for calling
+    - I'm not free to speak to you now
+    - I'm swamped
+    - I'm working right now
+    - im sorry actually im from the call now
+    - im sorry actually im from the call now
+    - in meeting now ok sorry sorry thank you bye
+    - it is okay i am expecting a call now
+    - maybe not i am talking with some one else
+    - meeting 
+    - no free
+    - no i think its okay because i only its okay its okay because i just did not long ago
+    - No I'm in the public transport
+    - no it is okay i am currently at work right now
+    - no its not a good time
+    - no its okay am not free
+    - no need la now i am outside not convenient
+    - not a good time i am working right now
+    - not available to speak right now
+    - not convient to talk
+    - outside now can't talk 
+    - so sorry i am actually in the meeting right now
+    - sorry ah i busy now i can't talk
+    - sorry ah not free right now ah
+    - sorry i cannot answer your call now can you call me the next day i am at work now
+    - sorry I cant talk
+    - Sorry I'm still in the middle of something
+    - sorry im having lunch now
+    - sorry,this isn't a good convienent time to talk.I am at work
+    - this is a work phone
+    - this is not a good time can you call me back later
+    - yeah but can you call me back later
+
+
+- intent: not_singaporean
+  examples: |
+    - i am a foreigner
+    - i am a foreigner i am a s pass holder
+    - i am a s pass holder
+    - i am e p 
+    - i am holding on to a permit pass
+    - i am not a pr
+    - i am not a singaporean or pr
+    - i am on EP
+    - i am on s pass
+    - i am on work permit
+    - i malaysian can?
+    - i'm malesian
+    - i'm not a singapore citizen
+    - i'm not singaporean
+    - is this eligible for everyone?
+    - not local
+    - oh sorry i am a foreigner i am a s pass holder
+    - sorry i am not a pr
+    - but i am not local 
+
+
 - intent: who_is
   examples: |
-    - I don't know you
+    - a i a 
     - AIA insurance ah
     - AIA insurance is it 
-    - a i a 
-    - who are you?
-    - you are  
-    - who is calling
-    - who am I speaking to?
-    - where are you calling from?
-    - who's on the line
-    - whats your name again
-    - who is this?
+    - calling from
+    - from
+    - from where
     - from where are you calling?
-    - sorry you are
     - hello who are you
-    - you are calling from prudential?
+    - I don't know you
     - prudential life insurance
     - sorry what is that
     - sorry who is this person
+    - sorry you are
+    - whats your name again
+    - where are you calling from?
+    - who am I speaking to?
+    - who are you?
+    - who is calling
+    - who is this?
+    - who's on the line
+    - you are  
     - you are calling from a i a
-    - from where
-    - calling from
+    - you are calling from prudential?
     - you are calling on behalf of a i a
-    - from
-    - you say you are from aia or prudential 
     - hi may i know why are you calling from
     - sorry who are you who are you why are you calling from
 
 
-- intent: question_related_to_numbers
+- intent: age
   examples: |
-    - how come you got my number
-    - who gave my number
-    - can i check how did you get my number
-    - how did you get my number
-    - eh why you call me
-    - who pass you my number
-    - where you got my number from
-    - where did you find my number
-    - what is it exactly you do?
-    - how did you get to reach this number
-    - can i know who gave my number?
+    - [24](number)
+    - [thirtyfive](number)
+    - am [25](number)
+    - am [twentyone](number)
+    - am major
+    - eighteen
+    - fifty
+    - fifty eight
+    - fifty five
+    - fifty four
+    - fifty nine
+    - fifty one
+    - fifty seven
+    - fifty six
+    - fifty three
+    - fifty two
+    - forty
+    - forty eight
+    - forty five
+    - forty four
+    - forty nine
+    - forty one
+    - forty seven
+    - forty six
+    - forty three
+    - forty two
+    - I am minor
+    - I have [26](number) years
+    - my age is [30](number)
+    - my age is [sixty](number)
+    - nineteen
+    - sixty
+    - sixty eight
+    - sixty five
+    - sixty four
+    - sixty nine
+    - sixty one
+    - sixty seven
+    - sixty six
+    - sixty three
+    - sixty two
+    - thirty
+    - thirty eight
+    - thirty five
+    - thirty four
+    - thirty nine
+    - thirty one
+    - thirty seven
+    - thirty six
+    - thirty three
+    - thirty two
+    - twenty
+    - twenty eight
+    - twenty five
+    - twenty four
+    - twenty one
+    - twenty seven
+    - twenty six
+    - twenty three
+    - twenty two
 
-- intent: question_related_to_scam
-  examples: |
-    - are you playing me
-    - ya you want to cheat people 
-    - prank call isit
-    - you think i am a fool is it
-    - i call police
-    - pranking me is it
-    - are you scamming me
-    - i don't think it is appropriate
-    - i can report you to the police
-    - is this a scam
-    - is this a prank call
-    - you think i 3 years old is it
-    - i can report to police
-    - do you know it is illegal
-    - is this a scam call
-    - prank call ah
-    - you trying to disturb aunty is it
-    - do you think i am stupid
-    - not comfortable
-    - no time for all this nonense
-    - eh you trying to fool me ah
-    - bloody hell what are you saying
-    - scam call isit
-    - you think aunty old alr play me ah
-    - dont con old people la
-    - you people like to cheat people
-    - what are you talking about cheating people
-    - yes yes yes cheat call
-    - cheat people
-    - think i am a fool is it
-    - fun isit
-    - what you trying to do
 
-- intent: not_singaporean
+- intent: reject
   examples: |
-    - i am on EP
-    - i'm malesian
-    - i am not a singaporean or pr
-    - i am not a pr
-    - sorry i am not a pr
-    - oh sorry i am a foreigner i am a s pass holder
-    - i'm not singaporean
-    - i am on work permit
-    - not local
-    - i am a foreigner
-    - i am a foreigner i am a s pass holder
-    - i'm not a singapore citizen
-    - i am holding on to a permit pass
-    - i am a s pass holder
-    - i am on s pass
-    - i am e p 
-    - is this eligible for everyone?
-    - i malaysian can?
-    - but i am not local 
+    - absolutely no
+    - ah i dont want
+    - can you take me off your calling list
+    - can you take my number off your calling list
+    - do not
+    - don't come
+    - don't have time
+    - don't show off
+    - don't want
+    - don't want don't want
+    - don't want your help
+    - don’t know
+    - don’t think I'll need it, thanks.
+    - dont disturb me
+    - dont think i need
+    - get out goodbye
+    - i am not interested for call back
+    - i am not okay with your help
+    - i do not want your help
+    - I don't need anything from you
+    - i don't need it
+    - i don't need your help
+    - i don't want
+    - I don't want your assistance
+    - i don't want your help
+    - I don't you help
+    - i dont know lah
+    - i dont want a call back
+    - i dont want anymore
+    - i think it about it again it is okay thank you 
+    - i think it is okay
+    - i will be fine without it
+    - its okay nevermind
+    - its okay thank you
+    - its okay thanks for calling
+    - need not
+    - never
+    - never help
+    - never mind
+    - No
+    - no already arranged for this
+    - no don't want
+    - no dont call me
+    - no forget
+    - no it is okay 
+    - no its fine
+    - no its okay
+    - no la no
+    - no need
+    - no no no i don't need it
+    - no not interested
+    - no so sorry
+    - no sorry
+    - No sorry not keen
+    - no Thank you
+    - no thank you
+    - no thanks
+    - No, I don’t want to receive a callback
+    - No, It's ok.
+    - nope i dont need your help
+    - not at the moment thanks
+    - not at this time
+    - not exactly
+    - not interested
+    - Not interested at the moment thank you.
+    - Not interested in anything
+    - Not interested, thank you
+    - not intertested
+    - not keen
+    - not necessary
+    - not need for callback
+    - not needed
+    - not now
+    - Not, really.
+    - of course not
+    - oh no need
+    - okay keep it in mind
+    - okay sorry bye bye
+    - okay thank you bye bye
+    - please dont call me again
+    - sorry i am not really keen thanks
+    - sorry i don't need
+    - sorry no
+    - Sorry not interested
+    - Sorry not interested in all these kind of insurance thing.
+    - sorry not now
+    - sorry, no
+    - sorry,not interested
+    - thank you bye bye
+    - thanks for the offer i can do it myself
+    - This will surely lead into insurance. No thanks.
+    - This will surely leading into insurance someway so don't disturb me
+    - We are not interested in any insurance
+    - Why would you need them to call me back
+    - Yes, but I am not keen now
+    - you can share this with other people
+    - Zoom ah? No need thankyou
+    - no sorry you got the wrong number
+    - im actually fully covered with everything 
+    - ill think ill give it a miss for the for the time being thanks
+    - no because maybe im going to retire also
 
 
 - intent: confirm
   examples: |
-    - okay okay
-    - can you be quick, i'm going for a meeting
-    - what is it regarding about
-    - what do you want
-    - ok thanks
-    - sorry what is it regarding
-    - what is it regarding
+    - a good day
     - a quick call I think it's fine
-    - yes
-    - is it through the phone
-    - thats right
-    - what is this call about
-    - why
-    - what is it about you wanna discuss
-    - you can you call me
-    - yes please
-    - what is it about
-    - it's alright
-    - you can you call me I think
-    - indeed
-    - of course
-    - um hmm
-    - uh huh
-    - that sounds good
-    - correct
-    - yeah
-    - go on
-    - continue
-    - yes tell me
-    - please carry on
-    - please continue
-    - yes,am interested
-    - yes,I heard about it
-    - yaa
-    - ya ok
-    - ya ya ya yes yes
-    - ok sure
-    - can speak now
-    - great
-    - cool
-    - ok
-    - interested
-    - yes,i may be interested.
-    - can
-    - sure
-    - carry on
-    - what is the next step
-    - yeah exactly
-    - okay that's fine
-    - I agree
-    - that is ok
-    - I guess
-    - okey
-    - ya
-    - errr.Sure.
-    - am keen about it
-    - ok yes
-    - yes it is
-    - yep
-    - yew
-    - hey yes
-    - yeah fine
-    - yes what is it
-    - yes continue
-    - am free
-    - yea fine
-    - yep okay
-    - fine okay
-    - yup
-    - YEAH
-    - okay buddy
-    - oh okay
-    - yeah sure
-    - okay cool
-    - coool
-    - okay
-    - can thank you
-    - ok can
-    - Okay can.
     - absolutely
-    - okay schedule
+    - ah ha
+    - ah yes
+    - ahhaa
     - all right
-    - no problem
-    - welcome
-    - Erm I think it's okay.
+    - am aware of it
+    - am completely aware of it
+    - am free
+    - am keen about it
+    - Ar lo
+    - Assalamualaikum
+    - aware of it la
+    - can
+    - can speak now
+    - can thank you
+    - can you be quick, i'm going for a meeting
+    - carry on
+    - continue
+    - cool
+    - coool
+    - correct
+    - eh actually this is insurance isit
+    - Erm I think it’s okay.
     - erm okay
-    - sup
-    - yo
     - erm yes
     - erm..yeah
-    - i see
-    - uhh
-    - umm
-    - ahhaa
-    - uh huhh
-    - oh humm huh
-    - sup man
-    - that sound good
-    - is there anything i can help you
+    - errr.Sure.
+    - fine okay
     - go about it
-    - ah yes
-    - hmm yes
-    - there
-    - ah ha
-    - hm hum
-    - hey
+    - go on
+    - great
     - hello
-    - hi
-    - long time no see
-    - howdy
-    - hey there
-    - whatsup
-    - hi there
-    - lovely day isn't it
-    - just going to say hi
-    - a good day
     - hello hi
-    - heya
-    - hey yeah?
-    - hey buddy
-    - oka
-    - yo man
-    - hola
-    - hii what is it about?
-    - heyy
     - hello hi what is it about
     - hello there
     - hello what is it about
     - hello yeah
+    - hey
     - Hey boo
+    - hey buddy
+    - hey there
     - hey ya
     - hey yeah
-    - lovely day
-    - wei
-    - wei ni hao
-    - Ar lo
-    - Assalamualaikum
-    - am aware of it
-    - am completely aware of it
-    - aware of it la
-    - maybe
+    - hey yeah?
+    - hey yes
+    - heya
+    - heyy
+    - hi
+    - hi is this very urgent
+    - hi there
+    - hi ya sorry what is it about
+    - hii what is it about?
+    - hm hum
+    - hmm yes
+    - hola
+    - howdy
+    - I agree
+    - I guess
+    - i see
+    - im not very sure about this sixty cents policy what is it about
+    - indeed
+    - interested
+    - is it through the phone
+    - is there anything i can help you
     - it may be
     - it may be ok
+    - it's alright
+    - just going to say hi
+    - long time no see
+    - lovely day
+    - lovely day isn't it
+    - maybe
     - maybe it is ok
-    - hi ya sorry what is it about
-    - eh actually this is insurance is it
-    - two minutes only 
-    - im not very sure about this sixty cents policy what is it about
-    - hi is this very urgent
-    - orh orh yah what is it regarding
+    - no problem
+    - of course
+    - oh humm huh
+    - oh okay
+    - ok
+    - ok can
+    - ok sure
+    - ok thanks
+    - ok yes
+    - oka
+    - okay
+    - okay buddy
+    - Okay can.
+    - okay cool
+    - okay okay 
+    - okay schedule
+    - okay that's fine
+    - okey
     - orh  
+    - orh orh yah what is it regarding
+    - please carry on
+    - please continue
+    - sorry what is it regarding
+    - sup
+    - sup man
+    - sure
+    - that is ok
+    - that sound good
+    - that sounds good
+    - thats right
+    - there
+    - two minutes only 
+    - uh huh
+    - uh huhh
+    - uhh
+    - um hmm
+    - umm
+    - wei
+    - wei ni hao
+    - welcome
+    - what do you want
+    - what is it about
+    - what is it about you wanna discuss
+    - what is it regarding
+    - what is it regarding about
+    - what is the next step
+    - what is this call about
+    - whatsup
+    - why
+    - ya
+    - ya ok
+    - ya ya ya yes yes
+    - yaa
+    - yea fine
+    - yeah
+    - YEAH
+    - yeah exactly
+    - yeah fine
+    - yeah sure
+    - yep
+    - yep okay
+    - yes
+    - yes continue
+    - yes it is
+    - yes please
+    - yes tell me
+    - yes what is it
+    - yes,am interested
+    - yes,I heard about it
+    - yes,i may be interested.
+    - yew
+    - yo
+    - yo man
+    - you can you call me
+    - you can you call me I think
+    - yup
     - what insurance are you talking about
+    - this one insurance company right
+    - you can try
 
-- intent: reject
-  examples: |
-    - never mind
-    - never
-    - no la no
-    - not needed
-    - never help
-    - don't come
-    - you can share this with other people
-    - No
-    - not at this time
-    - no its fine
-    - don't want
-    - thanks for the offer i can do it myself
-    - i dont want anymore
-    - no forget
-    - not exactly
-    - need not
-    - no its okay
-    - of course not
-    - absolutely no
-    - do not
-    - dont think i need
-    - i will be fine without it
-    - no thanks
-    - no don't want
-    - sorry no
-    - don't want your help
-    - I don't you help
-    - I don't want your assistance
-    - get out goodbye
-    - i do not want your help
-    - i don't need your help
-    - i don't want your help
-    - i am not okay with your help
-    - I don't need anything from you
-    - okay keep it in mind
-    - nope i dont need your help
-    - Don't show off
-    - sorry, no
-    - Yes, but I am not keen now
-    - not necessary
-    - no Thank you
-    - no need
-    - no so sorry
-    - not at the moment thanks
-    - No sorry not keen
-    - no sorry
-    - Zoom ah? No need thankyou
-    - sorry i am not really keen thanks
-    - no already aranged for this
-    - its okay thank you
-    - don't want
-    - no thank you
-    - oh no need
-    - ah i dont want
-    - i dont know lah
-    - not now
-    - sorry not now
-    - don't know
-    - don't have time
-    - sorry,not interested
-    - not interested
-    - its okay nevermind
-    - its okay thanks for calling
-    - can you take me off your calling list
-    - can you take my number off your calling list
-    - Not interested in anything
-    - This will surely lead into insurance. No thanks.
-    - We are not interested in any insurance
-    - Not interested at the moment thank you.
-    - Not, really.
-    - No, It's ok.
-    - Sorry not interested in all these kind of insurance thing.
-    - This will surely leading into insurance someway so don't disturb me
-    - don't think I'll need it, thanks.
-    - Not interested, thank you
-    - Sorry not interested
-    - no not interested
-    - sorry i don't need
-    - not keen
-    - not intertested
-    - don't want don't want
-    - i don't need it
-    - no no no i don't need it
-    - i don't want
-    - i dont want a call back
-    - i am not interested for call back
-    - No, I don't want to receive a callback
-    - Why would you need them to call me back
-    - please dont call me again
-    - not need for callback
-    - dont disturb me
-    - no dont call me
-    - thank you bye bye
-    - okay thank you bye bye
-    - okay sorry bye bye
-    - no it is okay 
-    - i think it is okay
-    - i think it about it again it is okay thank you 
-    - no sorry you got the wrong number
-    - im actually fully covered with everything 
-    - ill think ill give it a miss for the for the time being thanks
 
-- intent: evening
+- intent: speak_twice
   examples: |
-    - in the night
-    - it is ok evening
-    - 8pm
-    - after six
-    - 6pm
-    - after dinner 
-    - maybe evening 
-    - let's do evening
-    - evening is ok
-    - night
-    - 9pm
-    - after five
-    - evening lo
-    - early evening
-    - evening please
-    - evening is good
-    - 10pm
-    - can la evening 
-    - at night
-    - 7pm
-    - 11pm
-    - evening
-    - 5pm
-    - 6pm
-    - in the afternoon will be good
-    - in the evening will be good
-    - 10 p m
-    - 11 p m
-    - 9 p m
-    - 7 p m 
-    - ten pm
-    - nine pm
-    - seven pm
-    - five pm
-    
+    - hello again 
+    - hello can you hear me
+    - can you repeat
+    - Come again
+    - Hello hello
+    - huh what 
+    - i didn't catch you
+    - i dont get you
+    - repeat
+    - sorry
+    - what you say  
+    - what you say again
+    - what are you talking about
 
-- intent: afternoon
-  examples: |
-    - after one
-    - afternoon
-    - 4pm
-    - 1pm
-    - 2pm
-    - 12pm
-    - after two
-    - it is ok afternoon
-    - afternoon is ok
-    - in the afternoon
-    - afternoon is good
-    - can la afternoon
-    - maybe afternoon
-    - let's do afternoon
-    - afternoon please
-    - after lunch
-    - afternoon lo
-    - 3pm
-    - early afternoon please
-    - one pm
-    - two pm
-    - three pm
-    - four pm
-    - one p m
-    - three p m
-    - two p m
 
-- intent: age
+- intent: student
   examples: |
-    - [thirtyfive](number)
-    - am [25](number)
-    - eighteen
-    - am major
-    - my age is [30](number)
-    - am [twentyone](number)
-    - nineteen
-    - I am minor
-    - [24](number)
-    - twenty two
-    - twenty
-    - my age is [sixty](number)
-    - twenty one
-    - I have [26](number) years
-    - twenty three
-    - twenty four
-    - twenty five
-    - twenty six
-    - twenty seven
-    - twenty eight
-    - twenty nine
-    - thirty
-    - thirty one
-    - thirty two
-    - thirty three
-    - thirty four
-    - thirty five
-    - thirty six
-    - thirty seven
-    - thirty eight
-    - thirty nine
-    - forty
-    - forty one
-    - forty two
-    - forty three
-    - forty four
-    - forty five
-    - forty six
-    - forty seven
-    - forty eight
-    - forty nine
-    - fifty
-    - fifty one
-    - fifty two
-    - fifty three
-    - fifty four
-    - fifty five
-    - fifty six
-    - fifty seven
-    - fifty eight
-    - fifty nine
-    - sixty
-    - sixty one
-    - sixty two
-    - sixty three
-    - sixty four
-    - sixty five
-    - sixty six
-    - sixty seven
-    - sixty eight
-    - sixty nine
+    - eighteen year old
+    - eleven
+    - fifteen 
+    - fourteen
+    - i am a children
+    - i am actually a student
+    - i am eleven  
+    - i am eleven years old
+    - i am schooling
+    - i am still a student
+    - i am ten  
+    - i am ten years old
+    - is a kid
+    - nineteen years old
+    - only fifteen years old
+    - only fourteen years old
+    - only thirteen years old
+    - only twelve years old
+    - seventeen  
+    - Seventeen years old
+    - sixteen
+    - sixteen years old
+    - still a child
+    - still a kid
+    - still studying 
+    - ten
+    - thirteen
+    - twelve
+    - i dont think that i am a student pass
+    - i dont think it applies to me im a student pass
+
+
+- intent: question_related_to_age
+  examples: |
+    - do not wish to disclose my age
+    - for what tell you my age
+    - no i dont want to tell you
+    - not comfortable telling you my age
+    - why do you need my age
+    - why do you need to know
+    - why do you you need to know how old am i 
+    - why must i tell you my age
+    - why must you know
+    - you need my age for what
+    - not comfortable giving you my age
+
+
+- intent: DNC
+  examples: |
+    - d n c 
+    - do you know i am registered under do not call list
+    - do you know the PDPA guideline 
+    - i am from do not call list
+    - i am under DNC
+    - i can go PDPA and log a complain
+    - i registered DNC
+    - my number is under p d p a
+    - my number is under PDPA
+    - my number registered under do not call
+    - PDPA rules
+    - why are you calling me my number from DNC
+    - you know you cannot call me i am from DNC list
+    -p d p a rules 
+    - i am under d n c call list
+    - this is a corporate phone 
+    - okay because this is not personal phone this is the corporate phone
+    - this phone number is only for work phone work purposes
+
+
+- intent: manager_question
+  examples: |
+    - can i check who is your manager
+    - can i know who is your manager
+    - how do i know your manager
+    - just tell me la why need your manager 
+    - tell me about your manager
+    - what is the manager call regarding?
+    - what is tthe purpose of your manager calling me?
+    - what is your manger name
+    - who is your manager
+   
+    - why he need to call me again?
+    - why your manager need to call me?
+    - you cannot tell me meh need your manager to all me meh 
+    - your manager who
+
 
 - intent: date_day
   examples: |
-    - next sunday
-    - next week
+    - first week
     - last week
-    - third week
+    - next friday
     - next monday
     - next month
-    - next friday
-    - next weekday
-    - first week
-    - next tuesday
+    - next sunday
     - next thursday
-    - second week
-    - next weekend
+    - next tuesday
     - next wednesday
+    - next week
+    - next weekday
+    - next weekend
+    - second week
+    - third week
