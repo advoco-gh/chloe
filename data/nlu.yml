@@ -869,8 +869,6 @@ nlu:
 
 - intent: speak_twice
   examples: |
-    - hello again 
-    - hello can you hear me
     - can you repeat
     - Come again
     - Hello hello
