@@ -18,6 +18,42 @@ rules:
     - requested_slot: null
   - action: utter_manager_introduction
 
+
+- rule: Activate question_related_to_age
+  steps:
+  - intent: question_related_to_age
+  - action: question_related_to_age
+  - active_loop: question_related_to_age
+
+- rule: Submit question_related_to_age
+  condition:
+  - active_loop: question_related_to_age
+  steps:
+  - action: question_related_to_age
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_chloe_goodbye
+
+
+- rule: Activate objection_already_have_PA_plan
+  steps:
+  - intent: objection_already_have_PA_plan
+  - action: objection_already_have_PA_plan
+  - active_loop: objection_already_have_PA_plan
+
+- rule: Submit objection_already_have_PA_plan
+  condition:
+  - active_loop: objection_already_have_PA_plan
+  steps:
+  - action: objection_already_have_PA_plan
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+
+
+
+
 - rule: Activate form looking_for_form
   steps:
   - intent: looking_for
@@ -38,26 +74,26 @@ rules:
 - rule: Activate form call_back_to_another_party
   steps:
   - intent: call_back_to_another_party
-  - action: busy
-  - active_loop: busy
+  - action: other_party
+  - active_loop: other_party
 
 - rule: Submit form call_back_to_another_party
   condition:
-  - active_loop: busy
+  - active_loop: other_party
   steps:
-  - action: busy
+  - action: other_party
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - action: utter_chloe_goodbye
   
-- rule: Activate form
+- rule: Activate busy
   steps:
   - intent: busy
   - action: busy
   - active_loop: busy
 
-- rule: Submit form
+- rule: Submit busy
   condition:
   - active_loop: busy
   steps:
@@ -66,6 +102,16 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: utter_chloe_goodbye
+
+
+
+- rule: out-of-scope
+  steps:
+    - intent: nlu_fallback
+    - action: utter_fallback
+
+    
+
 
 - rule: speak_twice
   steps:
@@ -86,34 +132,29 @@ rules:
   steps:
   - intent: who_is
   - action: utter_chloe_greeting_repeat
-- rule: fees_question 
-  steps:
-  - intent: fees_question 
-  - action: utter_chloe_pa_fees
-- rule: question_related_to_scam
-  steps:
-  - intent: question_related_to_scam
-  - action: utter_chloe_scam
-- rule: question_related_to_numbers
-  steps:
-  - intent: question_related_to_numbers
-  - action: utter_chloe_number_info
-- rule: objection_already_have_PA_plan
-  steps:
-  - intent: objection_already_have_PA_plan
-  - action: utter_chloe_had_a_pa_plan
-- rule: not_singaporean
-  steps:
-  - intent: not_singaporean
-  - action: utter_chloe_not_local
+# - rule: fees_question 
+#   steps:
+#   - intent: fees_question 
+#   - action: utter_chloe_pa_fees
+# - rule: question_related_to_scam
+#   steps:
+#   - intent: question_related_to_scam
+#   - action: utter_chloe_scam
+# - rule: question_related_to_numbers
+#   steps:
+#   - intent: question_related_to_numbers
+#   - action: utter_chloe_number_info
+
+# - rule: not_singaporean
+#   steps:
+#   - intent: not_singaporean
+#   - action: utter_chloe_not_local
 - rule: manager_question 
   steps:
   - intent: manager_question 
   - action: utter_chloe_manager_introduction
-- rule: question_related_to_age
-  steps:
-  - intent: question_related_to_age
-  - action: utter_chloe_age_question
+
+
 - rule: question_speak_chinese
   steps:
   - intent: question_speak_chinese
@@ -123,10 +164,10 @@ rules:
   - intent: objection_i_am_agent
   - action: utter_chloe_goodbye
 
-- rule: pa_plan_coverage
-  steps:
-  - intent: pa_plan_coverage
-  - action: utter_chloe_pa_coverage
+# - rule: pa_plan_coverage
+#   steps:
+#   - intent: pa_plan_coverage
+#   - action: utter_chloe_pa_coverage
 
 
 # - rule: call_back_to_another_party

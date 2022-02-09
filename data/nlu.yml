@@ -931,28 +931,6 @@ nlu:
     - not comfortable giving you my age
 
 
-- intent: DNC
-  examples: |
-    - d n c 
-    - do you know i am registered under do not call list
-    - do you know the PDPA guideline 
-    - i am from do not call list
-    - i am under DNC
-    - i can go PDPA and log a complain
-    - i registered DNC
-    - my number is under p d p a
-    - my number is under PDPA
-    - my number registered under do not call
-    - PDPA rules
-    - why are you calling me my number from DNC
-    - you know you cannot call me i am from DNC list
-    -p d p a rules 
-    - i am under d n c call list
-    - this is a corporate phone 
-    - okay because this is not personal phone this is the corporate phone
-    - this phone number is only for work phone work purposes
-
-
 - intent: manager_question
   examples: |
     - can i check who is your manager
