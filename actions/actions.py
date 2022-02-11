@@ -106,5 +106,55 @@ class action_chloe(Action):
 
         dispatcher.utter_message(response = reply)
         return []
+        
+        
+class action_rule_only_once(Action):
+
+    def name(self) -> Text:
+        return "action_rule_only_once"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        a = tracker.events
+
+        only_actions = []
+        only_intents = []
+
+        for x in a:
+            if x['event'] == 'user':
+                only_intents.append(x['parse_data']['intent']['name'])
+            elif x['event'] == 'bot':
+                try:
+                    only_actions.append(x['metadata']['utter_action'])
+                except:
+                    pass
+
+
+        reply = ''
+        for intent in ['fees_question' , 'question_related_to_scam', 'question_related_to_numbers', 'not_singaporean', 'pa_plan_coverage' ]:
+            if only_intents.count(intent) > 1:
+                reply = 'utter_chloe_goodbye'
+
+        
+        if reply != 'utter_chloe_goodbye':
+            rules = {'fees_question' :
+                    'utter_chloe_pa_fees',
+                    'question_related_to_scam':
+                    'utter_chloe_scam',
+                    'question_related_to_numbers':
+                    'utter_chloe_number_info',
+                    'not_singaporean':
+                    'utter_chloe_not_local',
+                    'pa_plan_coverage':
+                    'utter_chloe_pa_coverage'}
+            reply = rules[only_intents[-1]]
+
+
+
+
+        dispatcher.utter_message(response = reply)
+        return []
 
 

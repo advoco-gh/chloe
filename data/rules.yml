@@ -132,23 +132,32 @@ rules:
   steps:
   - intent: who_is
   - action: utter_chloe_greeting_repeat
-# - rule: fees_question 
-#   steps:
-#   - intent: fees_question 
-#   - action: utter_chloe_pa_fees
-# - rule: question_related_to_scam
-#   steps:
-#   - intent: question_related_to_scam
-#   - action: utter_chloe_scam
-# - rule: question_related_to_numbers
-#   steps:
-#   - intent: question_related_to_numbers
-#   - action: utter_chloe_number_info
 
-# - rule: not_singaporean
-#   steps:
-#   - intent: not_singaporean
-#   - action: utter_chloe_not_local
+- rule: fees_question 
+  steps:
+  - intent: fees_question 
+  - action: action_rule_only_once
+- rule: question_related_to_scam
+  steps:
+  - intent: question_related_to_scam
+  - action: action_rule_only_once
+- rule: question_related_to_numbers
+  steps:
+  - intent: question_related_to_numbers
+  - action: action_rule_only_once
+
+- rule: not_singaporean
+  steps:
+  - intent: not_singaporean
+  - action: action_rule_only_once
+
+- rule: pa_plan_coverage
+  steps:
+  - intent: pa_plan_coverage
+  - action: action_rule_only_once
+
+
+
 - rule: manager_question 
   steps:
   - intent: manager_question 
@@ -164,10 +173,6 @@ rules:
   - intent: objection_i_am_agent
   - action: utter_chloe_goodbye
 
-# - rule: pa_plan_coverage
-#   steps:
-#   - intent: pa_plan_coverage
-#   - action: utter_chloe_pa_coverage
 
 
 # - rule: call_back_to_another_party

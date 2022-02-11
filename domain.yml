@@ -1,6 +1,7 @@
 version: '2.0'
 actions:
   - action_chloe
+  - action_rule_only_once
   - validate_already_have_agent
   - validate_objection_already_have_PA_plan
   
