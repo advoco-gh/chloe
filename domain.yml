@@ -4,6 +4,8 @@ actions:
   - action_rule_only_once
   - validate_already_have_agent
   - validate_objection_already_have_PA_plan
+  - action_trigger_conversion_form
+  # - validate_conversion_form
   
 entities:
   - number
@@ -31,10 +33,16 @@ slots:
     type: text
     influence_conversation: false
   goodbye:
-    type: text
+    type: bool
     influence_conversation: false
   are_you_ashley:
-    type: text
+    type: bool
+    influence_conversation: false
+  app_call_time:
+    type: bool
+    influence_conversation: false
+  age_info:
+    type: bool
     influence_conversation: false
 
 forms:
@@ -90,6 +98,27 @@ forms:
     - type: from_intent
       intent: reject
       value: false
+  conversion_form:
+    app_call_time:
+    - type: from_intent
+      intent: evening
+      value: true
+    - type: from_intent
+      intent: morning
+      value: true
+    - type: from_intent
+      intent: afternoon
+      value: true
+    - type: from_intent
+      intent: confirm
+      value: true
+    age_info:
+    - type: from_intent
+      intent: confirm
+      value: true
+    - type: from_intent
+      intent: age
+      value: true
 
 
 
@@ -104,7 +133,7 @@ intents:
   - question_related_to_scam
   - who_is
   - objection_i_am_agent
-  - pa_question
+  # - pa_question
   - pa_plan_coverage 
   - fees_question
   - manager_question
@@ -119,8 +148,9 @@ intents:
   - student
   - question_related_to_age
   - dnc
-  - request_names
+  # - request_names
   - date_day
+
 responses:
 
 
@@ -132,6 +162,12 @@ responses:
     - text: oh okay thank you and have a pleasant week ahead good bye
 
 
+  utter_ask_app_call_time:
+    - text: erm great er I will get my manager to contact you by next week to arrange a meet up  alright so erm do prefer him to call you in the afternoon or in the evening
+  
+  utter_ask_age_info:
+    - text: okay i will i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you
+    
   utter_ask_want_to_continue:
     - text: ah okay er can i ask does your agent follow up with you often erm would you be interested for me to assign a new agent for you
     

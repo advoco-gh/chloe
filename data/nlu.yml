@@ -1,6 +1,7 @@
 version: '2.0'
 nlu:
 
+
 - intent: pa_plan_coverage 
   examples: |
     - can claim from all woman disease?

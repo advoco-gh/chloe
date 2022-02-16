@@ -2,55 +2,90 @@ version: "2.0"
 
 rules:
 
-- rule: Activate form2
+# - rule: Activate conversion_form
+#   steps:
+#   - intent: speak_twice
+#   - action: conversion_form
+#   - active_loop: conversion_form
+
+# - rule: Submit conversion_form
+#   condition:
+#   - active_loop: conversion_form
+#   steps:
+#   - action: conversion_form
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - action: utter_chloe_acknowledgement_age
+
+# - rule: Activate form2
+#   steps:
+#   - intent: already_have_agent
+#   - action: already_have_agent
+#   - active_loop: already_have_agent
+
+# - rule: Submit form2
+#   condition:
+#   - active_loop: already_have_agent
+#   steps:
+#   - action: already_have_agent
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - action: utter_manager_introduction
+
+- rule: already_have_agent
   steps:
   - intent: already_have_agent
-  - action: already_have_agent
-  - active_loop: already_have_agent
-
-- rule: Submit form2
-  condition:
-  - active_loop: already_have_agent
-  steps:
-  - action: already_have_agent
-  - active_loop: null
-  - slot_was_set:
-    - requested_slot: null
-  - action: utter_manager_introduction
+  - action: action_trigger_conversion_form
+  
 
 
-- rule: Activate question_related_to_age
+
+# - rule: Activate question_related_to_age
+#   steps:
+#   - intent: question_related_to_age
+#   - action: question_related_to_age
+#   - active_loop: question_related_to_age
+
+# - rule: Submit question_related_to_age
+#   condition:
+#   - active_loop: question_related_to_age
+#   steps:
+#   - action: question_related_to_age
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - action: utter_chloe_goodbye
+
+- rule: question_related_to_age
   steps:
   - intent: question_related_to_age
-  - action: question_related_to_age
-  - active_loop: question_related_to_age
-
-- rule: Submit question_related_to_age
-  condition:
-  - active_loop: question_related_to_age
-  steps:
-  - action: question_related_to_age
-  - active_loop: null
-  - slot_was_set:
-    - requested_slot: null
-  - action: utter_chloe_goodbye
+  - action: action_trigger_conversion_form
+  
 
 
-- rule: Activate objection_already_have_PA_plan
+# - rule: Activate objection_already_have_PA_plan
+#   steps:
+#   - intent: objection_already_have_PA_plan
+#   - action: objection_already_have_PA_plan
+#   - active_loop: objection_already_have_PA_plan
+
+# - rule: Submit objection_already_have_PA_plan
+#   condition:
+#   - active_loop: objection_already_have_PA_plan
+#   steps:
+#   - action: objection_already_have_PA_plan
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+
+
+- rule: objection_already_have_PA_plan
   steps:
   - intent: objection_already_have_PA_plan
-  - action: objection_already_have_PA_plan
-  - active_loop: objection_already_have_PA_plan
-
-- rule: Submit objection_already_have_PA_plan
-  condition:
-  - active_loop: objection_already_have_PA_plan
-  steps:
-  - action: objection_already_have_PA_plan
-  - active_loop: null
-  - slot_was_set:
-    - requested_slot: null
-
+  - action: action_trigger_conversion_form
+  
 
 
 
@@ -161,18 +196,38 @@ rules:
 - rule: manager_question 
   steps:
   - intent: manager_question 
-  - action: utter_chloe_manager_introduction
+  - action: action_rule_only_once #utter_chloe_manager_introduction
 
 
 - rule: question_speak_chinese
   steps:
   - intent: question_speak_chinese
-  - action: utter_chloe_language_barrier
+  - action: action_rule_only_once #utter_chloe_language_barrier
+
 - rule: objection_i_am_agent
   steps:
   - intent: objection_i_am_agent
-  - action: utter_chloe_goodbye
+  - action: action_rule_only_once #utter_chloe_goodbye
 
+- rule: morning
+  steps:
+  - intent: morning
+  - action: action_rule_only_once 
+
+- rule: afternoon
+  steps:
+  - intent: afternoon
+  - action: action_rule_only_once 
+
+- rule: evening
+  steps:
+  - intent: evening
+  - action: action_rule_only_once 
+
+- rule: age
+  steps:
+  - intent: age
+  - action: action_rule_only_once 
 
 
 # - rule: call_back_to_another_party
