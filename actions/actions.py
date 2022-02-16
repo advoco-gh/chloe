@@ -223,6 +223,8 @@ class action_rule_only_once(Action):
                         'utter_chloe_greeting_repeat',
                         'evening':
                         'utter_chloe_greeting_repeat',
+                        'date_day':
+                        'utter_chloe_greeting_repeat',
                         'age':
                         'utter_chloe_greeting_repeat',
                         }
