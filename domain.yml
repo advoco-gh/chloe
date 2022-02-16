@@ -104,6 +104,9 @@ forms:
       intent: evening
       value: true
     - type: from_intent
+      intent: date_day
+      value: true
+    - type: from_intent
       intent: morning
       value: true
     - type: from_intent
