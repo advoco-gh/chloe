@@ -966,3 +966,24 @@ nlu:
     - next weekend
     - second week
     - third week
+
+- intent: dnc
+  examples: |
+    - do not call
+    - do not call list
+    - do you know i am registered under do not call list
+    - do you know the PDPA guideline
+    - i am from do not call list
+    - i am under DNC
+    - i can go PDPA and log a complain
+    - i registered DNC
+    - my number is under PDPA
+    - my number registered under do not call
+    - PDPA rules
+    - stop calling i am under do not call
+    - why are you calling me my number from DNC
+    - you know you cannot call me i am from DNC list
+    - this a company number 
+    - this is help support number from dbs bank 
+    - this is a bank number
+    - this is a coperate phone 
