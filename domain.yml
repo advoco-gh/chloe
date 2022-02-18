@@ -198,31 +198,31 @@ responses:
   - text: okay sure i will take note thank you so much for your time do expect a call from my manager ya
 
   utter_chloe_age_info:
-  - text: okay i will i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you 
+  - text: okay i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you 
 
   utter_chloe_age_question:
-  - text: erm ya so by knowing your age this allow my manager to do her preparation before meeting you so erm this allow us to save some time too before meeting you
+  - text: erm ok erm by knowing your age this allow my manager to do her preparation before meeting you so erm this allow us to save some time too before meeting you
 
   utter_chloe_appointment_call_time:
-  - text: erm great er I will get my manager to contact you by next week to arrange a meet up  alright so erm do prefer him to call you in the afternoon or in the evening
+  - text: erm great er I will get my manager to contact you by next week to arrange a meet up alright so erm do prefer him to call you in the afternoon or in the evening
 
   utter_ask_chloe_busy_call_back:
-  - text: sorry to disturb i will give you a call back tomorrow okay
+  - text: so sorry to disturb i will give you a call back okay
 
   utter_ask_other_party:
   - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
 
   utter_chloe_busy_call_back:
-  - text: sorry to disturb i will give you a call back tomorrow okay
+  - text: so sorry to disturb i will give you a call back okay
 
   utter_chloe_call_back_other:
   - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
 
   utter_chloe_convincing:
-  - text: erm I understand how it feel but many times we are neglected by all this er small unexpected accident that can erm possibly happen and without PA plan we ended have to pay upfront cash erm by paying the bills of our own and is not deductible by medisave so wpuld it be okay if i could arrange my manager to give you a detailed introduction on this plan i promise you will find it very useful after the meet
+  - text: erm I understand how it feel but many a times we are neglected by all this small unexpected accident that can possibly happen so erm actually without PA plan we ended have to pay upfront cash by paying the bills of our own and is still not deductible by medisave so would it be okay if i could arrange my manager to give you a detailed introduction on this plan i promise you will find it very useful after the meet
 
   utter_chloe_existing_agent:
-  - text: ah okay er can i ask does your agent follow up with you often erm would you be interested for me to assign a new agent for you
+  - text: ah okay er can i just ask does your agent follow up with you often would you be interested for me to assign a new agent for you
 
   utter_fallback:
     - text: erm so sorry i didn't get you
@@ -231,19 +231,19 @@ responses:
   - text: oh okay thank you and have a pleasant week ahead good bye
 
   utter_chloe_greeting:
-  - text: Hello hi this Chloe is it a good time to speak with you for a short while
+  - text: hello hi this Chloe is it a good time to speak with you for a short while
 
   utter_chloe_greeting_repeat:
   - text: hi so sorry i am chloe calling on behalf of AIA
 
   utter_chloe_had_a_pa_plan:
-  - text: erm er would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may value add to you in the long term erm would you consider that
+  - text: erm ya would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may add value to you in the long term erm would you consider that
 
   utter_chloe_language_barrier:
-  - text: erm sorry i cant understand chinese i get my colleague call you tomorrow thank you bye bye 
+  - text: erm sorry erm wo hua yu erm bu hao er wo ming tian jiao wo de tong shi er da gei ni okay er thank you bye bye
 
   utter_chloe_manager_introduction:
-  - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
+  - text: er ya so my manager is from AIA  with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about 30 minutes or more
 
   utter_chloe_nodding_er_ok:
   - text: er ok 
@@ -264,22 +264,22 @@ responses:
   - text: ah great you ask this question so this policy is actually open for anyone so er would it be okay if i could arrange my manager to further explain on this plan i promise you will find it very useful after the meet
 
   utter_chloe_number_info:
-  - text: hi erm so sorry i got your number from a online marketing survey that you fill in your particular some times back so i am doing a follow up service call to offer you the new accident plan policy that you only have to pay 60 cents a day and you can cover youself up to 100k of coverage so erm isit okay if i could arrange my manager to further explain on this plan
+  - text: hi erm so sorry i got your number from a online marketing survey that you fill in your particular some times back so i am actually doing a follow up service call to offer you the new accident plan policy that you only have to pay 60 cents a day and you can cover yourselves up to 100k of coverage so erm isit okay if i could arrange my manager to further explain on this plan
 
   utter_chloe_pa_benefit:
-  - text: er ya for this personal accident plan it allow you to claim plenty of accident that do not require to be hospitalized and no medical check up are required so this including TCM medical Chiropractic claim and many more so is it okay if i get my manager to give you a non obligation introduction on this plan itself
+  - text: er ya for this personal accident plan it allow you to claim plenty of accident that do not require to be hospitalized and no medical check up are required so this includes TCM medical Chiropractic claim and many more so is it okay if i get my manager to give you a non obligation introduction on this plan itself
 
   utter_chloe_pa_coverage:
-  - text: yup this plan is actually erm eligible for anyone that that is 17 years and above erm it actually cover accident related medical bills as well as erm provide compensate to your lost of income so erm the benefit of this erm plan it allow many small injuries claim that is self inflicted so such as like injured very small minor fall so isit okay if i could arrange my manager to further explain on this plan
+  - text: yup this plan is actually eligible for anyone that that is 17 years and above and it actually cover er accident related medical bills as well as  provide compensate to your lost of income so erm the benefit of this  plan it allow many small injuries claim that is self inflicted so such as like er injured by very small minor fall so is it okay if i could arrange my manager to further explain on this plan
 
   utter_chloe_pa_fees:
-  - text: erm er you only have to pay as low as 60 cents a day for this plan and it cover many benefit such as erm life payout lost of income and disability issue so isit okay if i could arrange my manager to give you a detailed introduction on this plan itself
+  - text: erm ya you only have to pay as low as 60 cents a day for this plan and it cover many benefit such as erm life payout lost of income and disability issue so erm isit okay if i could arrange my manager to give you a detailed introduction on this plan itself
 
   utter_chloe_scam:
-  - text: ya so erm don't worry this is definitely not a scam i am calling on behalf of AIA to share with you the 60 cent per day new attractive personal accident plan with high covererage so this more like a awareness campaign to share with you on the extra benefits of this plan so would it be okay if i could arrange my manager to give you a detailed introduction on this plan and i promise you will find it very useful after the meet
+  - text: erm ya so don't worry this is definitely not a scam i am calling on behalf of AIA to share with you the 60 cent per day attractive personal accident plan with high coverage so this more like a erm awareness campaign to share with you on the extra benefits of this plan so would it be okay if i could arrange my manager to give you a detailed introduction on this plan and i promise you will find it very useful after the meet
 
   utter_chloe_sry_are_you_there:
-  - text: erm sorry are you there
+  - text: hi erm sorry are you there
 
 
 session_config:

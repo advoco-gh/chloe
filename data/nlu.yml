@@ -1,7 +1,6 @@
 version: '2.0'
 nlu:
 
-
 - intent: pa_plan_coverage 
   examples: |
     - can claim from all woman disease?
@@ -26,6 +25,7 @@ nlu:
     - what does it covers?
     - What is the maxium coverage?
     - does it cover death?
+    - what is this medical insurance or saving
 
 
 - intent: objection_already_have_PA_plan
@@ -166,7 +166,6 @@ nlu:
     - speak with my husband
     - talk to my husband
     - what are you talking about can you call & explain to my husband
-    - you can call my friend
     - you can do it for my sister 
 
 
@@ -261,6 +260,12 @@ nlu:
     - i used to be an agent as well
     - last time i am an agent 
     - i am agent in the past 
+    - no need no need i will ask the agent shes my relative thank you
+    - no im also a agent so no need
+    - no im advisor advise sir thank you so much
+    - im a advisor 
+    - im a advisor advisor
+    - i think its okay because actually for myself im also an agent so i dont want to
 
 
 - intent: question_related_to_numbers
@@ -298,8 +303,7 @@ nlu:
     - who you are calling
     - why are you calling me
     - you know who am i anot why you call me
-    - where are you from
-    - chloe from
+    - i think you wrong number
 
 
 - intent: already_have_agent
@@ -318,6 +322,16 @@ nlu:
     - no thats fine i have already somebody working with me with on prudential itself
     - no worry i see my agent contact me
     - its okay my agent is aia
+    - i think my friend also working in a i a its its okay i can get her her information from her
+    - i got friends also a i a so i will get information from her thanks
+    - i think its okay yah i have i have my own agent 
+    - sorry i think its okay i i dont need i already have a agent yah thank you
+    - it is okay i got a i a agent
+    - yeah hes my friend
+    - yes is my friend
+    - ya we are very close 
+    - she is my friend 
+    - my friend 
 
 
 - intent: evening
@@ -354,7 +368,6 @@ nlu:
     - nine pm
     - seven pm
     - ten pm
-    - in the afternoon will be good
     - in the evening will be good
 
 
@@ -399,6 +412,7 @@ nlu:
     - three pm
     - two p m
     - two pm
+    - in the afternoon will be good
 
 
 - intent: busy
@@ -486,6 +500,12 @@ nlu:
     - this is a work phone
     - this is not a good time can you call me back later
     - yeah but can you call me back later
+    - call me in fifteen minutes
+    - call me in ten minutes
+    - call me in twenty minutes
+    - call me in five minutes
+    - im sorry im a line
+    - orh no free when we were walking so ya
 
 
 - intent: not_singaporean
@@ -509,6 +529,7 @@ nlu:
     - oh sorry i am a foreigner i am a s pass holder
     - sorry i am not a pr
     - but i am not local 
+    -im a foreigner
 
 
 - intent: who_is
@@ -539,6 +560,8 @@ nlu:
     - you are calling on behalf of a i a
     - hi may i know why are you calling from
     - sorry who are you who are you why are you calling from
+    - where are you from
+    - chloe from
 
 
 - intent: age
@@ -708,6 +731,9 @@ nlu:
     - im actually fully covered with everything 
     - ill think ill give it a miss for the for the time being thanks
     - no because maybe im going to retire also
+    - for what
+    - enough thank you so much alright
+
 
 
 - intent: confirm
@@ -866,6 +892,14 @@ nlu:
     - what insurance are you talking about
     - this one insurance company right
     - you can try
+    - yes sure what is it 
+    - what is it
+    - insurance is it 
+    - what is this regarding im driving 
+    - okay sure
+    - what is 
+    - why is it
+    - what
 
 
 - intent: speak_twice
@@ -881,6 +915,7 @@ nlu:
     - what you say  
     - what you say again
     - what are you talking about
+    - what is it again 
 
 
 - intent: student
@@ -915,6 +950,29 @@ nlu:
     - twelve
     - i dont think that i am a student pass
     - i dont think it applies to me im a student pass
+    - no its okay because im a student
+
+
+- intent: dnc
+  examples: |
+    - do not call
+    - do not call list
+    - do you know i am registered under do not call list
+    - do you know the PDPA guideline
+    - i am from do not call list
+    - i am under DNC
+    - i can go PDPA and log a complain
+    - i registered DNC
+    - my number is under PDPA
+    - my number registered under do not call
+    - PDPA rules
+    - stop calling i am under do not call
+    - why are you calling me my number from DNC
+    - you know you cannot call me i am from DNC list
+    - this a company number 
+    - this is help support number from dbs bank 
+    - this is a bank number
+    - this is a coperate phone 
 
 
 - intent: question_related_to_age
@@ -948,6 +1006,7 @@ nlu:
     - why your manager need to call me?
     - you cannot tell me meh need your manager to all me meh 
     - your manager who
+    - why is it so
 
 
 - intent: date_day
@@ -966,24 +1025,3 @@ nlu:
     - next weekend
     - second week
     - third week
-
-- intent: dnc
-  examples: |
-    - do not call
-    - do not call list
-    - do you know i am registered under do not call list
-    - do you know the PDPA guideline
-    - i am from do not call list
-    - i am under DNC
-    - i can go PDPA and log a complain
-    - i registered DNC
-    - my number is under PDPA
-    - my number registered under do not call
-    - PDPA rules
-    - stop calling i am under do not call
-    - why are you calling me my number from DNC
-    - you know you cannot call me i am from DNC list
-    - this a company number 
-    - this is help support number from dbs bank 
-    - this is a bank number
-    - this is a coperate phone 
