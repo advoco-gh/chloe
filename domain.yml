@@ -166,19 +166,19 @@ responses:
 
 
   utter_ask_app_call_time:
-    - text: erm great er I will get my manager to contact you by next week to arrange a meet up  alright so erm do prefer him to call you in the afternoon or in the evening
+    - text: erm great er I will get my manager to contact you by next week to arrange a meet up alright so erm do prefer him to call you in the afternoon or in the evening
   
   utter_ask_age_info:
     - text: okay i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you
     
   utter_ask_want_to_continue:
-    - text: ah okay er can i ask does your agent follow up with you often erm would you be interested for me to assign a new agent for you
+    - text: ah okay er can i just ask does your agent follow up with you often would you be interested for me to assign a new agent for you
     
   utter_ask_alternative_plan:
-    - text: erm er would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may value add to you in the long term erm would you consider that
+    - text: erm ya would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may add value to you in the long term erm would you consider that
     
   utter_ask_ok_for_age:
-    - text: erm ya so by knowing your age this allow my manager to do her preparation before meeting you so erm this allow us to save some time too before meeting you
+    - text: erm ok erm by knowing your age this allow my manager to do her preparation before meeting you so erm this allow us to save some time too before meeting you
     
     
   utter_ask_ok_for_aknowledge:
@@ -186,7 +186,7 @@ responses:
     
 
   utter_ask_reply_to_manager_advice:
-    - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
+    - text: er ya so my manager is from AIA  with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about 30 minutes or more
 
   utter_manager_introduction:
     - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
