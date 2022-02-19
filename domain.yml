@@ -169,7 +169,7 @@ responses:
     - text: erm great er I will get my manager to contact you by next week to arrange a meet up  alright so erm do prefer him to call you in the afternoon or in the evening
   
   utter_ask_age_info:
-    - text: okay i will i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you
+    - text: okay i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you
     
   utter_ask_want_to_continue:
     - text: ah okay er can i ask does your agent follow up with you often erm would you be interested for me to assign a new agent for you
