@@ -1,288 +1,294 @@
 version: '2.0'
-actions:
-  - action_chloe
-  - action_rule_only_once
-  - validate_already_have_agent
-  - validate_objection_already_have_PA_plan
-  - action_trigger_conversion_form
-  # - validate_conversion_form
-  
-entities:
-  - number
-
-slots:
-  chloe_busy_call_back:
-    type: text
-    influence_conversation: true
-  other_party:
-    type: text
-    influence_conversation: true
-  want_to_continue:
-    type: bool
-    influence_conversation: false  
-  alternative_plan:
-    type: bool
-    influence_conversation: false  
-  ok_for_age:
-    type: bool
-    influence_conversation: false
-  ok_for_aknowledge:
-    type: bool
-    influence_conversation: false  
-  reply_to_manager_advice:
-    type: text
-    influence_conversation: false
-  goodbye:
-    type: bool
-    influence_conversation: false
-  are_you_ashley:
-    type: bool
-    influence_conversation: false
-  app_call_time:
-    type: bool
-    influence_conversation: false
-  age_info:
-    type: bool
-    influence_conversation: false
-
-forms:
-  looking_for_form:
-    are_you_ashley:
-    - type: from_text
-  busy:
-    chloe_busy_call_back:
-    - type: from_text
-  other_party:
-    other_party:
-    - type: from_text
-  already_have_agent:
-    want_to_continue:
-    - type: from_intent
-      intent: confirm
-      value: true
-    - type: from_intent
-      intent: already_have_agent
-      value: false
-    - type: from_intent
-      intent: reject
-      value: false
-  objection_already_have_PA_plan:
-    alternative_plan:
-    - type: from_intent
-      intent: confirm
-      value: true
-    - type: from_intent
-      intent: objection_already_have_PA_plan
-      value: false
-    - type: from_intent
-      intent: reject
-      value: false
-  question_related_to_age:
-    ok_for_age:
-    - type: from_intent
-      intent: confirm
-      value: true
-    - type: from_intent
-      intent: question_related_to_age
-      value: false
-    - type: from_intent
-      intent: reject
-      value: false
-    ok_for_aknowledge:
-    - type: from_intent
-      intent: confirm
-      value: true
-    - type: from_intent
-      intent: question_related_to_age
-      value: false
-    - type: from_intent
-      intent: reject
-      value: false
-  conversion_form:
-    app_call_time:
-    - type: from_intent
-      intent: evening
-      value: true
-    - type: from_intent
-      intent: date_day
-      value: true
-    - type: from_intent
-      intent: morning
-      value: true
-    - type: from_intent
-      intent: afternoon
-      value: true
-    - type: from_intent
-      intent: confirm
-      value: true
-    age_info:
-    - type: from_intent
-      intent: confirm
-      value: true
-    - type: from_intent
-      intent: age
-      value: true
-
-
-
-intents:
-  - confirm
-  - reject
-  - evening
-  - afternoon
-  - age
-  - not_singaporean 
-  - question_related_to_numbers 
-  - question_related_to_scam
-  - who_is
-  - objection_i_am_agent
-  # - pa_question
-  - pa_plan_coverage 
-  - fees_question
-  - manager_question
-  - objection_already_have_PA_plan
-  - call_back_to_another_party
-  - question_speak_chinese
-  - looking_for
-  - already_have_agent
-  - morning
-  - busy
-  - speak_twice
-  - student
-  - question_related_to_age
-  - dnc
-  # - request_names
-  - date_day
-
-responses:
-
-
-  utter_ask_are_you_ashley:
-  - text: erm hi erm so sorry am i speaking to Ashley
-
-
-  utter_ask_goodbye:
-    - text: oh okay thank you and have a pleasant week ahead good bye
-
-
-  utter_ask_app_call_time:
-    - text: erm great er I will get my manager to contact you by next week to arrange a meet up alright so erm do prefer him to call you in the afternoon or in the evening
-  
-  utter_ask_age_info:
-    - text: okay i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you
-    
-  utter_ask_want_to_continue:
-    - text: ah okay er can i just ask does your agent follow up with you often would you be interested for me to assign a new agent for you
-    
-  utter_ask_alternative_plan:
-    - text: erm ya would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may add value to you in the long term erm would you consider that
-    
-  utter_ask_ok_for_age:
-    - text: erm ok erm by knowing your age this allow my manager to do her preparation before meeting you so erm this allow us to save some time too before meeting you
-    
-    
-  utter_ask_ok_for_aknowledge:
-    - text: okay sure i will take note thank you so much for your time do expect a call from my manager ya
-    
-
-  utter_ask_reply_to_manager_advice:
-    - text: er ya so my manager is from AIA  with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about 30 minutes or more
-
-  utter_manager_introduction:
-    - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
-
-  utter_chloe_60_cents_policy:
-  - text: hi I am calling on behalf of AIA this call is to check if you are aware of the insurance that cost only 60 cents a day have you hear about it
-
-  utter_chloe_acknowledgement_age:
-  - text: okay sure i will take note thank you so much for your time do expect a call from my manager ya
-
-  utter_chloe_age_info:
-  - text: okay i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you 
-
-  utter_chloe_age_question:
-  - text: erm ok erm by knowing your age this allow my manager to do her preparation before meeting you so erm this allow us to save some time too before meeting you
-
-  utter_chloe_appointment_call_time:
-  - text: erm great er I will get my manager to contact you by next week to arrange a meet up alright so erm do prefer him to call you in the afternoon or in the evening
-
-  utter_ask_chloe_busy_call_back:
-  - text: so sorry to disturb i will give you a call back okay
-
-  utter_ask_other_party:
-  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
-
-  utter_chloe_busy_call_back:
-  - text: so sorry to disturb i will give you a call back okay
-
-  utter_chloe_call_back_other:
-  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
-
-  utter_chloe_convincing:
-  - text: erm I understand how it feel but many a times we are neglected by all this small unexpected accident that can possibly happen so erm actually without PA plan we ended have to pay upfront cash by paying the bills of our own and is still not deductible by medisave so would it be okay if i could arrange my manager to give you a detailed introduction on this plan i promise you will find it very useful after the meet
-
-  utter_chloe_existing_agent:
-  - text: ah okay er can i just ask does your agent follow up with you often would you be interested for me to assign a new agent for you
-
-  utter_fallback:
-    - text: erm so sorry i didn't get you
-    
-  utter_chloe_goodbye:
-  - text: oh okay thank you and have a pleasant week ahead good bye
-
-  utter_chloe_greeting:
-  - text: hello hi this Chloe is it a good time to speak with you for a short while
-
-  utter_chloe_greeting_repeat:
-  - text: hi so sorry i am chloe calling on behalf of AIA
-
-  utter_chloe_had_a_pa_plan:
-  - text: erm ya would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may add value to you in the long term erm would you consider that
-
-  utter_chloe_language_barrier:
-  - text: erm sorry erm wo hua yu erm bu hao er wo ming tian jiao wo de tong shi er da gei ni okay er thank you bye bye
-
-  utter_chloe_manager_introduction:
-  - text: er ya so my manager is from AIA  with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about 30 minutes or more
-
-  utter_chloe_nodding_er_ok:
-  - text: er ok 
-
-  utter_chloe_nodding_erya:
-  - text: er ya
-
-  utter_chloe_nodding_um_uhum:
-  - text: num uhum
-
-  utter_chloe_nodding_umm:
-  - text: umm
-
-  utter_chloe_nodding_yacan:
-  - text: ya can
-
-  utter_chloe_not_local:
-  - text: ah great you ask this question so this policy is actually open for anyone so er would it be okay if i could arrange my manager to further explain on this plan i promise you will find it very useful after the meet
-
-  utter_chloe_number_info:
-  - text: hi erm so sorry i got your number from a online marketing survey that you fill in your particular some times back so i am actually doing a follow up service call to offer you the new accident plan policy that you only have to pay 60 cents a day and you can cover yourselves up to 100k of coverage so erm isit okay if i could arrange my manager to further explain on this plan
-
-  utter_chloe_pa_benefit:
-  - text: er ya for this personal accident plan it allow you to claim plenty of accident that do not require to be hospitalized and no medical check up are required so this includes TCM medical Chiropractic claim and many more so is it okay if i get my manager to give you a non obligation introduction on this plan itself
-
-  utter_chloe_pa_coverage:
-  - text: yup this plan is actually eligible for anyone that that is 17 years and above and it actually cover er accident related medical bills as well as  provide compensate to your lost of income so erm the benefit of this  plan it allow many small injuries claim that is self inflicted so such as like er injured by very small minor fall so is it okay if i could arrange my manager to further explain on this plan
-
-  utter_chloe_pa_fees:
-  - text: erm ya you only have to pay as low as 60 cents a day for this plan and it cover many benefit such as erm life payout lost of income and disability issue so erm isit okay if i could arrange my manager to give you a detailed introduction on this plan itself
-
-  utter_chloe_scam:
-  - text: erm ya so don't worry this is definitely not a scam i am calling on behalf of AIA to share with you the 60 cent per day attractive personal accident plan with high coverage so this more like a erm awareness campaign to share with you on the extra benefits of this plan so would it be okay if i could arrange my manager to give you a detailed introduction on this plan and i promise you will find it very useful after the meet
-
-  utter_chloe_sry_are_you_there:
-  - text: hi erm sorry are you there
-
-
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
+intents:
+- confirm:
+    use_entities: true
+- reject:
+    use_entities: true
+- evening:
+    use_entities: true
+- afternoon:
+    use_entities: true
+- age:
+    use_entities: true
+- not_singaporean:
+    use_entities: true
+- question_related_to_numbers:
+    use_entities: true
+- question_related_to_scam:
+    use_entities: true
+- who_is:
+    use_entities: true
+- objection_i_am_agent:
+    use_entities: true
+- pa_plan_coverage:
+    use_entities: true
+- fees_question:
+    use_entities: true
+- manager_question:
+    use_entities: true
+- objection_already_have_PA_plan:
+    use_entities: true
+- call_back_to_another_party:
+    use_entities: true
+- question_speak_chinese:
+    use_entities: true
+- looking_for:
+    use_entities: true
+- already_have_agent:
+    use_entities: true
+- morning:
+    use_entities: true
+- busy:
+    use_entities: true
+- speak_twice:
+    use_entities: true
+- student:
+    use_entities: true
+- question_related_to_age:
+    use_entities: true
+- dnc:
+    use_entities: true
+- date_day:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities:
+- number
+slots:
+  chloe_busy_call_back:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  other_party:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  want_to_continue:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  alternative_plan:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  ok_for_age:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  ok_for_aknowledge:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  reply_to_manager_advice:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  goodbye:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  are_you_ashley:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  app_call_time:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  age_info:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_ask_are_you_ashley:
+  - text: erm hi erm so sorry am i speaking to Ashley
+  utter_ask_goodbye:
+  - text: oh okay thank you and have a pleasant week ahead good bye
+  utter_ask_app_call_time:
+  - text: erm great er I will get my manager to contact you by next week to arrange a meet up alright so erm do prefer him to call you in the afternoon or in the evening
+  utter_ask_age_info:
+  - text: okay i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you
+  utter_ask_want_to_continue:
+  - text: ah okay er can i just ask does your agent follow up with you often would you be interested for me to assign a new agent for you
+  utter_ask_alternative_plan:
+  - text: erm ya would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may add value to you in the long term erm would you consider that
+  utter_ask_ok_for_age:
+  - text: erm ok erm by knowing your age this allow my manager to do her preparation before meeting you so erm this allow us to save some time too before meeting you
+  utter_ask_ok_for_aknowledge:
+  - text: okay sure i will take note thank you so much for your time do expect a call from my manager ya
+  utter_ask_reply_to_manager_advice:
+  - text: er ya so my manager is from AIA  with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about 30 minutes or more
+  utter_manager_introduction:
+  - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
+  utter_chloe_60_cents_policy:
+  - text: hi I am calling on behalf of AIA this call is to check if you are aware of the insurance that cost only 60 cents a day have you hear about it
+  utter_chloe_acknowledgement_age:
+  - text: okay sure i will take note thank you so much for your time do expect a call from my manager ya
+  utter_chloe_age_info:
+  - text: okay i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you
+  utter_chloe_age_question:
+  - text: erm ok erm by knowing your age this allow my manager to do her preparation before meeting you so erm this allow us to save some time too before meeting you
+  utter_chloe_appointment_call_time:
+  - text: erm great er I will get my manager to contact you by next week to arrange a meet up alright so erm do prefer him to call you in the afternoon or in the evening
+  utter_ask_chloe_busy_call_back:
+  - text: so sorry to disturb i will give you a call back okay
+  utter_ask_other_party:
+  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
+  utter_chloe_busy_call_back:
+  - text: so sorry to disturb i will give you a call back okay
+  utter_chloe_call_back_other:
+  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
+  utter_chloe_convincing:
+  - text: erm I understand how it feel but many a times we are neglected by all this small unexpected accident that can possibly happen so erm actually without PA plan we ended have to pay upfront cash by paying the bills of our own and is still not deductible by medisave so would it be okay if i could arrange my manager to give you a detailed introduction on this plan i promise you will find it very useful after the meet
+  utter_chloe_existing_agent:
+  - text: ah okay er can i just ask does your agent follow up with you often would you be interested for me to assign a new agent for you
+  utter_fallback:
+  - text: erm so sorry i didn't get
+  utter_chloe_goodbye:
+  - text: oh okay thank you and have a pleasant week ahead good bye
+  utter_chloe_greeting:
+  - text: hello hi this Chloe is it a good time to speak with you for a short while
+  utter_chloe_greeting_repeat:
+  - text: hi so sorry i am chloe calling on behalf of AIA
+  utter_chloe_had_a_pa_plan:
+  - text: erm ya would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may add value to you in the long term erm would you consider that
+  utter_chloe_language_barrier:
+  - text: erm sorry erm wo hua yu erm bu hao er wo ming tian jiao wo de tong shi er da gei ni okay er thank you bye bye
+  utter_chloe_manager_introduction:
+  - text: er ya so my manager is from AIA  with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about 30 minutes or more
+  utter_chloe_nodding_er_ok:
+  - text: er ok
+  utter_chloe_nodding_erya:
+  - text: er ya
+  utter_chloe_nodding_um_uhum:
+  - text: num uhum
+  utter_chloe_nodding_umm:
+  - text: umm
+  utter_chloe_nodding_yacan:
+  - text: ya can
+  utter_chloe_not_local:
+  - text: ah great you ask this question so this policy is actually open for anyone so er would it be okay if i could arrange my manager to further explain on this plan i promise you will find it very useful after the meet
+  utter_chloe_number_info:
+  - text: hi erm so sorry i got your number from a online marketing survey that you fill in your particular some times back so i am actually doing a follow up service call to offer you the new accident plan policy that you only have to pay 60 cents a day and you can cover yourselves up to 100k of coverage so erm isit okay if i could arrange my manager to further explain on this plan
+  utter_chloe_pa_benefit:
+  - text: er ya for this personal accident plan it allow you to claim plenty of accident that do not require to be hospitalized and no medical check up are required so this includes TCM medical Chiropractic claim and many more so is it okay if i get my manager to give you a non obligation introduction on this plan itself
+  utter_chloe_pa_coverage:
+  - text: yup this plan is actually eligible for anyone that that is 17 years and above and it actually cover er accident related medical bills as well as  provide compensate to your lost of income so erm the benefit of this  plan it allow many small injuries claim that is self inflicted so such as like er injured by very small minor fall so is it okay if i could arrange my manager to further explain on this plan
+  utter_chloe_pa_fees:
+  - text: erm ya you only have to pay as low as 60 cents a day for this plan and it cover many benefit such as erm life payout lost of income and disability issue so erm isit okay if i could arrange my manager to give you a detailed introduction on this plan itself
+  utter_chloe_scam:
+  - text: erm ya so don't worry this is definitely not a scam i am calling on behalf of AIA to share with you the 60 cent per day attractive personal accident plan with high coverage so this more like a erm awareness campaign to share with you on the extra benefits of this plan so would it be okay if i could arrange my manager to give you a detailed introduction on this plan and i promise you will find it very useful after the meet
+  utter_chloe_sry_are_you_there:
+  - text: hi erm sorry are you there
+actions:
+- action_chloe
+- action_rule_only_once
+- validate_already_have_agent
+- validate_objection_already_have_PA_plan
+- action_trigger_conversion_form
+forms:
+  looking_for_form:
+    required_slots:
+      are_you_ashley:
+      - type: from_text
+  busy:
+    required_slots:
+      chloe_busy_call_back:
+      - type: from_text
+  other_party:
+    required_slots:
+      other_party:
+      - type: from_text
+  already_have_agent:
+    required_slots:
+      want_to_continue:
+      - intent: confirm
+        type: from_intent
+        value: true
+      - intent: already_have_agent
+        type: from_intent
+        value: false
+      - intent: reject
+        type: from_intent
+        value: false
+  objection_already_have_PA_plan:
+    required_slots:
+      alternative_plan:
+      - intent: confirm
+        type: from_intent
+        value: true
+      - intent: objection_already_have_PA_plan
+        type: from_intent
+        value: false
+      - intent: reject
+        type: from_intent
+        value: false
+  question_related_to_age:
+    required_slots:
+      ok_for_age:
+      - intent: confirm
+        type: from_intent
+        value: true
+      - intent: question_related_to_age
+        type: from_intent
+        value: false
+      - intent: reject
+        type: from_intent
+        value: false
+      ok_for_aknowledge:
+      - intent: confirm
+        type: from_intent
+        value: true
+      - intent: question_related_to_age
+        type: from_intent
+        value: false
+      - intent: reject
+        type: from_intent
+        value: false
+  conversion_form:
+    required_slots:
+      age_info:
+      - intent: confirm
+        type: from_intent
+        value: true
+      - intent: age
+        type: from_intent
+        value: true
+      app_call_time:
+      - intent: evening
+        type: from_intent
+        value: true
+      - intent: date_day
+        type: from_intent
+        value: true
+      - intent: morning
+        type: from_intent
+        value: true
+      - intent: afternoon
+        type: from_intent
+        value: true
+      - intent: confirm
+        type: from_intent
+        value: true
+e2e_actions: []
