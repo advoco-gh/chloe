@@ -26,6 +26,7 @@ nlu:
     - What is the maxium coverage?
     - does it cover death?
     - what is this medical insurance or saving
+    - may i know whats the minimum age entry for this plan
 
 
 - intent: objection_already_have_PA_plan
@@ -63,6 +64,13 @@ nlu:
     - yes everything I have already
     - yes have already
     - yes I got already
+    - im already covered 
+    - no im sorry no its okay i dont need im well covered thank you
+    - i am fully covered thank you 
+    - sorry im not interested i have my own accident plan
+    - orh i think no need because we all have already yeah
+    - its okay i am fully covered thank you 
+    - im fully covered already i do not require anymore insurance thank you very much for your call
 
 
 - intent: fees_question
@@ -100,6 +108,7 @@ nlu:
     - what it costs
     - you sure free ah
     - zero cost ah
+    - no money
 
 
 - intent: question_related_to_scam
@@ -304,6 +313,7 @@ nlu:
     - why are you calling me
     - you know who am i anot why you call me
     - i think you wrong number
+    - wrong number
 
 
 - intent: already_have_agent
@@ -332,6 +342,10 @@ nlu:
     - ya we are very close 
     - she is my friend 
     - my friend 
+    - no im actually not not free right now and i dont have an insurance agent already thank you
+    -dont want no need i got my agent already under a i a one also
+    - no i dont think interested because i actually have a agent to serve me 
+    - no thanks  i have my own agent thank you very much
 
 
 - intent: evening
@@ -506,6 +520,13 @@ nlu:
     - call me in five minutes
     - im sorry im a line
     - orh no free when we were walking so ya
+    - i dont think i want to listen about insurance today im a meeting coming on her thanks for your call
+    - no because i now meeting
+    -  i cannot hear well can you call me not now maybe after six 
+    - no im on my way out 
+    - hold on first
+    - not now because im on m c
+    - im currently oversea
 
 
 - intent: not_singaporean
@@ -733,6 +754,9 @@ nlu:
     - no because maybe im going to retire also
     - for what
     - enough thank you so much alright
+    - yeah no
+    - if you are trying to promote a i a product im not interested 
+    - i know
 
 
 
@@ -900,6 +924,11 @@ nlu:
     - what is 
     - why is it
     - what
+     - sorry is it regarding some investment or
+    - for what purpose
+    - it depends
+    - what kind of insurance is that
+    - what is it for
 
 
 - intent: speak_twice
@@ -916,6 +945,9 @@ nlu:
     - what you say again
     - what are you talking about
     - what is it again 
+    - i dont understand
+    - sorry could you repeat yourself sorry environment quite noisy
+    - sorry sorry again
 
 
 - intent: student
@@ -973,6 +1005,7 @@ nlu:
     - this is help support number from dbs bank 
     - this is a bank number
     - this is a coperate phone 
+    - no but this is a company phone so yah sorry
 
 
 - intent: question_related_to_age
