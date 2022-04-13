@@ -130,7 +130,7 @@ responses:
   utter_ask_age_info:
   - text: okay i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you
   utter_ask_want_to_continue:
-  - text: ah okay er can i just ask does your agent follow up with you often would you be interested for me to assign a new agent for you
+  - text: oh okay erm would you still be keen for me to assign a new agent for you as my manager has many years of experience in manulife
   utter_ask_alternative_plan:
   - text: erm ya would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may add value to you in the long term erm would you consider that
   utter_ask_ok_for_age:
@@ -138,11 +138,11 @@ responses:
   utter_ask_ok_for_aknowledge:
   - text: okay sure i will take note thank you so much for your time do expect a call from my manager ya
   utter_ask_reply_to_manager_advice:
-  - text: er ya so my manager is from AIA  with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about 30 minutes or more
+  - text: er ya so my manager is from manulife with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about 30 minutes or more
   utter_manager_introduction:
   - text: ah er ya my manager is from AIA erm with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you with the whole erm duration ir will take about 30 minutes or more
   utter_chloe_60_cents_policy:
-  - text: hi I am calling on behalf of AIA this call is to check if you are aware of the insurance that cost only 60 cents a day have you hear about it
+  - text: hi i am calling on behalf of manulife this call is to check if you are aware of the insurance that cost only twenty six cents a day have you hear about it
   utter_chloe_acknowledgement_age:
   - text: okay sure i will take note thank you so much for your time do expect a call from my manager ya
   utter_chloe_age_info:
@@ -170,7 +170,7 @@ responses:
   utter_chloe_greeting:
   - text: hello hi this Chloe is it a good time to speak with you for a short while
   utter_chloe_greeting_repeat:
-  - text: hi so sorry i am chloe calling on behalf of AIA
+  - text: hi so sorry i am chloe calling on behalf of manulife
   utter_chloe_had_a_pa_plan:
   - text: erm ya would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may add value to you in the long term erm would you consider that
   utter_chloe_language_barrier:
@@ -198,7 +198,7 @@ responses:
   utter_chloe_pa_fees:
   - text: erm ya you only have to pay as low as 60 cents a day for this plan and it cover many benefit such as erm life payout lost of income and disability issue so erm isit okay if i could arrange my manager to give you a detailed introduction on this plan itself
   utter_chloe_scam:
-  - text: erm ya so don't worry this is definitely not a scam i am calling on behalf of AIA to share with you the 60 cent per day attractive personal accident plan with high coverage so this more like a erm awareness campaign to share with you on the extra benefits of this plan so would it be okay if i could arrange my manager to give you a detailed introduction on this plan and i promise you will find it very useful after the meet
+  - text: erm ya so dont worry this is definitely not a scam i am calling on behalf of manulife to share with you the twenty six cent per day attractive personal accident plan with high coverage so this more like a erm awareness campaign to share with you on the extra benefits of this plan so would it be okay if i could arrange my manager to give you a detailed introduction on this plan and i promise you will find it very useful after the meet
   utter_chloe_sry_are_you_there:
   - text: hi erm sorry are you there
 actions:
