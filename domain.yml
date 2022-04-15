@@ -162,7 +162,7 @@ responses:
   utter_chloe_convincing:
   - text: erm I understand how it feel but many a times we are neglected by all this small unexpected accident that can possibly happen so erm actually without PA plan we ended have to pay upfront cash by paying the bills of our own and is still not deductible by medisave so would it be okay if i could arrange my manager to give you a detailed introduction on this plan i promise you will find it very useful after the meet
   utter_chloe_existing_agent:
-  - text: ah okay er can i just ask does your agent follow up with you often would you be interested for me to assign a new agent for you
+  - text: oh okay erm would you still be keen for me to assign a new agent for you as my manager has many years of experience in manulife
   utter_fallback:
   - text: erm so sorry i didn't get
   utter_chloe_goodbye:
