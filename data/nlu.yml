@@ -71,6 +71,7 @@ nlu:
     - orh i think no need because we all have already yeah
     - its okay i am fully covered thank you 
     - im fully covered already i do not require anymore insurance thank you very much for your call
+    - i have something close to manulife
 
 
 - intent: fees_question
@@ -275,6 +276,10 @@ nlu:
     - im a advisor 
     - im a advisor advisor
     - i think its okay because actually for myself im also an agent so i dont want to
+    - i am working at manulife i am also the staff there
+    - im under manulife
+    - My husband is from manulife
+    - my girlfriend is a insurance agent from manulife
 
 
 - intent: question_related_to_numbers
@@ -346,6 +351,13 @@ nlu:
     -dont want no need i got my agent already under a i a one also
     - no i dont think interested because i actually have a agent to serve me 
     - no thanks  i have my own agent thank you very much
+    - no my agent has been there for very long and experience as well
+    - friend is from manulife very long time working with me on my portfolio so appreciate that call thank you so much
+    - i actually have my own manulife agent i think i dont think i need i need to discuss already
+    - I have a manulife agent
+    - no thats fine i have already somebody working with me with on manulife itself
+    - youre frommanulife is it my my agent is from prudential ill just check with her okay
+    - manulife i got my own agent leh 
 
 
 - intent: evening
@@ -583,6 +595,10 @@ nlu:
     - sorry who are you who are you why are you calling from
     - where are you from
     - chloe from
+    - where you calling from
+    - which company you are calling from
+    - this one who 
+    - you are from
 
 
 - intent: age
@@ -929,6 +945,8 @@ nlu:
     - it depends
     - what kind of insurance is that
     - what is it for
+    - manulife
+    - manulife insurance ya 
 
 
 - intent: speak_twice
