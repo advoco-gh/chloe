@@ -164,7 +164,7 @@ responses:
   utter_chloe_existing_agent:
   - text: oh okay erm would you still be keen for me to assign a new agent for you as my manager has many years of experience in manulife
   utter_fallback:
-  - text: erm so sorry i didn't get
+  - text: erm so sorry i didnt get you
   utter_chloe_goodbye:
   - text: oh okay thank you and have a pleasant week ahead good bye
   utter_chloe_greeting:
