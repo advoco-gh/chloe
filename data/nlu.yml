@@ -72,6 +72,7 @@ nlu:
     - its okay i am fully covered thank you 
     - im fully covered already i do not require anymore insurance thank you very much for your call
     - i have something close to manulife
+    - im covered thank you very much
 
 
 - intent: fees_question
@@ -539,6 +540,7 @@ nlu:
     - hold on first
     - not now because im on m c
     - im currently oversea
+    - no sorry i cant speak now
 
 
 - intent: not_singaporean
@@ -599,6 +601,8 @@ nlu:
     - which company you are calling from
     - this one who 
     - you are from
+    - eh hi may i know where youre coming from
+    - may i know whos on the line because im driving
 
 
 - intent: age
@@ -773,6 +777,9 @@ nlu:
     - yeah no
     - if you are trying to promote a i a product im not interested 
     - i know
+    - no im good thank you
+    - yeah thank you
+    - im sorry im just not interested right
 
 
 
@@ -947,6 +954,9 @@ nlu:
     - what is it for
     - manulife
     - manulife insurance ya 
+    - har har manulife
+    - sorry manualife
+    - yeah im still here
 
 
 - intent: speak_twice
