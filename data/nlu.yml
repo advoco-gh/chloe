@@ -27,6 +27,7 @@ nlu:
     - does it cover death?
     - what is this medical insurance or saving
     - may i know whats the minimum age entry for this plan
+    - are you talking about the e critical care
 
 
 - intent: objection_already_have_PA_plan
@@ -111,6 +112,7 @@ nlu:
     - you sure free ah
     - zero cost ah
     - no money
+    - correct is it twenty six twenty six cents per day on what
 
 
 - intent: question_related_to_scam
@@ -296,6 +298,7 @@ nlu:
     - where you got my number from
     - who gave my number
     - who pass you my number
+    - are you supposed to call me for this kind of marketing
 
 
 - intent: looking_for
@@ -541,6 +544,7 @@ nlu:
     - not now because im on m c
     - im currently oversea
     - no sorry i cant speak now
+    - im carrying a class
 
 
 - intent: not_singaporean
@@ -603,6 +607,9 @@ nlu:
     - you are from
     - eh hi may i know where youre coming from
     - may i know whos on the line because im driving
+    - sorry you are calling from
+    - sorry who is this again
+    - sorry whos calling
 
 
 - intent: age
@@ -780,6 +787,9 @@ nlu:
     - no im good thank you
     - yeah thank you
     - im sorry im just not interested right
+    - no im not looking for policy right now
+    - stop stop i say im not interested thanks for your time 
+    - sorry sorry no im not interested
 
 
 
@@ -957,6 +967,10 @@ nlu:
     - har har manulife
     - sorry manualife
     - yeah im still here
+    - hi calling from 
+    - where are you calling from 
+    - sorry whats the reason
+    - isit a loan or something 
 
 
 - intent: speak_twice
@@ -1049,6 +1063,7 @@ nlu:
     - why must you know
     - you need my age for what
     - not comfortable giving you my age
+    - you are calling from manulife you should know my age
 
 
 - intent: manager_question
