@@ -113,6 +113,9 @@ nlu:
     - zero cost ah
     - no money
     - correct is it twenty six twenty six cents per day on what
+    -  twenty six times a day or
+    - twenty six cent a day
+    - twenty six  cent
 
 
 - intent: question_related_to_scam
@@ -299,6 +302,7 @@ nlu:
     - who gave my number
     - who pass you my number
     - are you supposed to call me for this kind of marketing
+    - okay and how did you get my contact details
 
 
 - intent: looking_for
@@ -545,6 +549,7 @@ nlu:
     - im currently oversea
     - no sorry i cant speak now
     - im carrying a class
+    - can you call back and six oclock
 
 
 - intent: not_singaporean
@@ -610,6 +615,10 @@ nlu:
     - sorry you are calling from
     - sorry who is this again
     - sorry whos calling
+    - where you calling form
+    - calling from where 
+    - calling from
+    - chloe calling from
 
 
 - intent: age
@@ -790,6 +799,7 @@ nlu:
     - no im not looking for policy right now
     - stop stop i say im not interested thanks for your time 
     - sorry sorry no im not interested
+    - i mean youve been telling me youre calling for quite a number of times already
 
 
 
@@ -971,6 +981,7 @@ nlu:
     - where are you calling from 
     - sorry whats the reason
     - isit a loan or something 
+    - hi may i know what is it regarding because im currently working
 
 
 - intent: speak_twice
@@ -990,6 +1001,7 @@ nlu:
     - i dont understand
     - sorry could you repeat yourself sorry environment quite noisy
     - sorry sorry again
+    - sorry i cannot hear you
 
 
 - intent: student
