@@ -619,6 +619,7 @@ nlu:
     - calling from where 
     - calling from
     - chloe calling from
+    - calling for
 
 
 - intent: age
@@ -982,6 +983,9 @@ nlu:
     - sorry whats the reason
     - isit a loan or something 
     - hi may i know what is it regarding because im currently working
+    - what can i do for you
+    - manual life yeah
+    - yah yah go ahead anyway
 
 
 - intent: speak_twice
@@ -1037,6 +1041,8 @@ nlu:
     - i dont think that i am a student pass
     - i dont think it applies to me im a student pass
     - no its okay because im a student
+    - wrong number because im a kid over here
+    - i am six years old okay
 
 
 - intent: dnc
