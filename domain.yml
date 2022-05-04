@@ -142,41 +142,39 @@ responses:
   utter_manager_introduction:
   - text: er ya so my manager is from manulife with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about 30 minutes or more
   utter_chloe_60_cents_policy:
-  - text: hi i am calling on behalf of manulife this call is to check if you are aware of the insurance that cost only twenty six cents a day have you hear about it
+  - text: erm can i have one minute of your time to briefly share with you the newly launched twenty six cent per day  policy that we offering
   utter_chloe_acknowledgement_age:
-  - text: okay sure i will take note thank you so much for your time do expect a call from my manager ya
+  - text: okay sure no worries on that erm i will take note thank you so much for your time do expect a call from my manager ya
   utter_chloe_age_info:
-  - text: okay i will get my manager will give you a call back erm oh ya one last question just wanted to check how old are you
+  - text: okay i will get my manager will give you a call back erm oh ya one last question er just wanted to are you holding on to any particular insurance policy right now
   utter_chloe_age_question:
-  - text: erm ok erm by knowing your age this allow my manager to do her preparation before meeting you so erm this allow us to save some time too before meeting you
+  - text: erm ok erm by knowing your current insurance status will allow my manager to do her preparation before meeting you so erm this allow us to save some time before meeting you too
   utter_chloe_appointment_call_time:
-  - text: erm great er I will get my manager to contact you by next week to arrange a meet up alright so erm do prefer him to call you in the afternoon or in the evening
+  - text: erm great so I will get my manager to contact you by next week to arrange a meet up alright so erm do prefer him to give you a call in the afternoon or in the evening
   utter_ask_chloe_busy_call_back:
-  - text: so sorry to disturb i will give you a call back okay
+  - text: ah okok so sorry to disturb i will give you a call back okay
   utter_ask_other_party:
   - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
   utter_chloe_busy_call_back:
   - text: so sorry to disturb i will give you a call back okay
   utter_chloe_call_back_other:
-  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
+  - text: uh okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
   utter_chloe_convincing:
-  - text: erm I understand how it feel but many a times we are neglected by all this small unexpected accident that can possibly happen so erm actually without PA plan we ended have to pay upfront cash by paying the bills of our own and is still not deductible by medisave so would it be okay if i could arrange my manager to give you a detailed introduction on this plan i promise you will find it very useful after the meet
-  utter_chloe_existing_agent:
-  - text: oh okay erm would you still be keen for me to assign a new agent for you as my manager has many years of experience in manulife
+  - text: erm ok I understand that many insurance policy may be too much a cost for considering erm with this current twenty six cent per day promo it actually help many families to reconsider having at least a minimum coverage in their hospital plan for a life time erm why not i can get my manager to share with you a detailed coverage on the plan and if really still feels you are not ready for it we will definitely respect your decision will that be ok for you
   utter_fallback:
-  - text: erm so sorry i didnt get you
+  - text: sorry i dont get you
   utter_chloe_goodbye:
   - text: oh okay thank you and have a pleasant week ahead good bye
   utter_chloe_greeting:
-  - text: hello hi this Chloe is it a good time to speak with you for a short while
+  - text: hello hi this Chloe calling on behalf of manulife
   utter_chloe_greeting_repeat:
   - text: hi so sorry i am chloe calling on behalf of manulife
   utter_chloe_had_a_pa_plan:
-  - text: erm ya would you be open to a alternative view my manager can help you to review your current policy and advise you accordingly that may add value to you in the long term erm would you consider that
+  - text: ah okay would you be open for my manager to retrieve a free comparison report versus your current policy rest assure there will be no hard selling as long as you are comfortable sticking to your current policy we would definitely respect that decision erm would you consider that
   utter_chloe_language_barrier:
-  - text: erm sorry erm wo hua yu erm bu hao er wo ming tian jiao wo de tong shi er da gei ni okay er thank you bye bye
+  - text: erm sorry erm wo wo hua yu bu tai hao erm wo ming tian jiao wo de tong shi er da gei ni er okay thank you bye bye
   utter_chloe_manager_introduction:
-  - text: er ya so my manager is from manulife with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about 30 minutes or more
+  - text: er ya so my manager is from manulife with many years of experience in this industry so er would it be okay for my next manager in line to give you a quick call and arrange a meet up with you to assist you so the process will take about thirty minutes or more
   utter_chloe_nodding_er_ok:
   - text: er ok
   utter_chloe_nodding_erya:
@@ -188,15 +186,15 @@ responses:
   utter_chloe_nodding_yacan:
   - text: ya can
   utter_chloe_not_local:
-  - text: ah great you ask this question so this policy is actually open for anyone so er would it be okay if i could arrange my manager to further explain on this plan i promise you will find it very useful after the meet
+  - text: ah great that you ask this question so this policy is actually open for anyone so er would it be okay if i could arrange my manager to further explain on this plan i promise you will find it very useful after the meet
   utter_chloe_number_info:
-  - text: hi erm so sorry i got your number from a online marketing survey that you fill in your particular some times back so i am actually doing a follow up service call to offer you the new accident plan policy that you only have to pay 60 cents a day and you can cover yourselves up to 100k of coverage so erm isit okay if i could arrange my manager to further explain on this plan
+  - text: erm so sorry i got your number from a online marketing survey that you fill in your particular some times back so i am actually doing a follow up service call to offer you the new accident plan policy that only have to pay twenty six cents a day and you can actually cover yourselves up to hundred thousand of coverage so erm any chance would you be keen in this promotion offering back to you
   utter_chloe_pa_benefit:
-  - text: er ya for this personal accident plan it allow you to claim plenty of accident that do not require to be hospitalized and no medical check up are required so this includes TCM medical Chiropractic claim and many more so is it okay if i get my manager to give you a non obligation introduction on this plan itself
+  - text: um yap i am calling from manulife the insurance company so for this personal accident plan it allow you to claim plenty of accident that do not require to be hospitalized and no medical check up are required so this includes TCM medical Chiropractic claim and many more so is it okay if i get my manager to give you a non obligation introduction on this plan itself
   utter_chloe_pa_coverage:
-  - text: yup this plan is actually eligible for anyone that that is 17 years and above and it actually cover er accident related medical bills as well as  provide compensate to your lost of income so erm the benefit of this  plan it allow many small injuries claim that is self inflicted so such as like er injured by very small minor fall so is it okay if i could arrange my manager to further explain on this plan
+  - text: erm yup so this plan is actually eligible for anyone that that is seventeen years and above and it actually cover erm accident related medical bills as well it provides compensate to your lost of income so erm one of the key benefit of this plan it allow many small injuries claim that is self inflicted even for minor injuries so is it okay if i could arrange my manager to further explain on this plan
   utter_chloe_pa_fees:
-  - text: erm ya you only have to pay as low as 60 cents a day for this plan and it cover many benefit such as erm life payout lost of income and disability issue so erm isit okay if i could arrange my manager to give you a detailed introduction on this plan itself
+  - text: erm ya you only have to pay as low as twenty six cents a day for this plan and it cover many benefit such as erm life payout lost of income and disability issue so erm isit okay if i could arrange my manager to give you a detailed introduction on this plan itself
   utter_chloe_scam:
   - text: erm ya so dont worry this is definitely not a scam i am calling on behalf of manulife to share with you the twenty six cent per day attractive personal accident plan with high coverage so this more like a erm awareness campaign to share with you on the extra benefits of this plan so would it be okay if i could arrange my manager to give you a detailed introduction on this plan and i promise you will find it very useful after the meet
   utter_chloe_sry_are_you_there:
