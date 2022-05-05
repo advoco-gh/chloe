@@ -366,6 +366,13 @@ nlu:
     - no thats fine i have already somebody working with me with on manulife itself
     - youre frommanulife is it my my agent is from prudential ill just check with her okay
     - manulife i got my own agent leh 
+    - my auntie
+    - my uncle
+    - i have people
+    - my family have an insurance agent
+    - i have a many years insurance agent
+    - i have someone
+    - i have a p a handle by my agent
 
 
 - intent: evening
@@ -624,67 +631,25 @@ nlu:
 
 - intent: age
   examples: |
-    - [24](number)
-    - [thirtyfive](number)
-    - am [25](number)
-    - am [twentyone](number)
-    - am major
-    - eighteen
-    - fifty
-    - fifty eight
-    - fifty five
-    - fifty four
-    - fifty nine
-    - fifty one
-    - fifty seven
-    - fifty six
-    - fifty three
-    - fifty two
-    - forty
-    - forty eight
-    - forty five
-    - forty four
-    - forty nine
-    - forty one
-    - forty seven
-    - forty six
-    - forty three
-    - forty two
-    - I am minor
-    - I have [26](number) years
-    - my age is [30](number)
-    - my age is [sixty](number)
-    - nineteen
-    - sixty
-    - sixty eight
-    - sixty five
-    - sixty four
-    - sixty nine
-    - sixty one
-    - sixty seven
-    - sixty six
-    - sixty three
-    - sixty two
-    - thirty
-    - thirty eight
-    - thirty five
-    - thirty four
-    - thirty nine
-    - thirty one
-    - thirty seven
-    - thirty six
-    - thirty three
-    - thirty two
-    - twenty
-    - twenty eight
-    - twenty five
-    - twenty four
-    - twenty one
-    - twenty seven
-    - twenty six
-    - twenty three
-    - twenty two
-
+    - i dont have
+    - not that i know off
+    - i think i have
+    - i think i have great estern
+    - i think i have prudential
+    - i think i have a i a 
+    - i think my parent buy for me
+    - your system should have right
+    - your record should have right
+    - i not too sure
+    - can you check
+    - not really
+    - do you know
+    - i buy once from
+    - i purchase once from
+    - but i dont know
+    - cant you check
+    - you should have the record
+    - not that i know of
 
 - intent: reject
   examples: |
@@ -1070,18 +1035,10 @@ nlu:
 
 - intent: question_related_to_age
   examples: |
-    - do not wish to disclose my age
-    - for what tell you my age
-    - no i dont want to tell you
-    - not comfortable telling you my age
-    - why do you need my age
     - why do you need to know
-    - why do you you need to know how old am i 
-    - why must i tell you my age
-    - why must you know
-    - you need my age for what
-    - not comfortable giving you my age
-    - you are calling from manulife you should know my age
+    - why i dont know why you need to know
+    - why are you asking
+    - do you need to know
 
 
 - intent: manager_question
