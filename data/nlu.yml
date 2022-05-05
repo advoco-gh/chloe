@@ -631,25 +631,66 @@ nlu:
 
 - intent: age
   examples: |
-    - i dont have
-    - not that i know off
-    - i think i have
-    - i think i have great estern
-    - i think i have prudential
-    - i think i have a i a 
-    - i think my parent buy for me
-    - your system should have right
-    - your record should have right
-    - i not too sure
-    - can you check
-    - not really
-    - do you know
-    - i buy once from
-    - i purchase once from
-    - but i dont know
-    - cant you check
-    - you should have the record
-    - not that i know of
+- [24](number)
+- [thirtyfive](number)
+- am [25](number)
+- am [twentyone](number)
+- am major
+- eighteen
+- fifty
+- fifty eight
+- fifty five
+- fifty four
+- fifty nine
+- fifty one
+- fifty seven
+- fifty six
+- fifty three
+- fifty two
+- forty
+- forty eight
+- forty five
+- forty four
+- forty nine
+- forty one
+- forty seven
+- forty six
+- forty three
+- forty two
+- I am minor
+- I have [26](number) years
+- my age is [30](number)
+- my age is [sixty](number)
+- nineteen
+- sixty
+- sixty eight
+- sixty five
+- sixty four
+- sixty nine
+- sixty one
+- sixty seven
+- sixty six
+- sixty three
+- sixty two
+- thirty
+- thirty eight
+- thirty five
+- thirty four
+- thirty nine
+- thirty one
+- thirty seven
+- thirty six
+- thirty three
+- thirty two
+- twenty
+- twenty eight
+- twenty five
+- twenty four
+- twenty one
+- twenty seven
+- twenty six
+- twenty three
+- twenty two
 
 - intent: reject
   examples: |
@@ -766,6 +807,33 @@ nlu:
     - stop stop i say im not interested thanks for your time 
     - sorry sorry no im not interested
     - i mean youve been telling me youre calling for quite a number of times already
+    - i dont have
+    - not that i know off
+    - i think i have
+    - not too sure i think i have
+    - sometimes back
+    - i think i have a i a 
+    - i think my parent buy for me
+    - your system should have right
+    - your record should have right
+    - i not too sure
+    - can you check
+    - not really
+    - do you know
+    - i buy once from
+    - i purchase once from
+    - but i dont know
+    - cant you check
+    - i not too sure actually
+    - not that i know of
+    - i think i have prudential
+    - i think i have great estern
+    - maybe you can check
+    - why you asking me you should have the record
+    - purchase sometimes back not to sure
+    - i dont know leh
+    - no i dont have
+    - i never buy before
 
 
 
@@ -1039,6 +1107,7 @@ nlu:
     - why i dont know why you need to know
     - why are you asking
     - do you need to know
+    - you should have the record 
 
 
 - intent: manager_question
