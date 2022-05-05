@@ -158,7 +158,7 @@ responses:
   utter_chloe_busy_call_back:
   - text: so sorry to disturb i will give you a call back okay
   utter_chloe_call_back_other:
-  - text: uh okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
+  - text: uh okay sorry to disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
   utter_chloe_convincing:
   - text: erm ok I understand that many insurance policy may be too much a cost for considering erm with this current twenty six cent per day promo it actually help many families to reconsider having at least a minimum coverage in their hospital plan for a life time erm why not i can get my manager to share with you a detailed coverage on the plan and if really still feels you are not ready for it we will definitely respect your decision will that be ok for you
   utter_fallback:
