@@ -631,66 +631,66 @@ nlu:
 
 - intent: age
   examples: |
-- [24](number)
-- [thirtyfive](number)
-- am [25](number)
-- am [twentyone](number)
-- am major
-- eighteen
-- fifty
-- fifty eight
-- fifty five
-- fifty four
-- fifty nine
-- fifty one
-- fifty seven
-- fifty six
-- fifty three
-- fifty two
-- forty
-- forty eight
-- forty five
-- forty four
-- forty nine
-- forty one
-- forty seven
-- forty six
-- forty three
-- forty two
-- I am minor
-- I have [26](number) years
-- my age is [30](number)
-- my age is [sixty](number)
-- nineteen
-- sixty
-- sixty eight
-- sixty five
-- sixty four
-- sixty nine
-- sixty one
-- sixty seven
-- sixty six
-- sixty three
-- sixty two
-- thirty
-- thirty eight
-- thirty five
-- thirty four
-- thirty nine
-- thirty one
-- thirty seven
-- thirty six
-- thirty three
-- thirty two
-- twenty
-- twenty eight
-- twenty five
-- twenty four
-- twenty one
-- twenty seven
-- twenty six
-- twenty three
-- twenty two
+    - [24](number)
+    - [thirtyfive](number)
+    - am [25](number)
+    - am [twentyone](number)
+    - am major
+    - eighteen
+    - fifty
+    - fifty eight
+    - fifty five
+    - fifty four
+    - fifty nine
+    - fifty one
+    - fifty seven
+    - fifty six
+    - fifty three
+    - fifty two
+    - forty
+    - forty eight
+    - forty five
+    - forty four
+    - forty nine
+    - forty one
+    - forty seven
+    - forty six
+    - forty three
+    - forty two
+    - I am minor
+    - I have [26](number) years
+    - my age is [30](number)
+    - my age is [sixty](number)
+    - nineteen
+    - sixty
+    - sixty eight
+    - sixty five
+    - sixty four
+    - sixty nine
+    - sixty one
+    - sixty seven
+    - sixty six
+    - sixty three
+    - sixty two
+    - thirty
+    - thirty eight
+    - thirty five
+    - thirty four
+    - thirty nine
+    - thirty one
+    - thirty seven
+    - thirty six
+    - thirty three
+    - thirty two
+    - twenty
+    - twenty eight
+    - twenty five
+    - twenty four
+    - twenty one
+    - twenty seven
+    - twenty six
+    - twenty three
+    - twenty two
 
 - intent: reject
   examples: |
