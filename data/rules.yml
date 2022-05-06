@@ -37,7 +37,7 @@ rules:
 - rule: already_have_agent
   steps:
   - intent: already_have_agent
-  - action: action_trigger_conversion_form
+  - action: utter_ask_goodbye
   
 
 

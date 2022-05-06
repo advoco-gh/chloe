@@ -153,8 +153,11 @@ responses:
   - text: erm great so I will get my manager to contact you by next week to arrange a meet up alright so erm do prefer him to give you a call in the afternoon or in the evening
   utter_ask_chloe_busy_call_back:
   - text: ah okok so sorry to disturb i will give you a call back okay
+  # utter_ask_other_party:
+  # - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
   utter_ask_other_party:
-  - text: okay sorry disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
+  - text: uh okay sorry to disturb no problem erm i will get my manager to give you a call tomorrow and do pass the contact details over to my manager alright
+  
   utter_chloe_busy_call_back:
   - text: so sorry to disturb i will give you a call back okay
   utter_chloe_call_back_other:
@@ -268,6 +271,9 @@ forms:
     required_slots:
       age_info:
       - intent: confirm
+        type: from_intent
+        value: true
+      - intent: reject
         type: from_intent
         value: true
       - intent: age

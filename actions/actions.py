@@ -55,7 +55,7 @@ class Validate_conversion_form(FormValidationAction):
 
         if not tracker.get_slot("age_info"):
             slots_mapped_in_domain.append("goodbye")
-
+        print('{}, slots: {}'.format(self.name(), slots_mapped_in_domain))
         return slots_mapped_in_domain
         
         
@@ -72,7 +72,7 @@ class Validate_already_have_agent(FormValidationAction):
     ) -> Optional[List[Text]]:
         if not tracker.get_slot("want_to_continue"):
             slots_mapped_in_domain.append("goodbye")
-
+        print('{}, slots: {}'.format(self.name(), slots_mapped_in_domain))
         return slots_mapped_in_domain
 
 
@@ -92,6 +92,8 @@ class Validate_objection_already_have_PA_plan(FormValidationAction):
             
             else:
                 slots_mapped_in_domain.append("goodbye")
+                print('{}, slots: {}'.format(self.name(), slots_mapped_in_domain))
+
                 return slots_mapped_in_domain
 
 
@@ -124,6 +126,8 @@ class action_trigger_conversion_form(Action):
         # if only_intents[-1] == "speak_twice":
         #     reply = only_actions[-1] 
         if only_actions[-1] == 'utter_chloe_greeting':
+            print('{}, intent: {}, action: {}, reply; {}'.format(self.name(), only_intents[-1], only_actions[-1], reply))
+
             dispatcher.utter_message(response = 'utter_chloe_greeting_repeat')
             return []
 
@@ -132,6 +136,8 @@ class action_trigger_conversion_form(Action):
                         'objection_already_have_PA_plan': 'objection_already_have_PA_plan',
                         'question_related_to_age': 'question_related_to_age'}
             reply_action = rules[only_intents[-1]]
+            print('{}, intent: {}, action: {}, reply; {}'.format(self.name(), only_intents[-1], only_actions[-1], reply))
+
             return [FollowupAction(name=reply_action)]
         
         
@@ -161,7 +167,8 @@ class action_chloe(Action):
 
         if only_intents[-1] == "speak_twice":
             reply = only_actions[-1] 
-
+        print('{}, intent: {}, action: {}, reply; {}'.format(self.name(), only_intents[-1], only_actions[-1], reply))
+ 
         dispatcher.utter_message(response = reply)
         return []
         
@@ -231,7 +238,7 @@ class action_rule_only_once(Action):
                 reply = rules[only_intents[-1]]
 
 
-
+        print('{}, intent: {}, action: {}, reply; {}'.format(self.name(), only_intents[-1], only_actions[-1], reply))
 
         dispatcher.utter_message(response = reply)
         return []
