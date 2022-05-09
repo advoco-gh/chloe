@@ -136,6 +136,10 @@ rules:
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
+  - action: action_busy_reply
+  - or:
+    - intent: confirm
+    - intent: reject
   - action: utter_chloe_goodbye
 
 

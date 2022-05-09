@@ -244,3 +244,50 @@ class action_rule_only_once(Action):
         return []
 
 
+class action_busy_reply(Action):
+
+    def name(self) -> Text:
+        return "action_busy_reply"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        a = tracker.events
+
+        only_actions = []
+        only_intents = []
+
+        for x in a:
+            if x['event'] == 'user':
+                only_intents.append(x['parse_data']['intent']['name'])
+            elif x['event'] == 'bot':
+                try:
+                    only_actions.append(x['metadata']['utter_action'])
+                except:
+                    pass
+        
+
+
+        replies = {'pa_plan_coverage': 'utter_chloe_pa_coverage',
+                'objection_already_have_PA_plan': 'chloe_had_a_pa_plan',
+                'nlu_fallback': 'utter_fallback',
+                'fees_question': 'chloe_pa_fees',
+                'question_related_to_scam': 'utter_chloe_scam',
+                'call_back_to_another_party': 'chloe_call _back_other',
+                'question_related_to_numbers':'chloe_number_info',
+                'looking_for':'chloe_looking_for'
+                }
+    
+        print('action_busy_reply', only_intents, only_actions)
+        for intent, ans in replies.items():
+            if intent == only_intents[-1]:
+                reply = ans
+                break
+            else:
+                reply = 'utter_chloe_goodbye'
+
+        if only_intents.count('busy') > 1:
+                reply = 'utter_chloe_goodbye'
+        dispatcher.utter_message(response = reply)
+        return []
