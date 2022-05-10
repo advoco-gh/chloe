@@ -116,6 +116,29 @@ nlu:
     -  twenty six times a day or
     - twenty six cent a day
     - twenty six  cent
+    - hello hi
+    - hello hi yes
+    - yes hi
+    - you said youre calling from manulife itself right
+    - ok you are from manulife
+    - ok you are from prudential
+    - so you are from manulife
+    - manulife the the insurance company
+    - dont remember i have a manualife insurance
+    - dont remember i have a prudential insurance
+    - ok so you are from a i a 
+    - dont remember i have a a i a insurance
+    - is it a saving plan
+    - what plan is this
+    - is it a personal accident plan
+    - is it a p a plan
+    - saving plan
+    - what plan is this
+    - yes can you share more
+    - what plan again
+    - life insurance plan isit
+    - what policy
+    - what insurance policy you are reffering to
 
 
 - intent: question_related_to_scam
@@ -557,6 +580,16 @@ nlu:
     - no sorry i cant speak now
     - im carrying a class
     - can you call back and six oclock
+    - hang on hang on
+    - sorry wait ah
+    - please hang on
+    - sorry please hold on the line
+    - wait
+    - eh wait ah
+    - excuse me please hold
+    - please hold on
+    - please give me a mintute
+    - give me a mintute ya
 
 
 - intent: not_singaporean
@@ -1023,6 +1056,8 @@ nlu:
 
 - intent: speak_twice
   examples: |
+     - cant hear clearly
+    - cant hear you
     - can you repeat
     - Come again
     - Hello hello
@@ -1035,10 +1070,12 @@ nlu:
     - what you say again
     - what are you talking about
     - what is it again 
+    - may i know im calling for a while
     - i dont understand
     - sorry could you repeat yourself sorry environment quite noisy
     - sorry sorry again
     - sorry i cannot hear you
+    
 
 
 - intent: student
@@ -1099,6 +1136,12 @@ nlu:
     - this is a bank number
     - this is a coperate phone 
     - no but this is a company phone so yah sorry
+    - p c p a 
+    - do not call list
+    - do not call registry 
+    - why are you calling me
+    - do you know you are not suppose to call me
+    - c p a 
 
 
 - intent: question_related_to_age
