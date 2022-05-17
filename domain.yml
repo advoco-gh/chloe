@@ -19,7 +19,7 @@ intents:
     use_entities: true
 - question_related_to_numbers:
     use_entities: true
-- question_related_to_scam:
+- scam:
     use_entities: true
 - who_is:
     use_entities: true

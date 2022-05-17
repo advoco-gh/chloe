@@ -157,8 +157,6 @@ rules:
   - intent: speak_twice
   - action: action_chloe
   
-
-
 - rule: dnc
   steps:
   - intent: dnc
@@ -177,9 +175,9 @@ rules:
   steps:
   - intent: fees_question 
   - action: action_rule_only_once
-- rule: question_related_to_scam
+- rule: scam
   steps:
-  - intent: question_related_to_scam
+  - intent: scam
   - action: action_rule_only_once
 - rule: question_related_to_numbers
   steps:
