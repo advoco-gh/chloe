@@ -732,6 +732,173 @@ nlu:
     - twenty two
 
 
+- intent: im sorry i am hanging up sorry
+  examples: |
+    - absolutely no
+    - ah i dont want
+    - can you take me off your calling list
+    - can you take my number off your calling list
+    - do not
+    - don't come
+    - don't have time
+    - don't show off
+    - don't want
+    - don't want don't want
+    - don't want your help
+    - don’t know
+    - don’t think I'll need it, thanks.
+    - dont disturb me
+    - dont think i need
+    - get out goodbye
+    - i am not interested for call back
+    - i am not okay with your help
+    - i do not want your help
+    - I don't need anything from you
+    - i don't need it
+    - i don't need your help
+    - i don't want
+    - I don't want your assistance
+    - i don't want your help
+    - I don't you help
+    - i dont know lah
+    - i dont want a call back
+    - i dont want anymore
+    - i think it about it again it is okay thank you 
+    - i think it is okay
+    - i will be fine without it
+    - its okay nevermind
+    - its okay thank you
+    - its okay thanks for calling
+    - need not
+    - never
+    - never help
+    - never mind
+    - No
+    - no already arranged for this
+    - no don't want
+    - no dont call me
+    - no forget
+    - no it is okay 
+    - no its fine
+    - no its okay
+    - no la no
+    - no need
+    - no no no i don't need it
+    - no not interested
+    - no so sorry
+    - no sorry
+    - No sorry not keen
+    - no Thank you
+    - no thank you
+    - no thanks
+    - No, I don’t want to receive a callback
+    - No, It's ok.
+    - nope i dont need your help
+    - not at the moment thanks
+    - not at this time
+    - not exactly
+    - not interested
+    - Not interested at the moment thank you.
+    - Not interested in anything
+    - Not interested, thank you
+    - not intertested
+    - not keen
+    - not necessary
+    - not need for callback
+    - not needed
+    - not now
+    - Not, really.
+    - of course not
+    - oh no need
+    - okay keep it in mind
+    - okay sorry bye bye
+    - okay thank you bye bye
+    - please dont call me again
+    - sorry i am not really keen thanks
+    - sorry i don't need
+    - sorry no
+    - Sorry not interested
+    - Sorry not interested in all these kind of insurance thing.
+    - sorry not now
+    - sorry, no
+    - sorry,not interested
+    - thank you bye bye
+    - thanks for the offer i can do it myself
+    - This will surely lead into insurance. No thanks.
+    - This will surely leading into insurance someway so don't disturb me
+    - We are not interested in any insurance
+    - Why would you need them to call me back
+    - Yes, but I am not keen now
+    - you can share this with other people
+    - Zoom ah? No need thankyou
+    - no sorry you got the wrong number
+    - im actually fully covered with everything 
+    - ill think ill give it a miss for the for the time being thanks
+    - no because maybe im going to retire also
+    - for what
+    - enough thank you so much alright
+
+    - yeah sorry
+    - hello thank you
+    - hello hello sorry
+    - sorry i i dont think i have anything to do a i a
+
+    - meaning i i dont have anything to be a i a
+
+    - yeah no
+    - if you are trying to promote a i a product im not interested 
+    - i know
+    - no im good thank you
+    - yeah thank you
+    - im sorry im just not interested right
+    - no im not looking for policy right now
+    - stop stop i say im not interested thanks for your time 
+    - sorry sorry no im not interested
+    - i mean youve been telling me youre calling for quite a number of times already
+    - i dont have
+    - not that i know off
+    - i think i have
+    - not too sure i think i have
+    - sometimes back
+    - i think i have a i a 
+    - i think my parent buy for me
+    - your system should have right
+    - your record should have right
+    - i not too sure
+    - can you check
+    - not really
+    - do you know
+    - i buy once from
+    - i purchase once from
+    - but i dont know
+    - cant you check
+    - i not too sure actually
+    - not that i know of
+    - i think i have prudential
+    - i think i have great estern
+    - maybe you can check
+    - why you asking me you should have the record
+    - purchase sometimes back not to sure
+    - i dont know leh
+    - no i dont have
+    - i never buy before
+    - i understand
+    - aiyoh
+    - yeah i know i know i know i know
+    - i im not interested sorry im busy sorry
+    - its okay
+    - its okay its okay
+    - i just received a call a few days ago from manulife also
+    - youre calling to sell insurance
+    - its okay sorry
+    - no no somebody call me already its okay im not interested thank you
+    - sorry if youre talking to me about insurance i am well it should thank you for your time bye bye
+    - currently not looking for any new policy yah thank you
+    - im fine thank you very much
+    - yeah i understand
+    - hello im good thank you
+
+
 - intent: confirm
   examples: |
     - a good day
