@@ -1056,7 +1056,7 @@ nlu:
 
 - intent: speak_twice
   examples: |
-     - cant hear clearly
+    - cant hear clearly
     - cant hear you
     - can you repeat
     - Come again
@@ -1164,7 +1164,6 @@ nlu:
     - what is tthe purpose of your manager calling me?
     - what is your manger name
     - who is your manager
-   
     - why he need to call me again?
     - why your manager need to call me?
     - you cannot tell me meh need your manager to all me meh 
