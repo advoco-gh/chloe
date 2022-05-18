@@ -157,8 +157,6 @@ rules:
   - intent: speak_twice
   - action: action_chloe
   
-
-
 - rule: dnc
   steps:
   - intent: dnc

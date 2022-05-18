@@ -28,6 +28,11 @@ nlu:
     - what is this medical insurance or saving
     - may i know whats the minimum age entry for this plan
     - are you talking about the e critical care
+    - i know what kind of plan
+    - what you say about comparing what plan is it
+    - what policy is it
+    - its a new policy is it
+    - is it a savings plan
 
 
 - intent: objection_already_have_PA_plan
@@ -65,6 +70,8 @@ nlu:
     - yes everything I have already
     - yes have already
     - yes I got already
+    - holiday 
+    - i have enough 
     - im already covered 
     - no im sorry no its okay i dont need im well covered thank you
     - i am fully covered thank you 
@@ -74,6 +81,10 @@ nlu:
     - im fully covered already i do not require anymore insurance thank you very much for your call
     - i have something close to manulife
     - im covered thank you very much
+    - orh no no thank you i have already thank you thanks bye
+    - its okay i have a lot
+    - i dont think i need policies ive ive a lot of policies already thanks a lot
+    - ya i have one policy from manulife also
 
 
 - intent: fees_question
@@ -116,29 +127,6 @@ nlu:
     -  twenty six times a day or
     - twenty six cent a day
     - twenty six  cent
-    - hello hi
-    - hello hi yes
-    - yes hi
-    - you said youre calling from manulife itself right
-    - ok you are from manulife
-    - ok you are from prudential
-    - so you are from manulife
-    - manulife the the insurance company
-    - dont remember i have a manualife insurance
-    - dont remember i have a prudential insurance
-    - ok so you are from a i a 
-    - dont remember i have a a i a insurance
-    - is it a saving plan
-    - what plan is this
-    - is it a personal accident plan
-    - is it a p a plan
-    - saving plan
-    - what plan is this
-    - yes can you share more
-    - what plan again
-    - life insurance plan isit
-    - what policy
-    - what insurance policy you are reffering to
 
 
 - intent: question_related_to_scam
@@ -174,6 +162,7 @@ nlu:
     - you think i 3 years old is it
     - you think i am a fool is it
     - you trying to disturb aunty is it
+    - no sorry who is it i thought it was a prank call because theres a plus six five
 
 
 - intent: call_back_to_another_party
@@ -309,6 +298,7 @@ nlu:
     - im under manulife
     - My husband is from manulife
     - my girlfriend is a insurance agent from manulife
+    - my son is insurance line
 
 
 - intent: question_related_to_numbers
@@ -326,6 +316,7 @@ nlu:
     - who pass you my number
     - are you supposed to call me for this kind of marketing
     - okay and how did you get my contact details
+    - please take me off your calling list
 
 
 - intent: looking_for
@@ -350,6 +341,9 @@ nlu:
     - you know who am i anot why you call me
     - i think you wrong number
     - wrong number
+    - you know who i am
+    - no no no sorry maam may i know who youre looking for
+    - hold by the way are you calling to
 
 
 - intent: already_have_agent
@@ -378,6 +372,13 @@ nlu:
     - ya we are very close 
     - she is my friend 
     - my friend 
+    - yeah i bought from my agent a a a one
+    - brought from my aaa agent 
+    - i have a aaa agent already
+    - ive got insurance agent from me
+    - my daughter is an insurance agent
+    - my son is an insurance agent
+    - no my my daughter is on potential so
     - no im actually not not free right now and i dont have an insurance agent already thank you
     -dont want no need i got my agent already under a i a one also
     - no i dont think interested because i actually have a agent to serve me 
@@ -570,6 +571,11 @@ nlu:
     - call me in five minutes
     - im sorry im a line
     - orh no free when we were walking so ya
+    - in the midst of something
+
+    - in the midst of meeting 
+    - in the midst of working 
+    - no no no i think the meeting soon thanks
     - i dont think i want to listen about insurance today im a meeting coming on her thanks for your call
     - no because i now meeting
     -  i cannot hear well can you call me not now maybe after six 
@@ -725,6 +731,7 @@ nlu:
     - twenty three
     - twenty two
 
+
 - intent: reject
   examples: |
     - absolutely no
@@ -830,6 +837,14 @@ nlu:
     - no because maybe im going to retire also
     - for what
     - enough thank you so much alright
+
+    - yeah sorry
+    - hello thank you
+    - hello hello sorry
+    - sorry i i dont think i have anything to do a i a
+
+    - meaning i i dont have anything to be a i a
+
     - yeah no
     - if you are trying to promote a i a product im not interested 
     - i know
@@ -867,7 +882,21 @@ nlu:
     - i dont know leh
     - no i dont have
     - i never buy before
-
+    - i understand
+    - aiyoh
+    - yeah i know i know i know i know
+    - i im not interested sorry im busy sorry
+    - its okay
+    - its okay its okay
+    - i just received a call a few days ago from manulife also
+    - youre calling to sell insurance
+    - its okay sorry
+    - no no somebody call me already its okay im not interested thank you
+    - sorry if youre talking to me about insurance i am well it should thank you for your time bye bye
+    - currently not looking for any new policy yah thank you
+    - im fine thank you very much
+    - yeah i understand
+    - hello im good thank you
 
 
 - intent: confirm
@@ -1034,7 +1063,9 @@ nlu:
     - what is 
     - why is it
     - what
-     - sorry is it regarding some investment or
+    - what did you sir
+    - good idea
+    -  - sorry is it regarding some investment or
     - for what purpose
     - it depends
     - what kind of insurance is that
@@ -1052,6 +1083,37 @@ nlu:
     - what can i do for you
     - manual life yeah
     - yah yah go ahead anyway
+    - hello hi
+    - hello hi yes
+    - yes hi
+    - you said youre calling from manulife itself right
+    - ok you are from manulife
+    - ok you are from prudential
+    - so you are from manulife
+    - manulife the the insurance company
+    - dont remember i have a manualife insurance
+    - dont remember i have a prudential insurance
+    - ok so you are from a i a 
+    - dont remember i have a a i a insurance
+    - is it a saving plan
+    - what plan is this
+    - is it a personal accident plan
+    - is it a p a plan
+    - saving plan
+    - what plan is this
+    - yes can you share more
+    - what plan again
+    - life insurance plan isit
+    - what policy
+    - what insurance policy you are reffering to
+    - yah yah hello yah hello yes
+    - yes hi
+    - hi hi yes yes correct
+    - yes hi hello
+    - yeah hello hello hello
+    - yes hello
+    - yah yah yah hello
+    - ya i have a few
 
 
 - intent: speak_twice
@@ -1075,7 +1137,7 @@ nlu:
     - sorry could you repeat yourself sorry environment quite noisy
     - sorry sorry again
     - sorry i cannot hear you
-    
+    -  cannot hear you
 
 
 - intent: student
@@ -1135,6 +1197,11 @@ nlu:
     - this is help support number from dbs bank 
     - this is a bank number
     - this is a coperate phone 
+    - this company phone you know so
+    - no this is not my phone
+    - this is a hotline
+    - yah yah i know i know but this is this is not my phone is 
+    - a company phone
     - no but this is a company phone so yah sorry
     - p c p a 
     - do not call list
@@ -1142,6 +1209,9 @@ nlu:
     - why are you calling me
     - do you know you are not suppose to call me
     - c p a 
+    - is it a recorded message
+    - no its okay just just remove my name from your list
+    - sorry this is actually this is actually a office phone
 
 
 - intent: question_related_to_age
