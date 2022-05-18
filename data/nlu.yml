@@ -129,7 +129,7 @@ nlu:
     - twenty six  cent
 
 
-- intent: scam
+- intent: question_related_to_scam
   examples: |
     - are you playing me
     - are you scamming me
@@ -732,7 +732,7 @@ nlu:
     - twenty two
 
 
-- intent: im sorry i am hanging up sorry
+- intent: reject
   examples: |
     - absolutely no
     - ah i dont want

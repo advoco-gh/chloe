@@ -175,9 +175,9 @@ rules:
   steps:
   - intent: fees_question 
   - action: action_rule_only_once
-- rule: scam
+- rule: question_related_to_scam
   steps:
-  - intent: scam
+  - intent: question_related_to_scam
   - action: action_rule_only_once
 - rule: question_related_to_numbers
   steps:
