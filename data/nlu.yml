@@ -33,6 +33,8 @@ nlu:
     - what policy is it
     - its a new policy is it
     - is it a savings plan
+    - is this a cold call 
+    -  can you tell me what is the policy about
 
 
 - intent: objection_already_have_PA_plan
@@ -85,6 +87,8 @@ nlu:
     - its okay i have a lot
     - i dont think i need policies ive ive a lot of policies already thanks a lot
     - ya i have one policy from manulife also
+    - no its okay i have my own insurance
+    - i already have some policy so it should be fine thank you
 
 
 - intent: fees_question
@@ -126,7 +130,8 @@ nlu:
     - correct is it twenty six twenty six cents per day on what
     -  twenty six times a day or
     - twenty six cent a day
-    - twenty six  cent
+    - twenty six cent
+    - what is the twenty six
 
 
 - intent: question_related_to_scam
@@ -572,7 +577,6 @@ nlu:
     - im sorry im a line
     - orh no free when we were walking so ya
     - in the midst of something
-
     - in the midst of meeting 
     - in the midst of working 
     - no no no i think the meeting soon thanks
@@ -596,6 +600,7 @@ nlu:
     - please hold on
     - please give me a mintute
     - give me a mintute ya
+    - orh okay do you mind continue on another day
 
 
 - intent: not_singaporean
@@ -837,14 +842,11 @@ nlu:
     - no because maybe im going to retire also
     - for what
     - enough thank you so much alright
-
     - yeah sorry
     - hello thank you
     - hello hello sorry
     - sorry i i dont think i have anything to do a i a
-
     - meaning i i dont have anything to be a i a
-
     - yeah no
     - if you are trying to promote a i a product im not interested 
     - i know
@@ -897,6 +899,16 @@ nlu:
     - im fine thank you very much
     - yeah i understand
     - hello im good thank you
+    - i dont think im ready into the moment
+    - no thank you very much for your time you need to concentrate on other people okay
+    - its okay i dont wish to take anymore its call thank you
+    - no i say no i say no thank you very much
+    - its okay and then i i wont be like lets say i ive been participating in all these
+    - orh okay thank you
+    - orh im not free thanks
+    - orh okay can no worries you
+    - sorry what is this about
+    - no worries no worries its okay
 
 
 - intent: confirm
@@ -1114,6 +1126,10 @@ nlu:
     - yes hello
     - yah yah yah hello
     - ya i have a few
+    - pertaining to
+    - sure when will she be calling me
+    - if you dont mind can you send me the details
+    
 
 
 - intent: speak_twice
@@ -1138,6 +1154,8 @@ nlu:
     - sorry sorry again
     - sorry i cannot hear you
     -  cannot hear you
+    - cannot hear you
+    - sorry hello
 
 
 - intent: student
@@ -1175,6 +1193,7 @@ nlu:
     - no its okay because im a student
     - wrong number because im a kid over here
     - i am six years old okay
+    - sorry im thirteen
 
 
 - intent: dnc
@@ -1212,6 +1231,8 @@ nlu:
     - is it a recorded message
     - no its okay just just remove my name from your list
     - sorry this is actually this is actually a office phone
+    - ive never failed in any online survey okay dont make me pick up a p d p a
+    - can you please remove me from your database im quite sick of all these cold calls thank you
 
 
 - intent: question_related_to_age
@@ -1257,3 +1278,4 @@ nlu:
     - next weekend
     - second week
     - third week
+    - why dont you call them saturday is that possible for you
