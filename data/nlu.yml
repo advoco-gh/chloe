@@ -35,60 +35,9 @@ nlu:
     - is it a savings plan
     - is this a cold call 
     -  can you tell me what is the policy about
-
-
-- intent: objection_already_have_PA_plan
-  examples: |
-    - actually i have a plan already
-    - ah I actually have PA plan already
-    - ah ya i got already thank you ah
-    - buy alr last week
-    - can review for me i also dont know if i have anot ?
-    - i already have a insurance with ntuc also pa 
-    - i already have insurance for related to such 
-    - I already have it
-    - i already have more than enough insurance
-    - i already settle all this 
-    - i buy from another company 
-    - i completed 
-    - i dont know this but i have one
-    - I got the plan
-    - I have already
-    - i have insurance it's okay 
-    - i have many plans currently 
-    - i have something close to prudential 
-    - i think i have already 
-    - i think i have similar like this 
-    - I've already have it
-    - I've already have PA plan
-    - my company buy for me already
-    - no thanks i have already got this plan already
-    - oh have already
-    - oh I think this plan my husband buy for me already 
-    - PA i already got already
-    - this one got what difference with my insurance
-    - ya I have alr already have
-    - ya yes have already
-    - yes everything I have already
-    - yes have already
-    - yes I got already
-    - holiday 
-    - i have enough 
-    - im already covered 
-    - no im sorry no its okay i dont need im well covered thank you
-    - i am fully covered thank you 
-    - sorry im not interested i have my own accident plan
-    - orh i think no need because we all have already yeah
-    - its okay i am fully covered thank you 
-    - im fully covered already i do not require anymore insurance thank you very much for your call
-    - i have something close to manulife
-    - im covered thank you very much
-    - orh no no thank you i have already thank you thanks bye
-    - its okay i have a lot
-    - i dont think i need policies ive ive a lot of policies already thanks a lot
-    - ya i have one policy from manulife also
-    - no its okay i have my own insurance
-    - i already have some policy so it should be fine thank you
+    - this is a what accident plan ah
+    - what policy
+    - you are calling for which policy
 
 
 - intent: fees_question
@@ -116,7 +65,6 @@ nlu:
     - is there any obligaton
     - is there any terms and conditions
     - is this free of charge
-    - no oblgations right
     - no payment ah
     - promise me free first
     - so good meh only sixty cents
@@ -132,6 +80,7 @@ nlu:
     - twenty six cent a day
     - twenty six cent
     - what is the twenty six
+    - i got no more money
 
 
 - intent: question_related_to_scam
@@ -322,6 +271,8 @@ nlu:
     - are you supposed to call me for this kind of marketing
     - okay and how did you get my contact details
     - please take me off your calling list
+    - wait where did you get my number from the from the marketing team
+    - wait wait wait wait how did you get my number
 
 
 - intent: looking_for
@@ -349,6 +300,8 @@ nlu:
     - you know who i am
     - no no no sorry maam may i know who youre looking for
     - hold by the way are you calling to
+    - is this a recording
+    - i think you got the wrong number
 
 
 - intent: already_have_agent
@@ -402,6 +355,23 @@ nlu:
     - i have a many years insurance agent
     - i have someone
     - i have a p a handle by my agent
+    - i think my friend also working in a i a its its okay i can get her her information from her
+    - i got friends also a i a so i will get information from her thanks
+    - i think its okay yah i have i have my own agent 
+    - sorry i think its okay i i dont need i already have a agent yah thank you
+    - it is okay i got a i a agent
+    - yeah hes my friend
+    - yes is my friend
+    - ya we are very close 
+    - she is my friend 
+    - my friend 
+    - yeah i bought from my agent a a a one
+    - brought from my aaa agent 
+    - i have a aaa agent already
+    - ive got insurance agent from me
+    - my daughter is an insurance agent
+    - my son is an insurance agent
+    - no my my daughter is on potential so
 
 
 - intent: evening
@@ -601,6 +571,13 @@ nlu:
     - please give me a mintute
     - give me a mintute ya
     - orh okay do you mind continue on another day
+    - sorry i cannot talk im at work
+    - can you call back again
+    - no its okay yeah im working thank you
+    - i cannot talk now
+    - no im in a meeting
+    - p c
+    - sorry i am p c
 
 
 - intent: not_singaporean
@@ -909,6 +886,14 @@ nlu:
     - orh okay can no worries you
     - sorry what is this about
     - no worries no worries its okay
+    - i already said i am not interested okay
+    - do you understand im saying
+    - no thats fine yup
+    - yah yah
+    - no its okay no not at the moment thank you so much for calling
+    - i dont need any insurance plan or any savings plan so i dont need to hear what is the the the thing is sorry
+    - no need maam thanks for calling thank you very much
+    - can you hey hi can you hear me
 
 
 - intent: confirm
@@ -1077,7 +1062,7 @@ nlu:
     - what
     - what did you sir
     - good idea
-    - sorry is it regarding some investment or
+    -  - sorry is it regarding some investment or
     - for what purpose
     - it depends
     - what kind of insurance is that
@@ -1116,7 +1101,6 @@ nlu:
     - yes can you share more
     - what plan again
     - life insurance plan isit
-    - what policy
     - what insurance policy you are reffering to
     - yah yah hello yah hello yes
     - yes hi
@@ -1129,7 +1113,22 @@ nlu:
     - pertaining to
     - sure when will she be calling me
     - if you dont mind can you send me the details
-    
+    - what is it we are getting
+    - how can i help you
+    - orh manulife ya
+    - sorry you mentioned this is an accidental plant
+    - so what is this phone call about
+    - i think for me before throwing
+    - yes sure what is it 
+    - what is it
+    - insurance is it 
+    - what is this regarding im driving 
+    - okay sure
+    - what is 
+    - why is it
+    - what
+    - what did you sir
+    - good idea
 
 
 - intent: speak_twice
@@ -1153,9 +1152,11 @@ nlu:
     - sorry could you repeat yourself sorry environment quite noisy
     - sorry sorry again
     - sorry i cannot hear you
-    -  cannot hear you
     - cannot hear you
     - sorry hello
+    - sorry i cannot hear you one more time please
+    - sorry can you repeat again
+    - come again
 
 
 - intent: student
@@ -1225,7 +1226,6 @@ nlu:
     - p c p a 
     - do not call list
     - do not call registry 
-    - why are you calling me
     - do you know you are not suppose to call me
     - c p a 
     - is it a recorded message
@@ -1233,6 +1233,15 @@ nlu:
     - sorry this is actually this is actually a office phone
     - ive never failed in any online survey okay dont make me pick up a p d p a
     - can you please remove me from your database im quite sick of all these cold calls thank you
+    - ive never authorised manualife to call me
+    - this is help support number from dbs bank 
+    - this is a bank number
+    - this is a coperate phone 
+    - this company phone you know so
+    - no this is not my phone
+    - this is a hotline
+    - yah yah i know i know but this is this is not my phone is 
+    - a company phone
 
 
 - intent: question_related_to_age
